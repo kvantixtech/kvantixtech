@@ -28,11 +28,12 @@ def render(rows, today=None):
     last = rows[-1]
     state = "intact" if last["chain_ok"] == "true" else "**BROKEN, see the anchors**"
     board = (f"First scoreboard in about {SCOREBOARD_DAY - day} days." if day < SCOREBOARD_DAY
-             else "Scoreboard: [kvantix.tech/playground](https://kvantix.tech/playground/).")
+             else "Scoreboard: [kvantix.tech/playground/weather](https://kvantix.tech/playground/weather/).")
     return (f"{head}\n\n"
             f"| Day | Downloads locked | Chain | Latest public anchor |\n|---|---|---|---|\n"
             f"| **{day}** | {int(last['runs']):,} | {state} | [`{last['chain_head'][:16]}…`]({REPO}/blob/main/anchors/chain-heads.csv) · {last['date_utc']} |\n\n"
-            f"{board} Rules published 28 Sep 2026 at 07:57 UTC, four hours before the first forecast.")
+            f"{board} Rules published 28 Sep 2026 at 07:57 UTC, four hours before the first forecast. "
+            f"[Live status →](https://kvantix.tech/playground/weather/)")
 
 
 def main():
