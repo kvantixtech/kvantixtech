@@ -25,6 +25,7 @@ First scoreboard in about 28 days. Rules published 28 Sep 2026 at 07:57 UTC, fou
 | | |
 |---|---|
 | 🌦️ [**weather-forecast-test**](https://github.com/kvantixtech/weather-forecast-test) | The weather collector and scoring rules, fixed before the first forecast. Hash-chained downloads, anchored here daily. Python, standard library only. |
+| 📈 [**expert-forecasts**](https://github.com/kvantixtech/expert-forecasts) | Did Denmark's official forecasters get GDP and inflation right? 60 forecasts from 2015–2024, each quoted from its report, scored against Statistics Denmark and "next year like this year". |
 | 🔒 [**lock-your-prediction**](https://github.com/kvantixtech/lock-your-prediction) | Seal a prediction with SHA-256 and a secret key. Spec, test vectors, and verifiers in Python, Node, the browser and plain `sha256sum`. |
 | 🧪 [**validation-examples**](https://github.com/kvantixtech/validation-examples) | Six synthetic datasets where the truth is known, from a real-but-untradeable edge to a look-ahead bug that passes 7/7. Each has its full report. |
 | 📄 [**kvantix-reports**](https://github.com/kvantixtech/kvantix-reports) | The reports on our own engine, unedited: KAS v1 **1/7**, KAS v2.1 **2/7**. |
