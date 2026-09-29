@@ -36,6 +36,6 @@ First scoreboard in about 28 days. Rules published 28 Sep 2026 at 07:57 UTC, fou
 - [**Data Playground**](https://kvantix.tech/playground/): [weather test status](https://kvantix.tech/playground/weather/), [Track record checker](https://kvantix.tech/playground/track-record/), [Luck or skill?](https://kvantix.tech/playground/luck-or-skill/) and [Lock your prediction](https://kvantix.tech/playground/lock-your-prediction/).
 - [**Validation Report**](https://kvantix.tech/#kvx-services): a written verdict on your claim. Same price whatever the verdict.
 
-[kvantix.tech](https://kvantix.tech) · [X](https://x.com/KvantixTech) · validation@kvantix.tech · Hjørring, Denmark · CVR 46296036
+[kvantix.tech](https://kvantix.tech) · [LinkedIn](https://www.linkedin.com/company/kvantix/) · [X](https://x.com/KvantixTech) · validation@kvantix.tech · Hjørring, Denmark · CVR 46296036
 
 <sub>Statistics, not advice. Kvantix sells no signals.</sub>
