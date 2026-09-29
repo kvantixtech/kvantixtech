@@ -11,7 +11,13 @@ Everything here follows one method:
 ## In public right now
 
 <!-- weather:start -->
-**Which weather forecast is right most often in Denmark?** DMI, MET Norway, OpenWeatherMap and the pilots' TAF for five Danish cities, locked four times a day before the weather happens. Rules published 28 Sep 2026 at 07:57 UTC, four hours before the first forecast. First scoreboard in late October.
+**Which weather forecast is right most often in Denmark?** DMI, MET Norway, OpenWeatherMap and the pilots' TAF for five Danish cities, locked four times a day before the weather happens.
+
+| Day | Downloads locked | Chain | Latest public anchor |
+|---|---|---|---|
+| **2** | 70 | intact | [`b6ce9f7570cc1fb0…`](https://github.com/kvantixtech/weather-forecast-test/blob/main/anchors/chain-heads.csv) · 2026-09-29 |
+
+First scoreboard in about 28 days. Rules published 28 Sep 2026 at 07:57 UTC, four hours before the first forecast.
 <!-- weather:end -->
 
 ## Repositories
