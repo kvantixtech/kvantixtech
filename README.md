@@ -15,9 +15,9 @@ Everything here follows one method:
 
 | Day | Downloads locked | Chain | Latest public anchor |
 |---|---|---|---|
-| **2** | 70 | intact | [`b6ce9f7570cc1fb0…`](https://github.com/kvantixtech/weather-forecast-test/blob/main/anchors/chain-heads.csv) · 2026-09-29 |
+| **3** | 150 | intact | [`6118d02f3d99a905…`](https://github.com/kvantixtech/weather-forecast-test/blob/main/anchors/chain-heads.csv) · 2026-09-30 |
 
-First scoreboard in about 28 days. Rules published 28 Sep 2026 at 07:57 UTC, four hours before the first forecast. [Live status →](https://kvantix.tech/playground/weather/)
+First scoreboard in about 27 days. Rules published 28 Sep 2026 at 07:57 UTC, four hours before the first forecast. [Live status →](https://kvantix.tech/playground/weather/)
 <!-- weather:end -->
 
 ## Repositories
