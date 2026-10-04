@@ -1,0 +1,38 @@
+name: pulse
+
+# Twice an hour: what is each Kvantix investigation doing right now? Reads public commits, Actions runs
+# and status files of the kvantixtech repositories and writes pulse/pulse.json, which the live view on
+# kvantix.tech/playground/ reads. No results and no raw measurements. Commits only when something changed.
+on:
+  schedule:
+    - cron: "8,38 * * * *"
+  push:
+    branches: ["main"]
+    paths: ["tools/pulse.py", ".github/workflows/pulse.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: pulse
+  cancel-in-progress: false
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/pulse.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain pulse/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add pulse/ && git commit -qm "pulse (tools/pulse.py)"
+            git pull -q --rebase && git push -q
+          fi

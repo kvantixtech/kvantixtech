@@ -1,0 +1,997 @@
+{
+ "schema": 1,
+ "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
+ "built_utc": "2026-10-04T14:21:15Z",
+ "nodes": [
+  {
+   "id": "weather",
+   "name": "Weather forecasts",
+   "short": "Weather",
+   "question": "Which weather forecast is right most often?",
+   "url": "https://kvantix.tech/playground/weather/",
+   "repo": "weather-forecast-test",
+   "state": "collecting",
+   "since": "2026-09-28",
+   "beat_h": 24,
+   "line": "DMI, MET Norway, OpenWeatherMap and the pilots' TAF, locked 4× a day before the weather happens",
+   "next": {
+    "what": "First scoreboard, marked preliminary",
+    "date": "2026-10-28",
+    "approx": true
+   },
+   "chain_ok": true,
+   "counters": [
+    [
+     "forecast downloads locked",
+     "472"
+    ],
+    [
+     "day",
+     "7"
+    ]
+   ],
+   "rate": {
+    "per_day": 78,
+    "unit": "forecast downloads a day"
+   },
+   "anchor": {
+    "date": "2026-10-04",
+    "at": "2026-10-04T04:18:29Z",
+    "head": "cf4a9365b6c5"
+   },
+   "beat": "2026-10-04T13:24:49Z",
+   "touched": "2026-10-04T13:24:49Z"
+  },
+  {
+   "id": "co2",
+   "name": "Energinet's CO₂ forecast",
+   "short": "CO₂ forecast",
+   "question": "Does the green hour hold?",
+   "url": "https://kvantix.tech/playground/energy/",
+   "repo": "energinet-forecasts",
+   "state": "collecting",
+   "since": "2026-09-30",
+   "beat_h": 24,
+   "line": "Every hourly CO₂ forecast saved before it is overwritten",
+   "next": {
+    "what": "First green-hour tally, marked preliminary",
+    "date": "2026-10-30",
+    "approx": true
+   },
+   "chain_ok": true,
+   "counters": [
+    [
+     "CO₂ forecasts locked",
+     "109"
+    ],
+    [
+     "day",
+     "5"
+    ]
+   ],
+   "rate": {
+    "per_day": 27,
+    "unit": "CO₂ forecasts a day"
+   },
+   "anchor": {
+    "date": "2026-10-04",
+    "at": "2026-10-04T04:27:18Z",
+    "head": "f5322269ff75"
+   },
+   "beat": "2026-10-04T13:26:52Z",
+   "touched": "2026-10-04T13:26:52Z"
+  },
+  {
+   "id": "prices",
+   "name": "Electricity price list",
+   "short": "Price list",
+   "question": "Tariffs and tax, saved before they change",
+   "url": "https://kvantix.tech/playground/energy/",
+   "repo": "energy-price-archive",
+   "state": "collecting",
+   "since": "2026-09-30",
+   "beat_h": 24,
+   "line": "Every grid tariff and the electricity tax, checked daily and logged when they change",
+   "next": null,
+   "chain_ok": true,
+   "counters": [
+    [
+     "price-list checks locked",
+     "8"
+    ],
+    [
+     "day",
+     "4"
+    ]
+   ],
+   "rate": {
+    "per_day": 2,
+    "unit": "price-list checks a day"
+   },
+   "anchor": {
+    "date": "2026-10-03",
+    "at": "2026-10-03T14:31:48Z",
+    "head": "3124a559df8f"
+   },
+   "beat": "2026-10-03T18:39:36Z",
+   "touched": "2026-10-03T18:39:36Z"
+  },
+  {
+   "id": "windgrid",
+   "name": "Energinet's wind and solar forecasts",
+   "short": "Wind & solar",
+   "question": "How good are the wind and solar forecasts?",
+   "url": "https://kvantix.tech/playground/energy/",
+   "repo": "energinet-forecasts",
+   "state": "waiting",
+   "since": "2026-09-29",
+   "beat_h": null,
+   "line": "Scored for 2019–2026. Energinet has until 14 October to reply before anything is shown",
+   "next": {
+    "what": "Results may be published (right of reply ends)",
+    "date": "2026-10-14",
+    "approx": false
+   },
+   "counters": [
+    [
+     "years scored",
+     "2019–2026"
+    ],
+    [
+     "shown from",
+     "14 Oct"
+    ]
+   ],
+   "beat": null
+  },
+  {
+   "id": "windrain",
+   "name": "Offshore wind and coastal rain",
+   "short": "Wind & rain",
+   "question": "Do offshore wind farms take the rain from the coast?",
+   "url": "https://kvantix.tech/playground/wind-rain/",
+   "repo": "offshore-wind-rain",
+   "state": "working",
+   "since": "2026-10-02",
+   "beat_h": 6,
+   "line": "35 years of rain gauges against every offshore turbine, method locked before the data",
+   "next": {
+    "what": "Weather model complete for 1991–2025 (estimate at the current pace)",
+    "date": "2026-10-13",
+    "approx": true
+   },
+   "counters": [
+    [
+     "ERA5 years in",
+     "0 of 35"
+    ],
+    [
+     "steps done",
+     "4 of 8"
+    ],
+    [
+     "rain-gauge values read",
+     "0"
+    ]
+   ],
+   "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
+   "rate": {
+    "per_day": 4.2,
+    "unit": "ERA5 years a day"
+   },
+   "beat": "2026-10-04T12:55:33Z",
+   "touched": "2026-10-04T12:55:33Z",
+   "active": {
+    "since": "2026-10-04T12:55:35Z",
+    "what": "Fetching the weather model (ERA5)",
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37186711064"
+   }
+  },
+  {
+   "id": "experts",
+   "name": "Economic forecasts",
+   "short": "Experts",
+   "question": "Did the experts get it right?",
+   "url": "https://kvantix.tech/playground/experts/",
+   "repo": "expert-forecasts",
+   "state": "watching",
+   "since": "2026-09-29",
+   "beat_h": 168,
+   "line": "Scored. The live page is checked weekly and the outcomes monthly against Statistics Denmark",
+   "next": {
+    "what": "New edition with the 2026 outcomes",
+    "date": "2027-03-02",
+    "approx": false
+   },
+   "counters": [
+    [
+     "forecasts scored",
+     "60"
+    ],
+    [
+     "checked against",
+     "Statistics Denmark"
+    ]
+   ],
+   "beat": "2026-10-04T12:32:15Z",
+   "touched": "2026-10-04T12:32:15Z"
+  },
+  {
+   "id": "wastewater",
+   "name": "Denmark's wastewater",
+   "short": "Wastewater",
+   "question": "Where does Denmark's wastewater go?",
+   "url": "https://kvantix.tech/playground/wastewater/",
+   "repo": "wastewater-denmark",
+   "state": "watching",
+   "since": "2026-10-01",
+   "beat_h": 744,
+   "line": "Published. The sources are downloaded again every month and compared",
+   "next": {
+    "what": "Next monthly check against the sources",
+    "date": "2026-10-06",
+    "approx": false
+   },
+   "drift_day": 6,
+   "counters": [
+    [
+     "municipalities",
+     "99"
+    ],
+    [
+     "checked",
+     "monthly"
+    ]
+   ],
+   "touched": "2026-10-01T16:30:34Z",
+   "beat": "2026-10-01T16:30:34Z"
+  },
+  {
+   "id": "nitrogen",
+   "name": "Nitrogen sources",
+   "short": "Nitrogen",
+   "question": "Can open data show farming's share of the nitrogen?",
+   "url": "https://kvantix.tech/playground/nitrogen/",
+   "repo": "nitrogen-sources-denmark",
+   "state": "resting",
+   "since": "2026-10-01",
+   "beat_h": null,
+   "line": "Finished. Method locked before the first value; the reading is published",
+   "next": null,
+   "counters": [
+    [
+     "reading",
+     "Inconclusive"
+    ],
+    [
+     "stations",
+     "46"
+    ]
+   ],
+   "touched": "2026-10-02T05:10:19Z",
+   "beat": "2026-10-01T20:19:39Z"
+  },
+  {
+   "id": "tools",
+   "name": "Tools in your browser",
+   "short": "Tools",
+   "question": "Luck or skill · Lock your prediction · Track record",
+   "url": "https://kvantix.tech/playground/#kvx-pg-lab",
+   "repo": "lock-your-prediction",
+   "state": "watching",
+   "since": "2026-09-28",
+   "beat_h": 24,
+   "line": "They run in your browser and store nothing. The served files are checked daily against the code",
+   "next": null,
+   "counters": [
+    [
+     "tools",
+     "3"
+    ],
+    [
+     "stored",
+     "nothing"
+    ]
+   ],
+   "beat": "2026-10-04T11:15:43Z",
+   "touched": "2026-10-04T11:15:43Z"
+  }
+ ],
+ "edges": [
+  [
+   "windrain",
+   "windgrid",
+   "offshore wind"
+  ],
+  [
+   "co2",
+   "windgrid",
+   "Energinet data"
+  ],
+  [
+   "co2",
+   "prices",
+   "electricity"
+  ],
+  [
+   "nitrogen",
+   "wastewater",
+   "point sources"
+  ],
+  [
+   "weather",
+   "windrain",
+   "DMI data"
+  ]
+ ],
+ "milestones": [
+  {
+   "node": "wastewater",
+   "what": "Next monthly check against the sources",
+   "date": "2026-10-06",
+   "approx": false
+  },
+  {
+   "node": "windrain",
+   "what": "Weather model complete for 1991–2025 (estimate at the current pace)",
+   "date": "2026-10-13",
+   "approx": true
+  },
+  {
+   "node": "windgrid",
+   "what": "Results may be published (right of reply ends)",
+   "date": "2026-10-14",
+   "approx": false
+  },
+  {
+   "node": "weather",
+   "what": "First scoreboard, marked preliminary",
+   "date": "2026-10-28",
+   "approx": true
+  },
+  {
+   "node": "co2",
+   "what": "First green-hour tally, marked preliminary",
+   "date": "2026-10-30",
+   "approx": true
+  },
+  {
+   "node": "experts",
+   "what": "New edition with the 2026 outcomes",
+   "date": "2027-03-02",
+   "approx": false
+  }
+ ],
+ "feed": [
+  {
+   "t": "2026-10-04T13:26:52Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/37205633724"
+  },
+  {
+   "t": "2026-10-04T13:24:49Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/37205518359"
+  },
+  {
+   "t": "2026-10-04T12:55:33Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 43 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37185070726"
+  },
+  {
+   "t": "2026-10-04T12:55:30Z",
+   "node": "windrain",
+   "kind": "log",
+   "text": "Weather-model run logged; a year is closed once the next one is in",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/54808cbf44605dfb0c2d994a0e680ca8e6946ce6"
+  },
+  {
+   "t": "2026-10-04T12:32:15Z",
+   "node": "experts",
+   "kind": "check",
+   "text": "Outcomes compared again with Statistics Denmark (monthly drift check)",
+   "url": "https://github.com/kvantixtech/expert-forecasts/commit/599bf08936db89a3a9b1cf9d5ccab1150be6de81"
+  },
+  {
+   "t": "2026-10-04T11:15:43Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/37198119951"
+  },
+  {
+   "t": "2026-10-04T11:09:15Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/37197748620"
+  },
+  {
+   "t": "2026-10-04T07:44:31Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Live status file for the page (tools/status.py, data/status.json)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/fcbcfd62d7e3b92e67f5274875e505766a40a159"
+  },
+  {
+   "t": "2026-10-04T07:39:53Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "README: status and link to the live page",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/b8975530bbb32f543eabbdb3bc74b4d8613b569d"
+  },
+  {
+   "t": "2026-10-04T07:12:10Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Step 3: split ERA5 requests by months when CDS refuses the size",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/06d8f0a4dfe32cb68b3233b03f5d3640f4e4342e"
+  },
+  {
+   "t": "2026-10-04T07:06:53Z",
+   "node": "windrain",
+   "kind": "log",
+   "text": "Weather-model run logged; a year is closed once the next one is in",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/4c8b355da9892effded4ea2854596613a0fa8f6d"
+  },
+  {
+   "t": "2026-10-04T07:06:30Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Step 3: fetch ERA5 one year at a time within CDS queue limits; resumable via cache and hourly schedule",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/74ce2d887c0b3913937e7a923aec09ab4c33540f"
+  },
+  {
+   "t": "2026-10-04T06:21:51Z",
+   "node": "windrain",
+   "kind": "log",
+   "text": "Weather-model run logged; a year is closed once the next one is in",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/baf8c0a49b7102b700536798d61abe71fbdefd4b"
+  },
+  {
+   "t": "2026-10-04T06:04:07Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Step 3: tools/era5.py and workflow (ERA5 to day windows; no gauge values)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/27b85af075e4f4b3dd9502f674c2afa7a9aba178"
+  },
+  {
+   "t": "2026-10-04T04:27:19Z",
+   "node": "co2",
+   "kind": "seal",
+   "text": "Day 5 sealed: 109 CO₂ forecasts locked, chain intact",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/4a525f08aaad6b7effc21804d24679d3e52f2ef0"
+  },
+  {
+   "t": "2026-10-04T04:18:31Z",
+   "node": "weather",
+   "kind": "seal",
+   "text": "Day 7 sealed: 472 forecast downloads locked, chain intact",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/94279d531f6e037d534ae8dbc918e11808f87b30"
+  },
+  {
+   "t": "2026-10-03T18:39:36Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/37145017148"
+  },
+  {
+   "t": "2026-10-03T14:31:50Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 4 sealed: 8 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/927c1c3b02521cf8b3ba9f81250537b440a423a7"
+  },
+  {
+   "t": "2026-10-03T12:42:26Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/37123729814"
+  },
+  {
+   "t": "2026-10-03T12:41:41Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/37123690837"
+  },
+  {
+   "t": "2026-10-03T10:34:52Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/37116849822"
+  },
+  {
+   "t": "2026-10-03T10:27:41Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/37116485119"
+  },
+  {
+   "t": "2026-10-03T10:12:20Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "CHANGELOG: day windows per network fixed before any value is read (check 2)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/eda5c576b46fc70c41457694ea163bf6e3c84c61"
+  },
+  {
+   "t": "2026-10-03T10:10:38Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "gauges: series and day counts (tools/gauges.py)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/3797cb7e785d77da802b7985382b019dbce21482"
+  },
+  {
+   "t": "2026-10-03T10:04:44Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Step 2: keep the DWD RS window per station period and DMI's window offset",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/a29acfc29994d29572f1d7d29f8dc3c6a9134444"
+  },
+  {
+   "t": "2026-10-03T10:03:21Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "gauges: series and day counts (tools/gauges.py)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/4598d5277932ffc39f53c6e196024dda672f3acd"
+  },
+  {
+   "t": "2026-10-03T09:57:29Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Step 2: tools/gauges.py and workflow (counts only)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/6a4bc20cf8d87e32ee95f5397076a0283b82f841"
+  },
+  {
+   "t": "2026-10-03T09:41:10Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "farms: turbines and farm table (tools/farms.py)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/205510e70c9eb1560dd072673dad8dd9611cb5e2"
+  },
+  {
+   "t": "2026-10-03T09:40:03Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Step 1: coverage check by position, not name",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/c2c1d6d11baa17f1f56fccdee36a9284f2c53f86"
+  },
+  {
+   "t": "2026-10-03T09:39:33Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "farms: turbines and farm table (tools/farms.py)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/8bc5de407da07e50fc22350fa0ae5b7c9f1ab3e4"
+  },
+  {
+   "t": "2026-10-03T09:38:07Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Step 1: one farm name per register park; Vindeby named from a cited table",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/d191af5d7badaf6e39db035cd5d8cbba94795c88"
+  },
+  {
+   "t": "2026-10-03T09:36:26Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "farms: turbines and farm table (tools/farms.py)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/9d1bf65413aeebd70c77d667a1b05dc04419817f"
+  },
+  {
+   "t": "2026-10-03T09:35:33Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Workflow for step 1 (farms)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/7a2fe138c047dbe9741b5c0f85e5ef008240e1a2"
+  },
+  {
+   "t": "2026-10-03T09:35:22Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Step 1: tools/farms.py, manual dates for Gemini and Lillgrund, workflow (no rain data)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/703dd010eff6fa30dffe23fc701c4f237ca053f4"
+  },
+  {
+   "t": "2026-10-03T04:27:57Z",
+   "node": "co2",
+   "kind": "seal",
+   "text": "Day 4 sealed: 82 CO₂ forecasts locked, chain intact",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/ecc68d1bc836816d8e9d7fc66465f33561282a31"
+  },
+  {
+   "t": "2026-10-03T04:20:19Z",
+   "node": "weather",
+   "kind": "seal",
+   "text": "Day 6 sealed: 394 forecast downloads locked, chain intact",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/2bfc6965c6a2b4e7de9c4374e6f755c125c03153"
+  },
+  {
+   "t": "2026-10-02T19:54:41Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/37057159336"
+  },
+  {
+   "t": "2026-10-02T14:28:04Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 3 sealed: 6 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/538fe9e200f2738ceeb3d4f70a30b84fc658e52d"
+  },
+  {
+   "t": "2026-10-02T14:06:25Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/37017529982"
+  },
+  {
+   "t": "2026-10-02T14:04:49Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/37017344186"
+  },
+  {
+   "t": "2026-10-02T11:18:46Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/37000298331"
+  },
+  {
+   "t": "2026-10-02T11:09:38Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/36999455155"
+  },
+  {
+   "t": "2026-10-02T05:10:19Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "CHANGELOG: request to DCE sent 2 October (corrects 'has asked' of 1 October)",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/7651393de04c59846540152c12ebd62ac29d0071"
+  },
+  {
+   "t": "2026-10-02T04:44:57Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Method written before any rain-gauge data is read",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/04107055f99e798f4d32ebb53df5587e32c942fe"
+  },
+  {
+   "t": "2026-10-02T04:29:41Z",
+   "node": "co2",
+   "kind": "seal",
+   "text": "Day 3 sealed: 55 CO₂ forecasts locked, chain intact",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/d561521a844d005129f57c8d84b08d1fe34e4c19"
+  },
+  {
+   "t": "2026-10-02T04:21:15Z",
+   "node": "weather",
+   "kind": "seal",
+   "text": "Day 5 sealed: 313 forecast downloads locked, chain intact",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/818ecb38abfc7b98cf1e165b3e675a052e477f1d"
+  },
+  {
+   "t": "2026-10-01T20:23:04Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "README: question, result and how to check it",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/63c2d78d0f2b6af919b816d8b5487919396e3edc"
+  },
+  {
+   "t": "2026-10-01T20:21:07Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Results: first build on the real data (period 2017-2021, 46 stations). Reading: Inconclusive",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/86f43c41428c0866b90d6e75cce0ca51cdb892e2"
+  },
+  {
+   "t": "2026-10-01T20:19:39Z",
+   "node": "nitrogen",
+   "kind": "data",
+   "text": "Land use: farmland and clay share, point sources per catchment (tools/landuse.py), with run log",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/213be1421b0108a70ed6605d7429469c549f688a"
+  },
+  {
+   "t": "2026-10-01T20:19:21Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/36920690457"
+  },
+  {
+   "t": "2026-10-01T19:48:05Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Period fixed from flow coverage only (2017-2021); land-use step for the accepted catchments",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/81454df1a3892ce80ba4ad7df6510764b2593bc1"
+  },
+  {
+   "t": "2026-10-01T19:47:24Z",
+   "node": "nitrogen",
+   "kind": "data",
+   "text": "Flow: daily discharge, coverage and the period (tools/flow.py), with run log",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/372eadb705aa515f2e126fffb400dc60140621a1"
+  },
+  {
+   "t": "2026-10-01T19:18:12Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Build: pairing, valid years, loads, regression, system bootstrap, shares, reading, R1-R8 (not run yet)",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/4941cbac3c5821ebb201d69ae7e0584f5a7730a6"
+  },
+  {
+   "t": "2026-10-01T19:12:05Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Flow: daily discharge per candidate station, flow-year validity and the period rule from METHOD.md",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/54f54c7cc4137221908c495e6c102e58d85b6956"
+  },
+  {
+   "t": "2026-10-01T19:04:29Z",
+   "node": "nitrogen",
+   "kind": "data",
+   "text": "Catchments drawn from the elevation model (tools/catchments.py), with run log",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/04245f39d6980c7b6b86ad724bb58e6e551d4527"
+  },
+  {
+   "t": "2026-10-01T18:36:33Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Catchments: fix JSON types (the first run failed at the very end), keep a run log, never write the token",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/07fae79424f894c8675968c6f8e06cd6ca274e33"
+  },
+  {
+   "t": "2026-10-01T18:06:09Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Catchments: draw station catchments from the national elevation model (25 m, D8), workflow",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/4ab266c45a521db3b0ed9678cfad988939163f55"
+  },
+  {
+   "t": "2026-10-01T17:53:43Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Method change before data: catchment source (DCE or elevation model instead of HIP), and soil check R8",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/2b075e99840dafb37006e8671394db6f41facb0c"
+  },
+  {
+   "t": "2026-10-01T17:37:06Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Manifest: server-side check of the cut (same source hash, one line per record)",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/7966b1045f79851bad3c2e4df43cdf669cbbd594"
+  },
+  {
+   "t": "2026-10-01T17:33:41Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Data: total-nitrogen rows cut unchanged from the CC0 stream chemistry file, with manifest",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/2c905bb35f8c6b8b8f2b1e633bef2c82861a26c6"
+  },
+  {
+   "t": "2026-10-01T17:29:19Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Fix parameter, fraction, sample type and quality filters from the inventory; extract script",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/47e5b7fa4ef55cb922c4296de7e02b05e718a5ef"
+  },
+  {
+   "t": "2026-10-01T17:24:47Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Inventory script for the chemistry file (metadata only), and a note on the order of work",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/1ddbcf9ff1c8bb0a65e314ff663460ee39a4002f"
+  },
+  {
+   "t": "2026-10-01T16:30:34Z",
+   "node": "wastewater",
+   "kind": "commit",
+   "text": "CI: check workflow declares read-only permissions",
+   "url": "https://github.com/kvantixtech/wastewater-denmark/commit/b344018c26b6df1240316bf12da2529770a5e6ad"
+  },
+  {
+   "t": "2026-10-01T16:30:31Z",
+   "node": "experts",
+   "kind": "commit",
+   "text": "CI: check workflow declares read-only permissions",
+   "url": "https://github.com/kvantixtech/expert-forecasts/commit/c5fe1ee8cda4f8e748f1b449d6d524a7d2a9c713"
+  },
+  {
+   "t": "2026-10-01T16:30:29Z",
+   "node": "prices",
+   "kind": "commit",
+   "text": "CI: check workflow declares read-only permissions",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/90c27dc3f1c8d0e448f0bc617935511648c0fcc1"
+  },
+  {
+   "t": "2026-10-01T16:30:27Z",
+   "node": "co2",
+   "kind": "commit",
+   "text": "CI: check workflow declares read-only permissions",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/29ca5bf73094a7de41435dd2b2891182dc06eccd"
+  },
+  {
+   "t": "2026-10-01T15:04:05Z",
+   "node": "wastewater",
+   "kind": "commit",
+   "text": "Build: fixed nitrogen concentrations by calculation level, as in METHOD.md",
+   "url": "https://github.com/kvantixtech/wastewater-denmark/commit/f114debcae147dd499d957494e698caab511d94a"
+  },
+  {
+   "t": "2026-10-01T15:03:30Z",
+   "node": "wastewater",
+   "kind": "commit",
+   "text": "Method: describe fixed nitrogen concentrations in overflow figures (before code and page)",
+   "url": "https://github.com/kvantixtech/wastewater-denmark/commit/d5c90f7f265cc7d64ad48e4ece6c7794f07073ca"
+  },
+  {
+   "t": "2026-10-01T14:45:05Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/36878761695"
+  },
+  {
+   "t": "2026-10-01T14:43:48Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/36878604068"
+  },
+  {
+   "t": "2026-10-01T14:29:47Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 2 sealed: 4 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/d25d3594d9109a444b0e2291c8b06dade7afd70d"
+  },
+  {
+   "t": "2026-10-01T11:47:13Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/36857526843"
+  },
+  {
+   "t": "2026-10-01T11:40:27Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/36856804067"
+  },
+  {
+   "t": "2026-10-01T06:10:34Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Method: farmland share of nitrogen in Danish streams, written before any data",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/abbd364a35aef82d0dd35b419df15c4d1c681b74"
+  },
+  {
+   "t": "2026-10-01T04:55:37Z",
+   "node": "wastewater",
+   "kind": "commit",
+   "text": "Open data (DST VANDUD, MiljøGIS 2024 layers) with SHA-256 manifest, fetch and build tools, results, CI and monthly drift check",
+   "url": "https://github.com/kvantixtech/wastewater-denmark/commit/835158d737c2d387c9c95d502338a856d713da23"
+  },
+  {
+   "t": "2026-10-01T04:55:37Z",
+   "node": "wastewater",
+   "kind": "commit",
+   "text": "Method: sources, definitions and checks (before the page and before any ranking)",
+   "url": "https://github.com/kvantixtech/wastewater-denmark/commit/72975c9d2cb76addb14cbebeb49c622467e1c5ba"
+  },
+  {
+   "t": "2026-10-01T04:29:46Z",
+   "node": "co2",
+   "kind": "seal",
+   "text": "Day 2 sealed: 28 CO₂ forecasts locked, chain intact",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/d1e4d3b0dc878adb62987b9b24793155c525ab1b"
+  },
+  {
+   "t": "2026-10-01T04:17:22Z",
+   "node": "weather",
+   "kind": "seal",
+   "text": "Day 4 sealed: 230 forecast downloads locked, chain intact",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/61df3f65d4d7eb48798f19ad60a43c8a36343320"
+  },
+  {
+   "t": "2026-09-30T17:44:38Z",
+   "node": "co2",
+   "kind": "commit",
+   "text": "README: link to the live status of part B",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/8ae7183e9315f77f1542396e2e4cb8f394024e18"
+  },
+  {
+   "t": "2026-09-30T17:44:35Z",
+   "node": "prices",
+   "kind": "commit",
+   "text": "README: link to the live status page",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/1d4b995c2c3f350c5d8d9205bdabb85f0c7dac8c"
+  },
+  {
+   "t": "2026-09-30T17:20:33Z",
+   "node": "prices",
+   "kind": "commit",
+   "text": "README: collecting since 30 September 2026",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/13f894a386ace635b9803fa0aa68d8696c7bfd0b"
+  },
+  {
+   "t": "2026-09-30T17:19:23Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 1 sealed: 2 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/77cde944fe2774426bb2167839655b5d22bfc30e"
+  },
+  {
+   "t": "2026-09-30T16:52:48Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/36747386066"
+  },
+  {
+   "t": "2026-09-30T16:50:14Z",
+   "node": "prices",
+   "kind": "commit",
+   "text": "Collector v1.0 (kvx_prices.py) with hash chain, streaming parser, change log, systemd units, daily anchor, watchdog and offline tests",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/35756798f533a806e53ec565287240a85ca73c39"
+  },
+  {
+   "t": "2026-09-30T16:50:13Z",
+   "node": "prices",
+   "kind": "commit",
+   "text": "Method: what the price archive saves and how changes are recorded (before the first snapshot)",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/2152ed0a38265c2990c042aa4de99534fc4fbff5"
+  },
+  {
+   "t": "2026-09-30T14:12:44Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/36727355044"
+  },
+  {
+   "t": "2026-09-30T14:10:54Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/36727132846"
+  },
+  {
+   "t": "2026-09-30T11:20:17Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/36707890459"
+  },
+  {
+   "t": "2026-09-30T11:12:54Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/36707132592"
+  },
+  {
+   "t": "2026-09-30T07:40:05Z",
+   "node": "co2",
+   "kind": "seal",
+   "text": "Day 1 sealed: 4 CO₂ forecasts locked, chain intact",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/be458a808c5dc4898aa8cdb071455f69b70c9abd"
+  }
+ ]
+}
