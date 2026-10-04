@@ -29,12 +29,12 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 **Latest traces**
 
+- 4 Oct 18:04 UTC · Wind & rain · [Add files via upload](https://github.com/kvantixtech/offshore-wind-rain/commit/83dd036159bdd54e3cbac5a70e38c05c47bf7dde)
+- 4 Oct 18:03 UTC · Wind & rain · [Add files via upload](https://github.com/kvantixtech/offshore-wind-rain/commit/1c96be6195b936b5613f498b90f86045761354df)
+- 4 Oct 18:00 UTC · Wind & rain · [Add files via upload](https://github.com/kvantixtech/offshore-wind-rain/commit/e68b2bebe642be3f4fe94333116d454eb43ede8d)
+- 4 Oct 17:59 UTC · Wind & rain · [Add files via upload](https://github.com/kvantixtech/offshore-wind-rain/commit/f19bf1b9ee7bd0377762f711f5d41be5ddcc2661)
 - 4 Oct 14:30 UTC · Price list · [Day 5 sealed: 10 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/0f298f5b9dc27c782e1d76cd05b088d2123a2eaf)
 - 4 Oct 13:26 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/37205633724)
-- 4 Oct 13:24 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/37205518359)
-- 4 Oct 12:55 UTC · Wind & rain · [Weather-model run finished after 5 h 43 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37185070726)
-- 4 Oct 12:32 UTC · Experts · [Outcomes compared again with Statistics Denmark (monthly drift check)](https://github.com/kvantixtech/expert-forecasts/commit/599bf08936db89a3a9b1cf9d5ccab1150be6de81)
-- 4 Oct 11:15 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/37198119951)
 <!-- pulse:end -->
 
 ## Repositories

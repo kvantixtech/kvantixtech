@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-04T14:41:46Z",
+ "built_utc": "2026-10-04T18:19:58Z",
  "nodes": [
   {
    "id": "weather",
@@ -179,8 +179,8 @@
     "per_day": 4.2,
     "unit": "ERA5 years a day"
    },
+   "touched": "2026-10-04T18:04:12Z",
    "beat": "2026-10-04T12:55:33Z",
-   "touched": "2026-10-04T12:55:33Z",
    "active": {
     "since": "2026-10-04T12:55:35Z",
     "what": "Fetching the weather model (ERA5)",
@@ -363,6 +363,34 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-04T18:04:12Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Add files via upload",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/83dd036159bdd54e3cbac5a70e38c05c47bf7dde"
+  },
+  {
+   "t": "2026-10-04T18:03:51Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Add files via upload",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/1c96be6195b936b5613f498b90f86045761354df"
+  },
+  {
+   "t": "2026-10-04T18:00:02Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Add files via upload",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/e68b2bebe642be3f4fe94333116d454eb43ede8d"
+  },
+  {
+   "t": "2026-10-04T17:59:32Z",
+   "node": "windrain",
+   "kind": "commit",
+   "text": "Add files via upload",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/f19bf1b9ee7bd0377762f711f5d41be5ddcc2661"
+  },
   {
    "t": "2026-10-04T14:30:52Z",
    "node": "prices",
@@ -964,34 +992,6 @@
    "kind": "check",
    "text": "Published reports compared byte for byte with the live files",
    "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/36707890459"
-  },
-  {
-   "t": "2026-09-30T11:12:54Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Served sealing script compared byte for byte with the code",
-   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/36707132592"
-  },
-  {
-   "t": "2026-09-30T07:40:05Z",
-   "node": "co2",
-   "kind": "seal",
-   "text": "Day 1 sealed: 4 CO₂ forecasts locked, chain intact",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/be458a808c5dc4898aa8cdb071455f69b70c9abd"
-  },
-  {
-   "t": "2026-09-30T07:32:37Z",
-   "node": "co2",
-   "kind": "commit",
-   "text": "METHOD-CO2: the green-hours test uses the 17:07 UTC CO2 snapshot (fixed before the first snapshot)",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/7500929194c293a11b9aa3bca0b5114e5dcd9003"
-  },
-  {
-   "t": "2026-09-30T05:12:34Z",
-   "node": "co2",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/36672343518"
   }
  ]
 }
