@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-04T14:21:15Z",
+ "built_utc": "2026-10-04T14:41:46Z",
  "nodes": [
   {
    "id": "weather",
@@ -22,12 +22,12 @@
    "chain_ok": true,
    "counters": [
     [
-     "forecast downloads locked",
-     "472"
+     "472",
+     "forecast downloads locked"
     ],
     [
-     "day",
-     "7"
+     "7",
+     "days running"
     ]
    ],
    "rate": {
@@ -61,12 +61,12 @@
    "chain_ok": true,
    "counters": [
     [
-     "CO₂ forecasts locked",
-     "109"
+     "109",
+     "CO₂ forecasts locked"
     ],
     [
-     "day",
-     "5"
+     "5",
+     "days running"
     ]
    ],
    "rate": {
@@ -96,12 +96,12 @@
    "chain_ok": true,
    "counters": [
     [
-     "price-list checks locked",
-     "8"
+     "10",
+     "price-list checks locked"
     ],
     [
-     "day",
-     "4"
+     "5",
+     "days running"
     ]
    ],
    "rate": {
@@ -109,12 +109,12 @@
     "unit": "price-list checks a day"
    },
    "anchor": {
-    "date": "2026-10-03",
-    "at": "2026-10-03T14:31:48Z",
-    "head": "3124a559df8f"
+    "date": "2026-10-04",
+    "at": "2026-10-04T14:30:51Z",
+    "head": "423ce54fddba"
    },
-   "beat": "2026-10-03T18:39:36Z",
-   "touched": "2026-10-03T18:39:36Z"
+   "beat": "2026-10-04T14:30:52Z",
+   "touched": "2026-10-04T14:30:52Z"
   },
   {
    "id": "windgrid",
@@ -134,12 +134,12 @@
    },
    "counters": [
     [
-     "years scored",
-     "2019–2026"
+     "2019–2026",
+     "scored"
     ],
     [
-     "shown from",
-     "14 Oct"
+     "",
+     "shown from 14 October at the earliest"
     ]
    ],
    "beat": null
@@ -156,22 +156,22 @@
    "beat_h": 6,
    "line": "35 years of rain gauges against every offshore turbine, method locked before the data",
    "next": {
-    "what": "Weather model complete for 1991–2025 (estimate at the current pace)",
+    "what": "ERA5 weather model complete (estimate at the current pace)",
     "date": "2026-10-13",
     "approx": true
    },
    "counters": [
     [
-     "ERA5 years in",
-     "0 of 35"
+     "0 of 35",
+     "ERA5 years in"
     ],
     [
-     "steps done",
-     "4 of 8"
+     "4 of 8",
+     "steps done"
     ],
     [
-     "rain-gauge values read",
-     "0"
+     "0",
+     "rain-gauge values read"
     ]
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
@@ -205,12 +205,12 @@
    },
    "counters": [
     [
-     "forecasts scored",
-     "60"
+     "60",
+     "forecasts scored"
     ],
     [
-     "checked against",
-     "Statistics Denmark"
+     "",
+     "outcomes from Statistics Denmark"
     ]
    ],
    "beat": "2026-10-04T12:32:15Z",
@@ -235,12 +235,12 @@
    "drift_day": 6,
    "counters": [
     [
-     "municipalities",
-     "99"
+     "99",
+     "municipalities"
     ],
     [
-     "checked",
-     "monthly"
+     "",
+     "sources checked again every month"
     ]
    ],
    "touched": "2026-10-01T16:30:34Z",
@@ -260,12 +260,12 @@
    "next": null,
    "counters": [
     [
-     "reading",
-     "Inconclusive"
+     "Inconclusive",
+     "reading"
     ],
     [
-     "stations",
-     "46"
+     "46",
+     "stations"
     ]
    ],
    "touched": "2026-10-02T05:10:19Z",
@@ -285,12 +285,12 @@
    "next": null,
    "counters": [
     [
-     "tools",
-     "3"
+     "3",
+     "tools"
     ],
     [
-     "stored",
-     "nothing"
+     "",
+     "nothing you type is stored"
     ]
    ],
    "beat": "2026-10-04T11:15:43Z",
@@ -333,7 +333,7 @@
   },
   {
    "node": "windrain",
-   "what": "Weather model complete for 1991–2025 (estimate at the current pace)",
+   "what": "ERA5 weather model complete (estimate at the current pace)",
    "date": "2026-10-13",
    "approx": true
   },
@@ -364,6 +364,13 @@
  ],
  "feed": [
   {
+   "t": "2026-10-04T14:30:52Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 5 sealed: 10 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/0f298f5b9dc27c782e1d76cd05b088d2123a2eaf"
+  },
+  {
    "t": "2026-10-04T13:26:52Z",
    "node": "co2",
    "kind": "check",
@@ -383,13 +390,6 @@
    "kind": "check",
    "text": "Weather-model run finished after 5 h 43 min",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37185070726"
-  },
-  {
-   "t": "2026-10-04T12:55:30Z",
-   "node": "windrain",
-   "kind": "log",
-   "text": "Weather-model run logged; a year is closed once the next one is in",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/54808cbf44605dfb0c2d994a0e680ca8e6946ce6"
   },
   {
    "t": "2026-10-04T12:32:15Z",
@@ -434,25 +434,11 @@
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/06d8f0a4dfe32cb68b3233b03f5d3640f4e4342e"
   },
   {
-   "t": "2026-10-04T07:06:53Z",
-   "node": "windrain",
-   "kind": "log",
-   "text": "Weather-model run logged; a year is closed once the next one is in",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/4c8b355da9892effded4ea2854596613a0fa8f6d"
-  },
-  {
    "t": "2026-10-04T07:06:30Z",
    "node": "windrain",
    "kind": "commit",
    "text": "Step 3: fetch ERA5 one year at a time within CDS queue limits; resumable via cache and hourly schedule",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/74ce2d887c0b3913937e7a923aec09ab4c33540f"
-  },
-  {
-   "t": "2026-10-04T06:21:51Z",
-   "node": "windrain",
-   "kind": "log",
-   "text": "Weather-model run logged; a year is closed once the next one is in",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/baf8c0a49b7102b700536798d61abe71fbdefd4b"
   },
   {
    "t": "2026-10-04T06:04:07Z",
@@ -992,6 +978,20 @@
    "kind": "seal",
    "text": "Day 1 sealed: 4 CO₂ forecasts locked, chain intact",
    "url": "https://github.com/kvantixtech/energinet-forecasts/commit/be458a808c5dc4898aa8cdb071455f69b70c9abd"
+  },
+  {
+   "t": "2026-09-30T07:32:37Z",
+   "node": "co2",
+   "kind": "commit",
+   "text": "METHOD-CO2: the green-hours test uses the 17:07 UTC CO2 snapshot (fixed before the first snapshot)",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/7500929194c293a11b9aa3bca0b5114e5dcd9003"
+  },
+  {
+   "t": "2026-09-30T05:12:34Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/36672343518"
   }
  ]
 }
