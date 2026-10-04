@@ -186,9 +186,7 @@ def commit_events(repo, since, nodes):
                     if yrs:
                         out.append(ev(t, node, "data", "Weather model: " + ", ".join(map(str, yrs))
                                       + " reduced to the gauges' days (no rain-gauge value read)", url))
-                    else:
-                        out.append(ev(t, node, "log", "Weather-model run logged; a year is closed once the next one is in", url))
-                    continue
+                    continue   # no new year: the finished run is already in the feed
             if repo == "expert-forecasts" and msg.startswith("drift: checked"):
                 out.append(ev(t, node, "check", "Outcomes compared again with Statistics Denmark (monthly drift check)", url))
                 continue
@@ -270,7 +268,7 @@ def build(now=None):
         a = rows[-1]
         runs = int(a["runs"])
         n["chain_ok"] = a["chain_ok"] == "true"
-        n["counters"] = [[SEAL_TEXT[nid] + " locked", f"{runs:,}"], ["day", str(day_no(n, a["date_utc"]))]]
+        n["counters"] = [[f"{runs:,}", SEAL_TEXT[nid] + " locked"], [str(day_no(n, a["date_utc"])), "days running"]]
         if len(rows) == 2:
             n["rate"] = {"per_day": max(0, runs - int(rows[0]["runs"])), "unit": SEAL_TEXT[nid] + " a day"}
         n["anchor"] = {"date": a["date_utc"], "at": a["anchored_at_utc"], "head": a["chain_head"][:12]}
@@ -284,9 +282,9 @@ def build(now=None):
     e5 = st.get("era5", {})
     steps = st.get("steps", [])
     done = sum(1 for s in steps if s.get("status") == "done")
-    w["counters"] = [["ERA5 years in", f"{e5.get('years_done', 0)} of {e5.get('years_total', 35)}"],
-                     ["steps done", f"{done} of {len(steps) or 8}"],
-                     ["rain-gauge values read", "1991–2001 only" if st.get("rain_values_read") else "0"]]
+    w["counters"] = [[f"{e5.get('years_done', 0)} of {e5.get('years_total', 35)}", "ERA5 years in"],
+                     [f"{done} of {len(steps) or 8}", "steps done"],
+                     ["1991–2001 only", "rain-gauge values read"] if st.get("rain_values_read") else ["0", "rain-gauge values read"]]
     now_step = next((s for s in steps if s.get("status") != "done"), None)
     if now_step:
         w["step"] = now_step.get("step")
@@ -294,7 +292,7 @@ def build(now=None):
     if left > 0:
         per_year_h = (statistics.median(era5_minutes) / 60) if era5_minutes else 4.3
         eta = (now + dt.timedelta(hours=left * per_year_h + 2)).date()
-        w["next"] = {"what": "Weather model complete for 1991–2025 (estimate at the current pace)", "date": eta.isoformat(), "approx": True}
+        w["next"] = {"what": "ERA5 weather model complete (estimate at the current pace)", "date": eta.isoformat(), "approx": True}
         if era5_minutes:
             w["rate"] = {"per_day": round(24 / per_year_h, 1), "unit": "ERA5 years a day"}
     else:
@@ -304,22 +302,22 @@ def build(now=None):
     # finished projects: published facts from their own repos
     try:
         ex = json.loads(raw("expert-forecasts", "results/results.json") or "{}")
-        nodes["experts"]["counters"] = [["forecasts scored", str(len(ex.get("forecasts", [])))], ["checked against", "Statistics Denmark"]]
+        nodes["experts"]["counters"] = [[str(len(ex.get("forecasts", []))), "forecasts scored"], ["", "outcomes from Statistics Denmark"]]
     except ValueError:
         pass
     try:
         nr = json.loads(raw("nitrogen-sources-denmark", "results/results.json") or "{}")
-        nodes["nitrogen"]["counters"] = [["reading", str(nr.get("primary", {}).get("reading", "–"))], ["stations", str(nr.get("included", "–"))]]
+        nodes["nitrogen"]["counters"] = [[str(nr.get("primary", {}).get("reading", "–")), "reading"], [str(nr.get("included", "–")), "stations"]]
     except ValueError:
         pass
     nodes["wastewater"]["next"] = {"what": "Next monthly check against the sources", "date": next_monthly(6, now), "approx": False}
     try:
         ww = json.loads(raw("wastewater-denmark", "results/site.json") or "{}")
-        nodes["wastewater"]["counters"] = [["municipalities", str(len(ww.get("munis", [])))], ["checked", "monthly"]]
+        nodes["wastewater"]["counters"] = [[str(len(ww.get("munis", []))), "municipalities"], ["", "sources checked again every month"]]
     except ValueError:
         pass
-    nodes["tools"]["counters"] = [["tools", "3"], ["stored", "nothing"]]
-    nodes["windgrid"]["counters"] = [["years scored", "2019–2026"], ["shown from", "14 Oct"]]
+    nodes["tools"]["counters"] = [["3", "tools"], ["", "nothing you type is stored"]]
+    nodes["windgrid"]["counters"] = [["2019–2026", "scored"], ["", "shown from 14 October at the earliest"]]
 
     # heartbeat = latest automatic event (seal, data, check, log, alarm) per cell; active runs
     for e in feed:
