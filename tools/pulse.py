@@ -70,7 +70,7 @@ NODES = [
      "repo": "nitrogen-sources-denmark", "state": "resting", "since": "2026-10-01", "beat_h": None,
      "line": "Finished. Method locked before the first value; the reading is published", "next": None},
     {"id": "tools", "name": "Tools in your browser", "short": "Tools",
-     "question": "Luck or skill · Lock your prediction · Track record", "url": SITE + "#kvx-pg-lab",
+     "question": "Luck or skill · Lock your prediction · Track record", "url": SITE + "#kvx-pg-tools",
      "repo": "lock-your-prediction", "state": "watching", "since": "2026-09-28", "beat_h": 24,
      "line": "They run in your browser and store nothing. The served files are checked daily against the code", "next": None},
 ]
