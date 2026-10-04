@@ -19,22 +19,22 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 |---|---|---|---|---|
 | [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 4 Oct 13:24 UTC | 472 forecast downloads locked · 7 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
 | [Energinet's CO₂ forecast](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 4 Oct 13:26 UTC | 109 CO₂ forecasts locked · 5 days running | First green-hour tally, marked preliminary, ≈ 30 Oct |
-| [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 4 Oct 14:30 UTC | 10 price-list checks locked · 5 days running | – |
+| [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 4 Oct 18:36 UTC | 10 price-list checks locked · 5 days running | – |
 | [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/) | 🔒 Waiting | – | 2019–2026 scored · shown from 14 October at the earliest | Results may be published (right of reply ends), 14 Oct |
-| [Offshore wind and coastal rain](https://kvantix.tech/playground/wind-rain/) | 🟡 Working | 4 Oct 12:55 UTC | 0 of 35 ERA5 years in · 4 of 8 steps done · now: fetching the weather model (ERA5) | ERA5 weather model complete (estimate at the current pace), ≈ 13 Oct |
+| [Offshore wind and coastal rain](https://kvantix.tech/playground/wind-rain/) | 🟡 Working | 4 Oct 18:46 UTC | 0 of 35 ERA5 years in · 4 of 8 steps done · now: fetching the weather model (ERA5) | – |
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 4 Oct 12:32 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
-| [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 1 Oct 16:30 UTC | 99 municipalities · sources checked again every month | Next monthly check against the sources, 6 Oct |
+| [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 1 Oct 16:30 UTC | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Oct |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
 | [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-lab) | ⚪ Watching | 4 Oct 11:15 UTC | 3 tools · nothing you type is stored | – |
 
 **Latest traces**
 
-- 4 Oct 18:04 UTC · Wind & rain · [Add files via upload](https://github.com/kvantixtech/offshore-wind-rain/commit/83dd036159bdd54e3cbac5a70e38c05c47bf7dde)
-- 4 Oct 18:03 UTC · Wind & rain · [Add files via upload](https://github.com/kvantixtech/offshore-wind-rain/commit/1c96be6195b936b5613f498b90f86045761354df)
-- 4 Oct 18:00 UTC · Wind & rain · [Add files via upload](https://github.com/kvantixtech/offshore-wind-rain/commit/e68b2bebe642be3f4fe94333116d454eb43ede8d)
-- 4 Oct 17:59 UTC · Wind & rain · [Add files via upload](https://github.com/kvantixtech/offshore-wind-rain/commit/f19bf1b9ee7bd0377762f711f5d41be5ddcc2661)
-- 4 Oct 14:30 UTC · Price list · [Day 5 sealed: 10 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/0f298f5b9dc27c782e1d76cd05b088d2123a2eaf)
-- 4 Oct 13:26 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/37205633724)
+- 4 Oct 18:49 UTC · Wind & rain · [CHANGELOG: ERA5 fetching made resumable (evening of 4 Oct)](https://github.com/kvantixtech/offshore-wind-rain/commit/00f24cce0cc760f39785cef50773672acfbbcfe7)
+- 4 Oct 18:46 UTC · Wind & rain · [Weather-model run stopped at the time limit after 5 h 51 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37186711064)
+- 4 Oct 18:46 UTC · Wind & rain · [Weather model: 3 downloads for 1992 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/3ffc870c386a997ef49462b0c3b4b5987b9acbf6)
+- 4 Oct 18:36 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/37225106623)
+- 4 Oct 18:04 UTC · Wind & rain · [Updated tools/era5.py (uploaded on github.com)](https://github.com/kvantixtech/offshore-wind-rain/commit/83dd036159bdd54e3cbac5a70e38c05c47bf7dde)
+- 4 Oct 18:03 UTC · Wind & rain · [Updated .github/workflows/era5.yml (uploaded on github.com)](https://github.com/kvantixtech/offshore-wind-rain/commit/1c96be6195b936b5613f498b90f86045761354df)
 <!-- pulse:end -->
 
 ## Repositories
