@@ -1,6 +1,7 @@
 name: pulse
 
-# Twice an hour: what is each Kvantix investigation doing right now? Reads public commits, Actions runs
+# Every 15 minutes: what is each Kvantix investigation doing right now? Started from the Kvantix server through
+# workflow_dispatch (GitHub's schedule below often skips runs and stays as a backup). Reads public commits, Actions runs
 # and status files of the kvantixtech repositories and writes pulse/pulse.json, which the live view on
 # kvantix.tech/playground/ reads. No results and no raw measurements. Commits only when something changed.
 on:

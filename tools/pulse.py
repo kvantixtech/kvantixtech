@@ -8,8 +8,9 @@ Reads only public sources:
   - the status files the collectors commit themselves (anchors/chain-heads.csv, data/status.json).
 
 It never contains results or raw measurements. The feed says THAT something happened, with a link
-to the commit or run where anyone can check it. Standard library only. Runs hourly in GitHub Actions;
-the file is committed only when something in it changed.
+to the commit or run where anyone can check it. Standard library only. Runs in GitHub Actions every
+15 minutes (started from the Kvantix server through workflow_dispatch, because GitHub's own schedule
+skips runs; the schedule stays as a backup). The file is committed only when something in it changed.
 """
 import csv
 import datetime as dt
@@ -17,7 +18,6 @@ import io
 import json
 import os
 import re
-import statistics
 import sys
 import time
 import urllib.error
@@ -99,6 +99,12 @@ REPO_NODE = {"weather-forecast-test": "weather", "energinet-forecasts": "co2", "
              "offshore-wind-rain": "windrain", "expert-forecasts": "experts", "wastewater-denmark": "wastewater",
              "nitrogen-sources-denmark": "nitrogen", "lock-your-prediction": "tools", "kvantix-reports": "tools",
              "validation-examples": "tools"}
+# GitHub's own text for files uploaded in the browser: describe such commits by their files instead
+WEB_UPLOAD = re.compile(r"^(Add files via upload|Upload files?)$")
+# the run that started fetching ERA5 (step 3); the pace is measured from here once two years are in
+ERA5_START = dt.datetime(2026, 10, 4, 7, 12, tzinfo=dt.timezone.utc)
+ERA5_PART = re.compile(r"^\+\s+(single|p850) (\d{4}) (\d\d)-(\d\d): [\d.]+ MB in \d+ min$", re.M)
+STOPPED_TEXT = {"era5.yml": "Weather-model run stopped at the time limit after {dur}"}
 ANCHOR = re.compile(r"^anchor (\d{4}-\d{2}-\d{2}): chain head ([0-9a-f]+) \(run (\d+), (\d+) runs, chain_ok=(true|false)\)")
 SEAL_TEXT = {"weather": "forecast downloads", "co2": "CO₂ forecasts", "prices": "price-list checks"}
 
@@ -181,17 +187,31 @@ def commit_events(repo, since, nodes):
                     continue
                 if msg.startswith("era5: day windows"):
                     det = api(f"/repos/{OWNER}/{repo}/commits/{c['sha']}") or {}
-                    yrs = sorted(int(x.group(1)) for f in det.get("files", [])
+                    files = det.get("files", [])
+                    yrs = sorted(int(x.group(1)) for f in files
                                  if f.get("status") == "added" and (x := re.search(r"data/era5/gauge_days_(\d{4})\.csv\.xz$", f["filename"])))
                     if yrs:
                         out.append(ev(t, node, "data", "Weather model: " + ", ".join(map(str, yrs))
                                       + " reduced to the gauges' days (no rain-gauge value read)", url))
-                    continue   # no new year: the finished run is already in the feed
+                        continue
+                    # no year finished: count the downloads this run added to the log (cached ones are not counted)
+                    log = next((f.get("patch") or "" for f in files if f["filename"] == "data/era5/run.log"), "")
+                    parts = ERA5_PART.findall(log)
+                    if parts:
+                        years = sorted({int(p[1]) for p in parts})
+                        out.append(ev(t, node, "data", f"Weather model: {len(parts)} download{'s' if len(parts) != 1 else ''} for "
+                                      + ", ".join(map(str, years)) + " fetched (no rain-gauge value read)", url))
+                    continue   # otherwise the finished run is already in the feed
             if repo == "expert-forecasts" and msg.startswith("drift: checked"):
                 out.append(ev(t, node, "check", "Outcomes compared again with Statistics Denmark (monthly drift check)", url))
                 continue
             if repo in ("energinet-forecasts",) and re.search(r"\b(part A|wind|solar)\b", msg, re.I):
                 node = "windgrid"
+            if who != BOT and WEB_UPLOAD.match(msg):
+                det = api(f"/repos/{OWNER}/{repo}/commits/{c['sha']}") or {}
+                names = [f["filename"] for f in det.get("files", [])]
+                if names:
+                    msg = "Updated " + (", ".join(names[:3]) + (f" and {len(names) - 3} more" if len(names) > 3 else "")) + " (uploaded on github.com)"
             out.append(ev(t, node, "data" if who == BOT else "commit", msg, url))
         if len(cs) < 100:
             break
@@ -200,7 +220,7 @@ def commit_events(repo, since, nodes):
 
 
 def run_events(since):
-    out, active, era5_minutes = [], {}, []
+    out, active = [], {}
     for repo, wf, node, ok_text, bad_text in WORKFLOWS:
         js = api(f"/repos/{OWNER}/{repo}/actions/workflows/{wf}/runs?per_page=30") or {}
         for r in js.get("workflow_runs", []):
@@ -215,21 +235,28 @@ def run_events(since):
                     active[node] = {"since": iso(start), "what": "Fetching the weather model (ERA5)" if wf == "era5.yml" else "Running a check",
                                     "url": r["html_url"]}
                 continue
-            if r["status"] != "completed" or r["conclusion"] not in ("success", "failure", "timed_out"):
+            if r["status"] != "completed" or r["conclusion"] not in ("success", "failure", "timed_out", "cancelled"):
                 continue
             end = utc(r["updated_at"])
             if end < since:
                 continue
-            minutes = (end - start).total_seconds() / 60
-            if wf == "era5.yml":
-                if minutes < 3:          # idle hourly runs once every year is in
+            if r["conclusion"] in ("cancelled", "timed_out"):
+                jobs = (api(f"/repos/{OWNER}/{repo}/actions/runs/{r['id']}/jobs") or {}).get("jobs") or []
+                if not jobs or not jobs[0].get("started_at") or not jobs[0].get("completed_at"):
+                    continue          # replaced in the queue before it started
+                start, end = utc(jobs[0]["started_at"]), utc(jobs[0]["completed_at"])
+                if (end - start).total_seconds() < 120:
                     continue
-                if r["conclusion"] == "success" and minutes > 30:
-                    era5_minutes.append(minutes)
+                txt = STOPPED_TEXT.get(wf, "Run stopped after {dur}: see the run")
+                out.append(ev(end, node, "warn", txt.format(dur=dur(start, end)), r["html_url"]))
+                continue
+            minutes = (end - start).total_seconds() / 60
+            if wf == "era5.yml" and minutes < 3:          # idle hourly runs once every year is in
+                continue
             good = r["conclusion"] == "success"
             out.append(ev(end, node, "check" if good else "alarm",
                           (ok_text if good else bad_text).format(dur=dur(start, end)), r["html_url"]))
-    return out, active, era5_minutes
+    return out, active
 
 
 # ------------------------------------------------------------------------------------- node details
@@ -255,7 +282,7 @@ def build(now=None):
     feed = []
     for repo in sorted(set(REPO_NODE)):
         feed += commit_events(repo, since, nodes)
-    rfeed, active, era5_minutes = run_events(since)
+    rfeed, active = run_events(since)
     feed += rfeed
     feed.sort(key=lambda e: e["t"], reverse=True)
 
@@ -288,13 +315,19 @@ def build(now=None):
     now_step = next((s for s in steps if s.get("status") != "done"), None)
     if now_step:
         w["step"] = now_step.get("step")
-    left = e5.get("years_total", 35) - e5.get("years_done", 0)
+    yd = e5.get("years_done", 0)
+    left = e5.get("years_total", 35) - yd
     if left > 0:
-        per_year_h = (statistics.median(era5_minutes) / 60) if era5_minutes else 4.3
-        eta = (now + dt.timedelta(hours=left * per_year_h + 2)).date()
-        w["next"] = {"what": "ERA5 weather model complete (estimate at the current pace)", "date": eta.isoformat(), "approx": True}
-        if era5_minutes:
-            w["rate"] = {"per_day": round(24 / per_year_h, 1), "unit": "ERA5 years a day"}
+        # the pace is what has actually been finished since the first download, not how long a run takes:
+        # a run can now end inside a year and the next one carries on. No date before two years are in.
+        days = max((now - ERA5_START).total_seconds() / 86400, 0.1)
+        if yd >= 2:
+            per_day = yd / days
+            eta = (now + dt.timedelta(days=left / per_day)).date()
+            w["next"] = {"what": "ERA5 weather model complete (estimate at the pace so far)", "date": eta.isoformat(), "approx": True}
+            w["rate"] = {"per_day": round(per_day, 1), "unit": "ERA5 years a day"}
+        else:
+            w["next"] = {"what": "ERA5: an estimate once the first two years are in", "date": None, "approx": True}
     else:
         w["state"] = "working" if not any(s.get("key") == "result" and s.get("status") == "done" for s in steps) else "watching"
         w["next"] = {"what": "Power check on 1991–2001, before the farms", "date": None, "approx": True}
@@ -313,7 +346,10 @@ def build(now=None):
     nodes["wastewater"]["next"] = {"what": "Next monthly check against the sources", "date": next_monthly(6, now), "approx": False}
     try:
         ww = json.loads(raw("wastewater-denmark", "results/site.json") or "{}")
-        nodes["wastewater"]["counters"] = [[str(len(ww.get("munis", []))), "municipalities"], ["", "sources checked again every month"]]
+        mu = list(ww.get("munis", []))
+        n_mu = len([m for m in mu if m != "Christiansø"])
+        nodes["wastewater"]["counters"] = [[str(n_mu), "municipalities" + (" and Christiansø" if "Christiansø" in mu else "")],
+                                           ["", "sources checked again every month"]]
     except ValueError:
         pass
     nodes["tools"]["counters"] = [["3", "tools"], ["", "nothing you type is stored"]]
