@@ -346,20 +346,76 @@ def build(now=None):
     }
 
 
+# ------------------------------------------------------------------------------- the profile README
+README = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "README.md")
+README_BLOCK = re.compile(r"(<!-- pulse:start -->\n)(.*?)(\n<!-- pulse:end -->)", re.S)
+STATE_MD = {"collecting": "🟢 Collecting", "working": "🟡 Working", "watching": "⚪ Watching", "waiting": "🔒 Waiting", "resting": "💤 Resting"}
+NAME_MD = {"weather": "weather-forecast-test", "co2": "energinet-forecasts", "prices": "energy-price-archive", "windgrid": "energinet-forecasts",
+           "windrain": "offshore-wind-rain", "experts": "expert-forecasts", "wastewater": "wastewater-denmark",
+           "nitrogen": "nitrogen-sources-denmark", "tools": "lock-your-prediction"}
+
+
+def _when(iso_s):
+    t = utc(iso_s)
+    return f"{t.day} {t.strftime('%b')} {t:%H:%M} UTC"
+
+
+def render_readme(out, now=None):
+    """Absolute times only, so the block changes when something happens, not as the clock moves."""
+    now = now or dt.datetime.now(dt.timezone.utc)
+    rows = ["| Investigation | State | Last heartbeat | Where it stands | Next |", "|---|---|---|---|---|"]
+    for n in out["nodes"]:
+        state = STATE_MD.get(n["state"], n["state"])
+        if n.get("chain_ok") is False:
+            state += " · ⚠️ chain broken"
+        elif n.get("beat_h") and n.get("beat") and (now - utc(n["beat"])).total_seconds() / 3600 > n["beat_h"] * 1.5 + 1:
+            state += " · ⚠️ heartbeat late"
+        stands = " · ".join(((k[0] + " ") if k[0] else "") + k[1] for k in (n.get("counters") or [])[:2])
+        if n.get("active"):
+            stands += f" · now: {n['active']['what'][0].lower() + n['active']['what'][1:]}"
+        nxt = n.get("next") or {}
+        if nxt.get("date"):
+            d = dt.date.fromisoformat(nxt["date"])
+            nxt_s = nxt["what"] + ", " + ("≈ " if nxt.get("approx") else "") + f"{d.day} {d:%b}" + (f" {d.year}" if d.year != now.year else "")
+        else:
+            nxt_s = "–"
+        beat = _when(n["beat"]) if n.get("beat") and n["state"] != "resting" else "–"
+        rows.append(f"| [{n['name']}]({n['url']}) | {state} | {beat} | {stands} | {nxt_s} |")
+    ev = [f"- {_when(e['t'])} · {next((x['short'] for x in out['nodes'] if x['id'] == e['node']), e['node'])} · [{e['text']}]({e['url']})"
+          for e in out["feed"][:6]]
+    return ("Every investigation, as of its latest public trace. This block is rewritten by "
+            "[`tools/pulse.py`](tools/pulse.py) from the commits and Actions runs of the repositories below, the same data as the "
+            "live view at **[kvantix.tech/playground](https://kvantix.tech/playground/)**. No results appear here before their test is finished and checked.\n\n"
+            + "\n".join(rows) + "\n\n**Latest traces**\n\n" + "\n".join(ev))
+
+
+def update_readme(out):
+    try:
+        text = open(README, encoding="utf-8").read()
+    except OSError:
+        return False
+    new = README_BLOCK.sub(lambda m: m.group(1) + render_readme(out) + m.group(3), text)
+    if new == text:
+        return False
+    open(README, "w", encoding="utf-8", newline="\n").write(new)
+    return True
+
+
 def main():
     out = build()
+    readme = update_readme(out)
     try:
         prev = json.load(open(OUT, encoding="utf-8"))
     except (OSError, ValueError):
         prev = None
     if prev and {k: v for k, v in prev.items() if k != "built_utc"} == {k: v for k, v in out.items() if k != "built_utc"}:
-        print("pulse unchanged")
+        print("pulse unchanged" + (", README updated" if readme else ""))
         return 0
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8", newline="\n") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
         f.write("\n")
-    print(f"pulse: {len(out['feed'])} events, {sum(1 for n in out['nodes'] if n.get('active'))} active runs")
+    print(f"pulse: {len(out['feed'])} events, {sum(1 for n in out['nodes'] if n.get('active'))} active runs" + (", README updated" if readme else ""))
     return 0
 
 

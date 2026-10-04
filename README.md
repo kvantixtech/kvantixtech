@@ -2,38 +2,76 @@
 
 **Independent validation of trading signals and forecasts.** Seven statistical tests on your own data, and a written verdict from a person. We ran them on our own crypto engine first, in public. It failed.
 
+The same method now runs in the open on everyday questions: weather forecasts, Energinet's data, offshore wind and rain, official economic forecasts, wastewater and nitrogen. Every collector, check and test commits its traces here, and **[kvantix.tech/playground](https://kvantix.tech/playground/)** shows them live.
+
 Everything here follows one method:
 
-1. **Lock it before the outcome.** A prediction that can be edited afterwards proves nothing.
-2. **Measure it honestly.** Every call counts, the misses too, against real outcomes and real costs.
+1. **Lock it before the outcome.** A prediction or a method that can be edited afterwards proves nothing.
+2. **Measure it honestly.** Every call counts, the misses too, against real outcomes and data nobody controls.
 3. **Beat a dumb baseline.** "Tomorrow will be like today" is surprisingly hard to beat.
 
 ## In public right now
 
-<!-- weather:start -->
-**Which weather forecast is right most often in Denmark?** DMI, MET Norway, OpenWeatherMap and the pilots' TAF for five Danish cities, locked four times a day before the weather happens.
+<!-- pulse:start -->
+Every investigation, as of its latest public trace. This block is rewritten by [`tools/pulse.py`](tools/pulse.py) from the commits and Actions runs of the repositories below, the same data as the live view at **[kvantix.tech/playground](https://kvantix.tech/playground/)**. No results appear here before their test is finished and checked.
 
-| Day | Downloads locked | Chain | Latest public anchor |
-|---|---|---|---|
-| **7** | 472 | intact | [`cf4a9365b6c57736…`](https://github.com/kvantixtech/weather-forecast-test/blob/main/anchors/chain-heads.csv) · 2026-10-04 |
+| Investigation | State | Last heartbeat | Where it stands | Next |
+|---|---|---|---|---|
+| [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 4 Oct 13:24 UTC | 472 forecast downloads locked · 7 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
+| [Energinet's CO₂ forecast](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 4 Oct 13:26 UTC | 109 CO₂ forecasts locked · 5 days running | First green-hour tally, marked preliminary, ≈ 30 Oct |
+| [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 4 Oct 14:30 UTC | 10 price-list checks locked · 5 days running | – |
+| [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/) | 🔒 Waiting | – | 2019–2026 scored · shown from 14 October at the earliest | Results may be published (right of reply ends), 14 Oct |
+| [Offshore wind and coastal rain](https://kvantix.tech/playground/wind-rain/) | 🟡 Working | 4 Oct 12:55 UTC | 0 of 35 ERA5 years in · 4 of 8 steps done · now: fetching the weather model (ERA5) | ERA5 weather model complete (estimate at the current pace), ≈ 13 Oct |
+| [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 4 Oct 12:32 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
+| [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 1 Oct 16:30 UTC | 99 municipalities · sources checked again every month | Next monthly check against the sources, 6 Oct |
+| [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
+| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-lab) | ⚪ Watching | 4 Oct 11:15 UTC | 3 tools · nothing you type is stored | – |
 
-First scoreboard in about 23 days. Rules published 28 Sep 2026 at 07:57 UTC, four hours before the first forecast. [Live status →](https://kvantix.tech/playground/weather/)
-<!-- weather:end -->
+**Latest traces**
+
+- 4 Oct 14:30 UTC · Price list · [Day 5 sealed: 10 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/0f298f5b9dc27c782e1d76cd05b088d2123a2eaf)
+- 4 Oct 13:26 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/37205633724)
+- 4 Oct 13:24 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/37205518359)
+- 4 Oct 12:55 UTC · Wind & rain · [Weather-model run finished after 5 h 43 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37185070726)
+- 4 Oct 12:32 UTC · Experts · [Outcomes compared again with Statistics Denmark (monthly drift check)](https://github.com/kvantixtech/expert-forecasts/commit/599bf08936db89a3a9b1cf9d5ccab1150be6de81)
+- 4 Oct 11:15 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/37198119951)
+<!-- pulse:end -->
 
 ## Repositories
 
+**Collecting and testing now**
+
 | | |
 |---|---|
-| 🌦️ [**weather-forecast-test**](https://github.com/kvantixtech/weather-forecast-test) | The weather collector and scoring rules, fixed before the first forecast. Hash-chained downloads, anchored here daily. Python, standard library only. |
-| 📈 [**expert-forecasts**](https://github.com/kvantixtech/expert-forecasts) | Did Denmark's official forecasters get GDP and inflation right? 60 forecasts from 2015–2024, each quoted from its report, scored against Statistics Denmark and "next year like this year". |
+| 🌦️ [**weather-forecast-test**](https://github.com/kvantixtech/weather-forecast-test) | Which weather forecast is right most often in Denmark? DMI, MET Norway, OpenWeatherMap and the pilots' TAF for five cities, locked four times a day before the weather happens. Hash-chained and anchored on GitHub every day. |
+| ⚡ [**energinet-forecasts**](https://github.com/kvantixtech/energinet-forecasts) | How good are Energinet's wind and solar forecasts, and does the green hour hold? Wind and solar scored against settled production, method committed before any data. Every hourly CO₂ forecast is saved and hash-chained before it is overwritten. |
+| 🧾 [**energy-price-archive**](https://github.com/kvantixtech/energy-price-archive) | Denmark's published electricity price list, every grid tariff and the electricity tax, archived daily and hash-chained, so corrections and removals can be checked later. |
+| 🌊 [**offshore-wind-rain**](https://github.com/kvantixtech/offshore-wind-rain) | Do offshore wind farms take the rain from the coast? 35 years of Danish and German rain gauges against every offshore turbine, method committed before any rain value is read. Plus a test of the new west-coast farms, rerun every year to 2029. |
+
+**Finished checks, still watched**
+
+| | |
+|---|---|
+| 📈 [**expert-forecasts**](https://github.com/kvantixtech/expert-forecasts) | Did Denmark's official forecasters get GDP and inflation right? 60 forecasts from 2015–2024, each quoted from its report, scored against Statistics Denmark and "next year like this year". Checked monthly for revisions. |
+| 🚰 [**wastewater-denmark**](https://github.com/kvantixtech/wastewater-denmark) | Where Denmark's wastewater goes: treatment plants, sewer overflows and rainwater outlets in every municipality, from the national data. Only 36 of 4,195 overflows report measured flow and concentrations. |
+| 🌾 [**nitrogen-sources-denmark**](https://github.com/kvantixtech/nitrogen-sources-denmark) | Can open data show farming's share of the nitrogen in Danish streams? 46 stations with measured flow, method committed before the first value. Reading: Inconclusive. |
+
+**Tools and evidence**
+
+| | |
+|---|---|
 | 🔒 [**lock-your-prediction**](https://github.com/kvantixtech/lock-your-prediction) | Seal a prediction with SHA-256 and a secret key. Spec, test vectors, and verifiers in Python, Node, the browser and plain `sha256sum`. |
 | 🧪 [**validation-examples**](https://github.com/kvantixtech/validation-examples) | Six synthetic datasets where the truth is known, from a real-but-untradeable edge to a look-ahead bug that passes 7/7. Each has its full report. |
 | 📄 [**kvantix-reports**](https://github.com/kvantixtech/kvantix-reports) | The reports on our own engine, unedited: KAS v1 **1/7**, KAS v2.1 **2/7**. |
+| 🫀 [**kvantixtech**](https://github.com/kvantixtech/kvantixtech) (this page) | The pulse: [`tools/pulse.py`](tools/pulse.py) reads the public commits and runs of every repository above twice an hour and writes [`pulse/pulse.json`](pulse/pulse.json), which drives the live view on the site and the table above. |
+
+Archived, kept for the record: `local-ccxt-wrapper`, `position-sizer`, `crypto-news-parser-lite`.
 
 ## Try it
 
+- [**Data Playground**](https://kvantix.tech/playground/): the whole lab, live. Each investigation has its own page: [weather](https://kvantix.tech/playground/weather/), [energy](https://kvantix.tech/playground/energy/), [offshore wind and rain](https://kvantix.tech/playground/wind-rain/), [experts](https://kvantix.tech/playground/experts/), [wastewater](https://kvantix.tech/playground/wastewater/) and [nitrogen](https://kvantix.tech/playground/nitrogen/).
+- **In your browser, nothing stored:** [Track record checker](https://kvantix.tech/playground/track-record/), [Luck or skill?](https://kvantix.tech/playground/luck-or-skill/) and [Lock your prediction](https://kvantix.tech/playground/lock-your-prediction/).
 - [**Quick Check**](https://kvantix.tech/#kvx-toolkit): run the seven tests on your own CSV. Free, no login, the file is not kept.
-- [**Data Playground**](https://kvantix.tech/playground/): [weather test status](https://kvantix.tech/playground/weather/), [Track record checker](https://kvantix.tech/playground/track-record/), [Luck or skill?](https://kvantix.tech/playground/luck-or-skill/) and [Lock your prediction](https://kvantix.tech/playground/lock-your-prediction/).
 - [**Validation Report**](https://kvantix.tech/#kvx-services): a written verdict on your claim. Same price whatever the verdict.
 
 [kvantix.tech](https://kvantix.tech) · [LinkedIn](https://www.linkedin.com/company/kvantix/) · [X](https://x.com/KvantixTech) · validation@kvantix.tech · Hjørring, Denmark · CVR 46296036
