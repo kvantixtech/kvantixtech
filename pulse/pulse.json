@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-04T20:01:39Z",
+ "built_utc": "2026-10-04T20:24:40Z",
  "nodes": [
   {
    "id": "weather",
@@ -272,7 +272,7 @@
    "name": "Tools in your browser",
    "short": "Tools",
    "question": "Luck or skill · Lock your prediction · Track record",
-   "url": "https://kvantix.tech/playground/#kvx-pg-lab",
+   "url": "https://kvantix.tech/playground/#kvx-pg-tools",
    "repo": "lock-your-prediction",
    "state": "watching",
    "since": "2026-09-28",
