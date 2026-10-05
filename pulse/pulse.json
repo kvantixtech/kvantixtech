@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-05T05:07:45Z",
+ "built_utc": "2026-10-05T06:47:22Z",
  "nodes": [
   {
    "id": "weather",
@@ -162,7 +162,7 @@
    },
    "counters": [
     [
-     "0 of 35",
+     "1 of 35",
      "ERA5 years in"
     ],
     [
@@ -175,12 +175,12 @@
     ]
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
-   "touched": "2026-10-05T03:28:15Z",
-   "beat": "2026-10-05T00:45:45Z",
+   "beat": "2026-10-05T06:45:19Z",
+   "touched": "2026-10-05T06:45:19Z",
    "active": {
-    "since": "2026-10-05T00:45:48Z",
+    "since": "2026-10-05T06:45:22Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37236576044"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37259568608"
    }
   },
   {
@@ -353,6 +353,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-05T06:45:19Z",
+   "node": "windrain",
+   "kind": "warn",
+   "text": "Weather-model run stopped at the time limit after 6 h 00 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37236576044"
+  },
+  {
+   "t": "2026-10-05T06:45:15Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 1991 reduced to the gauges' days (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/860dbd5cfe55af3a66db79cf098739a9e0d2db70"
+  },
   {
    "t": "2026-10-05T04:29:38Z",
    "node": "co2",
@@ -968,20 +982,6 @@
    "kind": "commit",
    "text": "Method: sources, definitions and checks (before the page and before any ranking)",
    "url": "https://github.com/kvantixtech/wastewater-denmark/commit/72975c9d2cb76addb14cbebeb49c622467e1c5ba"
-  },
-  {
-   "t": "2026-10-01T04:29:46Z",
-   "node": "co2",
-   "kind": "seal",
-   "text": "Day 2 sealed: 28 CO₂ forecasts locked, chain intact",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/d1e4d3b0dc878adb62987b9b24793155c525ab1b"
-  },
-  {
-   "t": "2026-10-01T04:17:22Z",
-   "node": "weather",
-   "kind": "seal",
-   "text": "Day 4 sealed: 230 forecast downloads locked, chain intact",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/61df3f65d4d7eb48798f19ad60a43c8a36343320"
   }
  ]
 }
