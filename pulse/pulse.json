@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-05T16:32:36Z",
+ "built_utc": "2026-10-05T17:32:36Z",
  "nodes": [
   {
    "id": "weather",
@@ -157,13 +157,13 @@
    "beat_h": 6,
    "line": "35 years of rain gauges against every offshore turbine, method locked before the data",
    "next": {
-    "what": "ERA5: an estimate once the first two years are in",
-    "date": null,
+    "what": "ERA5 weather model complete (estimate at the pace so far)",
+    "date": "2026-10-29",
     "approx": true
    },
    "counters": [
     [
-     "1 of 35",
+     "2 of 35",
      "ERA5 years in"
     ],
     [
@@ -176,12 +176,16 @@
     ]
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
-   "beat": "2026-10-05T12:27:06Z",
-   "touched": "2026-10-05T12:27:06Z",
+   "rate": {
+    "per_day": 1.4,
+    "unit": "ERA5 years a day"
+   },
+   "beat": "2026-10-05T17:19:03Z",
+   "touched": "2026-10-05T17:19:03Z",
    "active": {
-    "since": "2026-10-05T12:27:08Z",
+    "since": "2026-10-05T17:19:06Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37276025113"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37338211384"
    }
   },
   {
@@ -341,6 +345,12 @@
    "approx": true
   },
   {
+   "node": "windrain",
+   "what": "ERA5 weather model complete (estimate at the pace so far)",
+   "date": "2026-10-29",
+   "approx": true
+  },
+  {
    "node": "co2",
    "what": "First green-hour tally, marked preliminary",
    "date": "2026-10-30",
@@ -354,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-05T17:19:03Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 4 h 52 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37276025113"
+  },
+  {
+   "t": "2026-10-05T17:18:57Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 1992 reduced to the gauges' days (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/a4697b0fe3ccb1b5b22d7fe6b84dd17e19b5b775"
+  },
   {
    "t": "2026-10-05T16:25:18Z",
    "node": "windgrid",
@@ -969,20 +993,6 @@
    "kind": "commit",
    "text": "Inventory script for the chemistry file (metadata only), and a note on the order of work",
    "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/1ddbcf9ff1c8bb0a65e314ff663460ee39a4002f"
-  },
-  {
-   "t": "2026-10-01T16:30:34Z",
-   "node": "wastewater",
-   "kind": "commit",
-   "text": "CI: check workflow declares read-only permissions",
-   "url": "https://github.com/kvantixtech/wastewater-denmark/commit/b344018c26b6df1240316bf12da2529770a5e6ad"
-  },
-  {
-   "t": "2026-10-01T16:30:31Z",
-   "node": "experts",
-   "kind": "commit",
-   "text": "CI: check workflow declares read-only permissions",
-   "url": "https://github.com/kvantixtech/expert-forecasts/commit/c5fe1ee8cda4f8e748f1b449d6d524a7d2a9c713"
   }
  ]
 }
