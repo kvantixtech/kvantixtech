@@ -17,8 +17,8 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 | Investigation | State | Last heartbeat | Where it stands | Next |
 |---|---|---|---|---|
-| [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 4 Oct 13:24 UTC | 472 forecast downloads locked · 7 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
-| [Energinet's CO₂ forecast](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 4 Oct 13:26 UTC | 109 CO₂ forecasts locked · 5 days running | First green-hour tally, marked preliminary, ≈ 30 Oct |
+| [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 5 Oct 04:17 UTC | 554 forecast downloads locked · 8 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
+| [Energinet's CO₂ forecast](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 5 Oct 04:29 UTC | 136 CO₂ forecasts locked · 6 days running | First green-hour tally, marked preliminary, ≈ 30 Oct |
 | [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 4 Oct 18:36 UTC | 10 price-list checks locked · 5 days running | – |
 | [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/) | 🔒 Waiting | – | 2019–2026 scored · shown from 14 October at the earliest | Results may be published (right of reply ends), 14 Oct |
 | [Offshore wind and coastal rain](https://kvantix.tech/playground/wind-rain/) | 🟡 Working | 5 Oct 00:45 UTC | 0 of 35 ERA5 years in · 4 of 8 steps done · now: fetching the weather model (ERA5) | – |
@@ -29,12 +29,12 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 **Latest traces**
 
+- 5 Oct 04:29 UTC · CO₂ forecast · [Day 6 sealed: 136 CO₂ forecasts locked, chain intact](https://github.com/kvantixtech/energinet-forecasts/commit/60d428db78df4b3c151c1e34814c6e7afae8ceb2)
+- 5 Oct 04:17 UTC · Weather · [Day 8 sealed: 554 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/53bf82ccae1ba0c64a7aff8b06704be1804c4802)
+- 5 Oct 03:28 UTC · Wind & rain · [Step 3: ERA5 requests resumable at CDS (ids cached, polled, picked up by the next run)](https://github.com/kvantixtech/offshore-wind-rain/commit/21cd83ddd31c5e316652938e89123ae1e7a80113)
 - 5 Oct 00:45 UTC · Wind & rain · [Weather-model run stopped at the time limit after 6 h 00 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37222953263)
 - 5 Oct 00:45 UTC · Wind & rain · [Weather model: 3 downloads for 1992 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/2857eb1f549a6a649651b0df94e55c3b9db26ee4)
 - 4 Oct 18:49 UTC · Wind & rain · [CHANGELOG: ERA5 fetching made resumable (evening of 4 Oct)](https://github.com/kvantixtech/offshore-wind-rain/commit/00f24cce0cc760f39785cef50773672acfbbcfe7)
-- 4 Oct 18:46 UTC · Wind & rain · [Weather-model run stopped at the time limit after 5 h 51 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37186711064)
-- 4 Oct 18:46 UTC · Wind & rain · [Weather model: 3 downloads for 1992 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/3ffc870c386a997ef49462b0c3b4b5987b9acbf6)
-- 4 Oct 18:36 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/37225106623)
 <!-- pulse:end -->
 
 ## Repositories
