@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-05T22:47:19Z",
+ "built_utc": "2026-10-05T23:02:51Z",
  "nodes": [
   {
    "id": "weather",
@@ -180,12 +180,12 @@
     "per_day": 1.2,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-05T17:19:03Z",
-   "touched": "2026-10-05T17:19:03Z",
+   "beat": "2026-10-05T23:01:31Z",
+   "touched": "2026-10-05T23:01:31Z",
    "active": {
-    "since": "2026-10-05T17:19:06Z",
+    "since": "2026-10-05T23:01:33Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37338211384"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37384117810"
    }
   },
   {
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-05T23:01:31Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 42 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37338211384"
+  },
+  {
+   "t": "2026-10-05T23:01:27Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 3 downloads for 1994 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/ec9666e066959025a17164cda3268dcb6882b82e"
+  },
   {
    "t": "2026-10-05T21:58:00Z",
    "node": "prices",
@@ -979,20 +993,6 @@
    "kind": "commit",
    "text": "Manifest: server-side check of the cut (same source hash, one line per record)",
    "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/7966b1045f79851bad3c2e4df43cdf669cbbd594"
-  },
-  {
-   "t": "2026-10-01T17:33:41Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Data: total-nitrogen rows cut unchanged from the CC0 stream chemistry file, with manifest",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/2c905bb35f8c6b8b8f2b1e633bef2c82861a26c6"
-  },
-  {
-   "t": "2026-10-01T17:29:19Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Fix parameter, fraction, sample type and quality filters from the inventory; extract script",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/47e5b7fa4ef55cb922c4296de7e02b05e718a5ef"
   }
  ]
 }
