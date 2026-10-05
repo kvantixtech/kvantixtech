@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-05T06:47:22Z",
+ "built_utc": "2026-10-05T12:32:46Z",
  "nodes": [
   {
    "id": "weather",
@@ -175,12 +175,12 @@
     ]
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
-   "beat": "2026-10-05T06:45:19Z",
-   "touched": "2026-10-05T06:45:19Z",
+   "beat": "2026-10-05T12:27:06Z",
+   "touched": "2026-10-05T12:27:06Z",
    "active": {
-    "since": "2026-10-05T06:45:22Z",
+    "since": "2026-10-05T12:27:08Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37259568608"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37276025113"
    }
   },
   {
@@ -289,8 +289,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-10-04T11:15:43Z",
-   "touched": "2026-10-04T11:15:43Z"
+   "beat": "2026-10-05T12:21:29Z",
+   "touched": "2026-10-05T12:21:29Z"
   }
  ],
  "edges": [
@@ -353,6 +353,27 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-05T12:27:06Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 42 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37259568608"
+  },
+  {
+   "t": "2026-10-05T12:27:01Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 2 downloads for 1993 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/65e1502c7f710caa4f7a35cdfca1ff5d147b6ba2"
+  },
+  {
+   "t": "2026-10-05T12:21:29Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/37308946015"
+  },
   {
    "t": "2026-10-05T06:45:19Z",
    "node": "windrain",
@@ -961,27 +982,6 @@
    "kind": "check",
    "text": "Served sealing script compared byte for byte with the code",
    "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/36856804067"
-  },
-  {
-   "t": "2026-10-01T06:10:34Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Method: farmland share of nitrogen in Danish streams, written before any data",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/abbd364a35aef82d0dd35b419df15c4d1c681b74"
-  },
-  {
-   "t": "2026-10-01T04:55:37Z",
-   "node": "wastewater",
-   "kind": "commit",
-   "text": "Open data (DST VANDUD, MiljøGIS 2024 layers) with SHA-256 manifest, fetch and build tools, results, CI and monthly drift check",
-   "url": "https://github.com/kvantixtech/wastewater-denmark/commit/835158d737c2d387c9c95d502338a856d713da23"
-  },
-  {
-   "t": "2026-10-01T04:55:37Z",
-   "node": "wastewater",
-   "kind": "commit",
-   "text": "Method: sources, definitions and checks (before the page and before any ranking)",
-   "url": "https://github.com/kvantixtech/wastewater-denmark/commit/72975c9d2cb76addb14cbebeb49c622467e1c5ba"
   }
  ]
 }
