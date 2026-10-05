@@ -29,12 +29,12 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 **Latest traces**
 
+- 5 Oct 15:31 UTC · CO₂ forecast · [CHANGELOG #7-10: Energinet's reply; offshore also scored against parks >=100 MW (before that scoring is run)](https://github.com/kvantixtech/energinet-forecasts/commit/bd2c0f8b2fae38c002e59a4e936804dd2c046ee6)
+- 5 Oct 15:26 UTC · Nitrogen · [CHANGELOG: rule for the rerun with DCE's station catchments (fixed before the rerun)](https://github.com/kvantixtech/nitrogen-sources-denmark/commit/69048e77a41a95f49fa61a39212bc9c583fa0ad1)
 - 5 Oct 14:28 UTC · Price list · [Day 6 sealed: 12 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/365ee7e39664ccc7194daedc14fed04d3edbc8c5)
 - 5 Oct 12:42 UTC · Experts · [Live page compared with the repository](https://github.com/kvantixtech/expert-forecasts/actions/runs/37311403785)
 - 5 Oct 12:34 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/37310499947)
 - 5 Oct 12:27 UTC · Wind & rain · [Weather-model run finished after 5 h 42 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37259568608)
-- 5 Oct 12:27 UTC · Wind & rain · [Weather model: 2 downloads for 1993 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/65e1502c7f710caa4f7a35cdfca1ff5d147b6ba2)
-- 5 Oct 12:21 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/37308946015)
 <!-- pulse:end -->
 
 ## Repositories

@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-05T14:32:10Z",
+ "built_utc": "2026-10-05T15:32:25Z",
  "nodes": [
   {
    "id": "weather",
@@ -78,8 +78,8 @@
     "at": "2026-10-05T04:29:36Z",
     "head": "cc5c02f2f675"
    },
-   "beat": "2026-10-05T04:29:38Z",
-   "touched": "2026-10-05T04:29:38Z"
+   "touched": "2026-10-05T15:31:49Z",
+   "beat": "2026-10-05T04:29:38Z"
   },
   {
    "id": "prices",
@@ -264,7 +264,7 @@
      "stations"
     ]
    ],
-   "touched": "2026-10-02T05:10:19Z",
+   "touched": "2026-10-05T15:26:07Z",
    "beat": "2026-10-01T20:19:39Z"
   },
   {
@@ -353,6 +353,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-05T15:31:49Z",
+   "node": "co2",
+   "kind": "commit",
+   "text": "CHANGELOG #7-10: Energinet's reply; offshore also scored against parks >=100 MW (before that scoring is run)",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/bd2c0f8b2fae38c002e59a4e936804dd2c046ee6"
+  },
+  {
+   "t": "2026-10-05T15:26:07Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "CHANGELOG: rule for the rerun with DCE's station catchments (fixed before the rerun)",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/69048e77a41a95f49fa61a39212bc9c583fa0ad1"
+  },
   {
    "t": "2026-10-05T14:28:31Z",
    "node": "prices",
@@ -968,20 +982,6 @@
    "kind": "commit",
    "text": "Method: describe fixed nitrogen concentrations in overflow figures (before code and page)",
    "url": "https://github.com/kvantixtech/wastewater-denmark/commit/d5c90f7f265cc7d64ad48e4ece6c7794f07073ca"
-  },
-  {
-   "t": "2026-10-01T14:45:05Z",
-   "node": "co2",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/36878761695"
-  },
-  {
-   "t": "2026-10-01T14:43:48Z",
-   "node": "weather",
-   "kind": "check",
-   "text": "Watchdog: anchor, chain and code version checked",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/36878604068"
   }
  ]
 }
