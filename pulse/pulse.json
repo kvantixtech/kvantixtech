@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-05T15:47:29Z",
+ "built_utc": "2026-10-05T16:32:36Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-10-05T04:17:06Z",
     "head": "460409e4b47a"
    },
-   "beat": "2026-10-05T04:17:07Z",
-   "touched": "2026-10-05T04:17:07Z"
+   "beat": "2026-10-05T16:20:33Z",
+   "touched": "2026-10-05T16:20:33Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-10-05T04:29:36Z",
     "head": "cc5c02f2f675"
    },
-   "touched": "2026-10-05T15:31:49Z",
-   "beat": "2026-10-05T04:29:38Z"
+   "beat": "2026-10-05T16:21:16Z",
+   "touched": "2026-10-05T16:21:16Z"
   },
   {
    "id": "prices",
@@ -142,8 +142,8 @@
      "shown from 14 October at the earliest"
     ]
    ],
-   "touched": "2026-10-05T15:40:26Z",
-   "beat": "2026-10-05T15:40:26Z"
+   "touched": "2026-10-05T16:25:18Z",
+   "beat": "2026-10-05T16:25:18Z"
   },
   {
    "id": "windrain",
@@ -354,6 +354,27 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-05T16:25:18Z",
+   "node": "windgrid",
+   "kind": "commit",
+   "text": "Coverage diagnostic for offshore wind: monthly forecast/outcome ratio, both outcomes (CHANGELOG #11)",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/37f4e6303d1784bee8b10cf028f4c80cc40a37cd"
+  },
+  {
+   "t": "2026-10-05T16:21:16Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/37340144071"
+  },
+  {
+   "t": "2026-10-05T16:20:33Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/37340054632"
+  },
   {
    "t": "2026-10-05T15:40:26Z",
    "node": "windgrid",
@@ -962,27 +983,6 @@
    "kind": "commit",
    "text": "CI: check workflow declares read-only permissions",
    "url": "https://github.com/kvantixtech/expert-forecasts/commit/c5fe1ee8cda4f8e748f1b449d6d524a7d2a9c713"
-  },
-  {
-   "t": "2026-10-01T16:30:29Z",
-   "node": "prices",
-   "kind": "commit",
-   "text": "CI: check workflow declares read-only permissions",
-   "url": "https://github.com/kvantixtech/energy-price-archive/commit/90c27dc3f1c8d0e448f0bc617935511648c0fcc1"
-  },
-  {
-   "t": "2026-10-01T16:30:27Z",
-   "node": "co2",
-   "kind": "commit",
-   "text": "CI: check workflow declares read-only permissions",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/29ca5bf73094a7de41435dd2b2891182dc06eccd"
-  },
-  {
-   "t": "2026-10-01T15:04:05Z",
-   "node": "wastewater",
-   "kind": "commit",
-   "text": "Build: fixed nitrogen concentrations by calculation level, as in METHOD.md",
-   "url": "https://github.com/kvantixtech/wastewater-denmark/commit/f114debcae147dd499d957494e698caab511d94a"
   }
  ]
 }
