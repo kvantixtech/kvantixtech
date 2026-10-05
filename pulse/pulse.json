@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-05T21:47:21Z",
+ "built_utc": "2026-10-05T22:02:51Z",
  "nodes": [
   {
    "id": "weather",
@@ -113,8 +113,8 @@
     "at": "2026-10-05T14:28:30Z",
     "head": "8707ff283466"
    },
-   "beat": "2026-10-05T14:28:31Z",
-   "touched": "2026-10-05T14:28:31Z"
+   "beat": "2026-10-05T21:58:00Z",
+   "touched": "2026-10-05T21:58:00Z"
   },
   {
    "id": "windgrid",
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-05T21:58:00Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/37379353537"
+  },
   {
    "t": "2026-10-05T17:19:03Z",
    "node": "windrain",
@@ -986,13 +993,6 @@
    "kind": "commit",
    "text": "Fix parameter, fraction, sample type and quality filters from the inventory; extract script",
    "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/47e5b7fa4ef55cb922c4296de7e02b05e718a5ef"
-  },
-  {
-   "t": "2026-10-01T17:24:47Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Inventory script for the chemistry file (metadata only), and a note on the order of work",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/1ddbcf9ff1c8bb0a65e314ff663460ee39a4002f"
   }
  ]
 }

@@ -19,7 +19,7 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 |---|---|---|---|---|
 | [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 5 Oct 16:20 UTC | 554 forecast downloads locked · 8 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
 | [Energinet's CO₂ forecast](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 5 Oct 16:21 UTC | 136 CO₂ forecasts locked · 6 days running | First green-hour tally, marked preliminary, ≈ 30 Oct |
-| [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 5 Oct 14:28 UTC | 12 price-list checks locked · 6 days running | – |
+| [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 5 Oct 21:58 UTC | 12 price-list checks locked · 6 days running | – |
 | [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/) | 🔒 Waiting | 5 Oct 16:25 UTC | 2019–2026 scored · shown from 14 October at the earliest | Results may be published (right of reply ends), 14 Oct |
 | [Offshore wind and coastal rain](https://kvantix.tech/playground/wind-rain/) | 🟡 Working | 5 Oct 17:19 UTC | 2 of 35 ERA5 years in · 4 of 8 steps done · now: fetching the weather model (ERA5) | ERA5 weather model complete (estimate at the pace so far), ≈ 1 Nov |
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 5 Oct 12:42 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
@@ -29,12 +29,12 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 **Latest traces**
 
+- 5 Oct 21:58 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/37379353537)
 - 5 Oct 17:19 UTC · Wind & rain · [Weather-model run finished after 4 h 52 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37276025113)
 - 5 Oct 17:18 UTC · Wind & rain · [Weather model: 1992 reduced to the gauges' days (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/a4697b0fe3ccb1b5b22d7fe6b84dd17e19b5b775)
 - 5 Oct 16:25 UTC · Wind & solar · [Coverage diagnostic for offshore wind: monthly forecast/outcome ratio, both outcomes (CHANGELOG #11)](https://github.com/kvantixtech/energinet-forecasts/commit/37f4e6303d1784bee8b10cf028f4c80cc40a37cd)
 - 5 Oct 16:21 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/37340144071)
 - 5 Oct 16:20 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/37340054632)
-- 5 Oct 15:40 UTC · Wind & solar · [Score offshore wind also against parks >=100 MW (CHANGELOG #7); first scores unchanged](https://github.com/kvantixtech/energinet-forecasts/commit/d99a3a9ff154f025520a07db27a3f7a08061eb27)
 <!-- pulse:end -->
 
 ## Repositories
