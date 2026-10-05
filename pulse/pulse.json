@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-05T15:32:25Z",
+ "built_utc": "2026-10-05T15:47:29Z",
  "nodes": [
   {
    "id": "weather",
@@ -142,7 +142,8 @@
      "shown from 14 October at the earliest"
     ]
    ],
-   "beat": null
+   "touched": "2026-10-05T15:40:26Z",
+   "beat": "2026-10-05T15:40:26Z"
   },
   {
    "id": "windrain",
@@ -353,6 +354,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-05T15:40:26Z",
+   "node": "windgrid",
+   "kind": "commit",
+   "text": "Score offshore wind also against parks >=100 MW (CHANGELOG #7); first scores unchanged",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/d99a3a9ff154f025520a07db27a3f7a08061eb27"
+  },
   {
    "t": "2026-10-05T15:31:49Z",
    "node": "co2",
@@ -975,13 +983,6 @@
    "kind": "commit",
    "text": "Build: fixed nitrogen concentrations by calculation level, as in METHOD.md",
    "url": "https://github.com/kvantixtech/wastewater-denmark/commit/f114debcae147dd499d957494e698caab511d94a"
-  },
-  {
-   "t": "2026-10-01T15:03:30Z",
-   "node": "wastewater",
-   "kind": "commit",
-   "text": "Method: describe fixed nitrogen concentrations in overflow figures (before code and page)",
-   "url": "https://github.com/kvantixtech/wastewater-denmark/commit/d5c90f7f265cc7d64ad48e4ece6c7794f07073ca"
   }
  ]
 }

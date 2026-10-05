@@ -20,7 +20,7 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 5 Oct 04:17 UTC | 554 forecast downloads locked · 8 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
 | [Energinet's CO₂ forecast](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 5 Oct 04:29 UTC | 136 CO₂ forecasts locked · 6 days running | First green-hour tally, marked preliminary, ≈ 30 Oct |
 | [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 5 Oct 14:28 UTC | 12 price-list checks locked · 6 days running | – |
-| [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/) | 🔒 Waiting | – | 2019–2026 scored · shown from 14 October at the earliest | Results may be published (right of reply ends), 14 Oct |
+| [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/) | 🔒 Waiting | 5 Oct 15:40 UTC | 2019–2026 scored · shown from 14 October at the earliest | Results may be published (right of reply ends), 14 Oct |
 | [Offshore wind and coastal rain](https://kvantix.tech/playground/wind-rain/) | 🟡 Working | 5 Oct 12:27 UTC | 1 of 35 ERA5 years in · 4 of 8 steps done · now: fetching the weather model (ERA5) | – |
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 5 Oct 12:42 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
 | [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 1 Oct 16:30 UTC | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Oct |
@@ -29,12 +29,12 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 **Latest traces**
 
+- 5 Oct 15:40 UTC · Wind & solar · [Score offshore wind also against parks >=100 MW (CHANGELOG #7); first scores unchanged](https://github.com/kvantixtech/energinet-forecasts/commit/d99a3a9ff154f025520a07db27a3f7a08061eb27)
 - 5 Oct 15:31 UTC · CO₂ forecast · [CHANGELOG #7-10: Energinet's reply; offshore also scored against parks >=100 MW (before that scoring is run)](https://github.com/kvantixtech/energinet-forecasts/commit/bd2c0f8b2fae38c002e59a4e936804dd2c046ee6)
 - 5 Oct 15:26 UTC · Nitrogen · [CHANGELOG: rule for the rerun with DCE's station catchments (fixed before the rerun)](https://github.com/kvantixtech/nitrogen-sources-denmark/commit/69048e77a41a95f49fa61a39212bc9c583fa0ad1)
 - 5 Oct 14:28 UTC · Price list · [Day 6 sealed: 12 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/365ee7e39664ccc7194daedc14fed04d3edbc8c5)
 - 5 Oct 12:42 UTC · Experts · [Live page compared with the repository](https://github.com/kvantixtech/expert-forecasts/actions/runs/37311403785)
 - 5 Oct 12:34 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/37310499947)
-- 5 Oct 12:27 UTC · Wind & rain · [Weather-model run finished after 5 h 42 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37259568608)
 <!-- pulse:end -->
 
 ## Repositories
