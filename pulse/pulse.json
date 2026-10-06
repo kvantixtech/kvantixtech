@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-06T12:32:25Z",
+ "built_utc": "2026-10-06T14:02:18Z",
  "nodes": [
   {
    "id": "weather",
@@ -244,8 +244,8 @@
      "sources checked again every month"
     ]
    ],
-   "touched": "2026-10-01T16:30:34Z",
-   "beat": "2026-10-01T16:30:34Z"
+   "beat": "2026-10-06T13:36:28Z",
+   "touched": "2026-10-06T13:36:28Z"
   },
   {
    "id": "nitrogen",
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-06T13:36:28Z",
+   "node": "wastewater",
+   "kind": "check",
+   "text": "Monthly check: sources downloaded again and compared",
+   "url": "https://github.com/kvantixtech/wastewater-denmark/actions/runs/37471935343"
+  },
   {
    "t": "2026-10-06T12:12:05Z",
    "node": "tools",
@@ -986,13 +993,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/36920690457"
-  },
-  {
-   "t": "2026-10-01T19:48:05Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Period fixed from flow coverage only (2017-2021); land-use step for the accepted catchments",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/81454df1a3892ce80ba4ad7df6510764b2593bc1"
   }
  ]
 }
