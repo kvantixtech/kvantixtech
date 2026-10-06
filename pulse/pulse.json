@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-06T02:47:12Z",
+ "built_utc": "2026-10-06T03:17:41Z",
  "nodes": [
   {
    "id": "weather",
@@ -180,12 +180,12 @@
     "per_day": 1.1,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-05T23:01:31Z",
-   "touched": "2026-10-05T23:01:31Z",
+   "beat": "2026-10-06T03:10:57Z",
+   "touched": "2026-10-06T03:10:57Z",
    "active": {
-    "since": "2026-10-05T23:01:33Z",
+    "since": "2026-10-06T03:10:59Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37384117810"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37407121780"
    }
   },
   {
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-06T03:10:57Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 4 h 09 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37384117810"
+  },
+  {
+   "t": "2026-10-06T03:10:52Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 2 downloads for 1994 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/be1db73a452155c80c14a82abdfb31eb6768ddb5"
+  },
   {
    "t": "2026-10-05T23:01:31Z",
    "node": "windrain",
@@ -979,20 +993,6 @@
    "kind": "commit",
    "text": "Catchments: draw station catchments from the national elevation model (25 m, D8), workflow",
    "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/4ab266c45a521db3b0ed9678cfad988939163f55"
-  },
-  {
-   "t": "2026-10-01T17:53:43Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Method change before data: catchment source (DCE or elevation model instead of HIP), and soil check R8",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/2b075e99840dafb37006e8671394db6f41facb0c"
-  },
-  {
-   "t": "2026-10-01T17:37:06Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Manifest: server-side check of the cut (same source hash, one line per record)",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/7966b1045f79851bad3c2e4df43cdf669cbbd594"
   }
  ]
 }
