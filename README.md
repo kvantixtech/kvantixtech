@@ -23,7 +23,7 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/) | 🔒 Waiting | 5 Oct 16:25 UTC | 2019–2026 scored · shown from 14 October at the earliest | Results may be published (right of reply ends), 14 Oct |
 | [Offshore wind and coastal rain](https://kvantix.tech/playground/wind-rain/) | 🟡 Working | 6 Oct 03:10 UTC | 2 of 35 ERA5 years in · 4 of 8 steps done · now: fetching the weather model (ERA5) | ERA5 weather model complete (estimate at the pace so far), ≈ 8 Nov |
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 5 Oct 12:42 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
-| [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 1 Oct 16:30 UTC | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Oct |
+| [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 1 Oct 16:30 UTC | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Nov |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
 | [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 5 Oct 12:34 UTC | 3 tools · nothing you type is stored | – |
 
