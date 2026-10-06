@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-06T14:32:16Z",
+ "built_utc": "2026-10-06T16:02:17Z",
  "nodes": [
   {
    "id": "weather",
@@ -180,13 +180,8 @@
     "per_day": 1.3,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-06T08:52:52Z",
-   "touched": "2026-10-06T08:52:52Z",
-   "active": {
-    "since": "2026-10-06T10:25:56Z",
-    "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37449729287"
-   }
+   "beat": "2026-10-06T16:00:35Z",
+   "touched": "2026-10-06T16:00:35Z"
   },
   {
    "id": "experts",
@@ -364,6 +359,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-06T16:00:35Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 35 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37449729287"
+  },
+  {
+   "t": "2026-10-06T16:00:30Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 4 downloads for 1995 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/56304949c395d6d4af40d47f51b7034fe298ae40"
+  },
   {
    "t": "2026-10-06T14:27:38Z",
    "node": "prices",
@@ -979,20 +988,6 @@
    "kind": "seal",
    "text": "Day 3 sealed: 55 CO₂ forecasts locked, chain intact",
    "url": "https://github.com/kvantixtech/energinet-forecasts/commit/d561521a844d005129f57c8d84b08d1fe34e4c19"
-  },
-  {
-   "t": "2026-10-02T04:21:15Z",
-   "node": "weather",
-   "kind": "seal",
-   "text": "Day 5 sealed: 313 forecast downloads locked, chain intact",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/818ecb38abfc7b98cf1e165b3e675a052e477f1d"
-  },
-  {
-   "t": "2026-10-01T20:23:04Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "README: question, result and how to check it",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/63c2d78d0f2b6af919b816d8b5487919396e3edc"
   }
  ]
 }
