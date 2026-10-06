@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-06T04:17:33Z",
+ "built_utc": "2026-10-06T04:32:43Z",
  "nodes": [
   {
    "id": "weather",
@@ -22,11 +22,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "554",
+     "636",
      "forecast downloads locked"
     ],
     [
-     "8",
+     "9",
      "days running"
     ]
    ],
@@ -35,12 +35,12 @@
     "unit": "forecast downloads a day"
    },
    "anchor": {
-    "date": "2026-10-05",
-    "at": "2026-10-05T04:17:06Z",
-    "head": "460409e4b47a"
+    "date": "2026-10-06",
+    "at": "2026-10-06T04:17:55Z",
+    "head": "723e418cbc3b"
    },
-   "beat": "2026-10-05T16:20:33Z",
-   "touched": "2026-10-05T16:20:33Z"
+   "beat": "2026-10-06T04:17:57Z",
+   "touched": "2026-10-06T04:17:57Z"
   },
   {
    "id": "co2",
@@ -61,11 +61,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "136",
+     "163",
      "CO₂ forecasts locked"
     ],
     [
-     "6",
+     "7",
      "days running"
     ]
    ],
@@ -74,12 +74,12 @@
     "unit": "CO₂ forecasts a day"
    },
    "anchor": {
-    "date": "2026-10-05",
-    "at": "2026-10-05T04:29:36Z",
-    "head": "cc5c02f2f675"
+    "date": "2026-10-06",
+    "at": "2026-10-06T04:29:13Z",
+    "head": "b1f543f1ad7d"
    },
-   "beat": "2026-10-05T16:21:16Z",
-   "touched": "2026-10-05T16:21:16Z"
+   "beat": "2026-10-06T04:29:15Z",
+   "touched": "2026-10-06T04:29:15Z"
   },
   {
    "id": "prices",
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-06T04:29:15Z",
+   "node": "co2",
+   "kind": "seal",
+   "text": "Day 7 sealed: 163 CO₂ forecasts locked, chain intact",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/7b0091b09a4d6aeb2ad12dc5a880161e869c3d85"
+  },
+  {
+   "t": "2026-10-06T04:17:57Z",
+   "node": "weather",
+   "kind": "seal",
+   "text": "Day 9 sealed: 636 forecast downloads locked, chain intact",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/3c237274284a330072c420a33f3eda403ced435d"
+  },
   {
    "t": "2026-10-06T03:10:57Z",
    "node": "windrain",
@@ -979,20 +993,6 @@
    "kind": "data",
    "text": "Catchments drawn from the elevation model (tools/catchments.py), with run log",
    "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/04245f39d6980c7b6b86ad724bb58e6e551d4527"
-  },
-  {
-   "t": "2026-10-01T18:36:33Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Catchments: fix JSON types (the first run failed at the very end), keep a run log, never write the token",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/07fae79424f894c8675968c6f8e06cd6ca274e33"
-  },
-  {
-   "t": "2026-10-01T18:06:09Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Catchments: draw station catchments from the national elevation model (25 m, D8), workflow",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/4ab266c45a521db3b0ed9678cfad988939163f55"
   }
  ]
 }
