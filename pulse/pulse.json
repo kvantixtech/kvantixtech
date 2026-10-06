@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-06T10:32:54Z",
+ "built_utc": "2026-10-06T12:17:33Z",
  "nodes": [
   {
    "id": "weather",
@@ -158,7 +158,7 @@
    "line": "35 years of rain gauges against every offshore turbine, method locked before the data",
    "next": {
     "what": "ERA5 weather model complete (estimate at the pace so far)",
-    "date": "2026-10-29",
+    "date": "2026-10-30",
     "approx": true
    },
    "counters": [
@@ -294,8 +294,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-10-05T12:34:56Z",
-   "touched": "2026-10-05T12:34:56Z"
+   "beat": "2026-10-06T12:12:05Z",
+   "touched": "2026-10-06T12:12:05Z"
   }
  ],
  "edges": [
@@ -339,14 +339,14 @@
    "approx": true
   },
   {
-   "node": "windrain",
-   "what": "ERA5 weather model complete (estimate at the pace so far)",
-   "date": "2026-10-29",
+   "node": "co2",
+   "what": "First green-hour tally, marked preliminary",
+   "date": "2026-10-30",
    "approx": true
   },
   {
-   "node": "co2",
-   "what": "First green-hour tally, marked preliminary",
+   "node": "windrain",
+   "what": "ERA5 weather model complete (estimate at the pace so far)",
    "date": "2026-10-30",
    "approx": true
   },
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-06T12:12:05Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/37461552175"
+  },
+  {
+   "t": "2026-10-06T12:05:04Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/37460731934"
+  },
   {
    "t": "2026-10-06T08:52:52Z",
    "node": "windrain",
@@ -979,20 +993,6 @@
    "kind": "commit",
    "text": "Period fixed from flow coverage only (2017-2021); land-use step for the accepted catchments",
    "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/81454df1a3892ce80ba4ad7df6510764b2593bc1"
-  },
-  {
-   "t": "2026-10-01T19:47:24Z",
-   "node": "nitrogen",
-   "kind": "data",
-   "text": "Flow: daily discharge, coverage and the period (tools/flow.py), with run log",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/372eadb705aa515f2e126fffb400dc60140621a1"
-  },
-  {
-   "t": "2026-10-01T19:18:12Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Build: pairing, valid years, loads, regression, system bootstrap, shares, reading, R1-R8 (not run yet)",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/4941cbac3c5821ebb201d69ae7e0584f5a7730a6"
   }
  ]
 }
