@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-06T08:17:34Z",
+ "built_utc": "2026-10-06T09:02:36Z",
  "nodes": [
   {
    "id": "weather",
@@ -158,12 +158,12 @@
    "line": "35 years of rain gauges against every offshore turbine, method locked before the data",
    "next": {
     "what": "ERA5 weather model complete (estimate at the pace so far)",
-    "date": "2026-11-09",
+    "date": "2026-10-28",
     "approx": true
    },
    "counters": [
     [
-     "2 of 35",
+     "3 of 35",
      "ERA5 years in"
     ],
     [
@@ -177,16 +177,11 @@
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
    "rate": {
-    "per_day": 1.0,
+    "per_day": 1.4,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-06T03:10:57Z",
-   "touched": "2026-10-06T03:10:57Z",
-   "active": {
-    "since": "2026-10-06T03:10:59Z",
-    "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37407121780"
-   }
+   "beat": "2026-10-06T08:52:52Z",
+   "touched": "2026-10-06T08:52:52Z"
   },
   {
    "id": "experts",
@@ -339,6 +334,12 @@
    "approx": true
   },
   {
+   "node": "windrain",
+   "what": "ERA5 weather model complete (estimate at the pace so far)",
+   "date": "2026-10-28",
+   "approx": true
+  },
+  {
    "node": "co2",
    "what": "First green-hour tally, marked preliminary",
    "date": "2026-10-30",
@@ -351,12 +352,6 @@
    "approx": false
   },
   {
-   "node": "windrain",
-   "what": "ERA5 weather model complete (estimate at the pace so far)",
-   "date": "2026-11-09",
-   "approx": true
-  },
-  {
    "node": "experts",
    "what": "New edition with the 2026 outcomes",
    "date": "2027-03-02",
@@ -364,6 +359,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-06T08:52:52Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 42 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37407121780"
+  },
+  {
+   "t": "2026-10-06T08:52:47Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 1993 reduced to the gauges' days (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/f19407f73dc82eadb72801bf7f31fd2d0838a295"
+  },
   {
    "t": "2026-10-06T04:29:15Z",
    "node": "co2",
@@ -979,20 +988,6 @@
    "kind": "commit",
    "text": "Build: pairing, valid years, loads, regression, system bootstrap, shares, reading, R1-R8 (not run yet)",
    "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/4941cbac3c5821ebb201d69ae7e0584f5a7730a6"
-  },
-  {
-   "t": "2026-10-01T19:12:05Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Flow: daily discharge per candidate station, flow-year validity and the period rule from METHOD.md",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/54f54c7cc4137221908c495e6c102e58d85b6956"
-  },
-  {
-   "t": "2026-10-01T19:04:29Z",
-   "node": "nitrogen",
-   "kind": "data",
-   "text": "Catchments drawn from the elevation model (tools/catchments.py), with run log",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/04245f39d6980c7b6b86ad724bb58e6e551d4527"
   }
  ]
 }
