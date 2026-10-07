@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-07T14:27:32Z",
+ "built_utc": "2026-10-07T14:47:38Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-10-07T04:18:56Z",
     "head": "fb63f149f022"
    },
-   "beat": "2026-10-07T04:18:57Z",
-   "touched": "2026-10-07T04:18:57Z"
+   "beat": "2026-10-07T14:42:53Z",
+   "touched": "2026-10-07T14:42:53Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-10-07T04:27:06Z",
     "head": "8bf8a1234040"
    },
-   "beat": "2026-10-07T04:27:07Z",
-   "touched": "2026-10-07T04:27:07Z"
+   "beat": "2026-10-07T14:43:51Z",
+   "touched": "2026-10-07T14:43:51Z"
   },
   {
    "id": "prices",
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-07T14:43:51Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/37639130663"
+  },
+  {
+   "t": "2026-10-07T14:42:53Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/37638999578"
+  },
   {
    "t": "2026-10-07T14:27:13Z",
    "node": "prices",
@@ -979,20 +993,6 @@
    "kind": "commit",
    "text": "Step 1: one farm name per register park; Vindeby named from a cited table",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/d191af5d7badaf6e39db035cd5d8cbba94795c88"
-  },
-  {
-   "t": "2026-10-03T09:36:26Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "farms: turbines and farm table (tools/farms.py)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/9d1bf65413aeebd70c77d667a1b05dc04419817f"
-  },
-  {
-   "t": "2026-10-03T09:35:33Z",
-   "node": "windrain",
-   "kind": "commit",
-   "text": "Workflow for step 1 (farms)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/7a2fe138c047dbe9741b5c0f85e5ef008240e1a2"
   }
  ]
 }
