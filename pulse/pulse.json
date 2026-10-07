@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-07T14:47:38Z",
+ "built_utc": "2026-10-07T15:32:42Z",
  "nodes": [
   {
    "id": "weather",
@@ -180,13 +180,8 @@
     "per_day": 1.5,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-07T09:38:41Z",
-   "touched": "2026-10-07T09:38:41Z",
-   "active": {
-    "since": "2026-10-07T09:38:43Z",
-    "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37595929518"
-   }
+   "beat": "2026-10-07T15:19:20Z",
+   "touched": "2026-10-07T15:19:20Z"
   },
   {
    "id": "experts",
@@ -364,6 +359,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-07T15:19:20Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 41 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37595929518"
+  },
+  {
+   "t": "2026-10-07T15:19:15Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 2 downloads for 1997 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/c3afd4547d3d4c4790a052a6a0b5465cf2f7c37f"
+  },
   {
    "t": "2026-10-07T14:43:51Z",
    "node": "co2",
@@ -979,20 +988,6 @@
    "kind": "commit",
    "text": "Step 1: coverage check by position, not name",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/c2c1d6d11baa17f1f56fccdee36a9284f2c53f86"
-  },
-  {
-   "t": "2026-10-03T09:39:33Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "farms: turbines and farm table (tools/farms.py)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/8bc5de407da07e50fc22350fa0ae5b7c9f1ab3e4"
-  },
-  {
-   "t": "2026-10-03T09:38:07Z",
-   "node": "windrain",
-   "kind": "commit",
-   "text": "Step 1: one farm name per register park; Vindeby named from a cited table",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/d191af5d7badaf6e39db035cd5d8cbba94795c88"
   }
  ]
 }
