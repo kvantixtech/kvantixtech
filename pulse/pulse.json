@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-07T09:47:34Z",
+ "built_utc": "2026-10-07T12:02:46Z",
  "nodes": [
   {
    "id": "weather",
@@ -294,8 +294,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-10-06T12:12:05Z",
-   "touched": "2026-10-06T12:12:05Z"
+   "beat": "2026-10-07T11:58:48Z",
+   "touched": "2026-10-07T11:58:48Z"
   }
  ],
  "edges": [
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-07T11:58:48Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/37617743814"
+  },
+  {
+   "t": "2026-10-07T11:50:27Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/37616798295"
+  },
   {
    "t": "2026-10-07T09:38:41Z",
    "node": "windrain",
@@ -979,20 +993,6 @@
    "kind": "commit",
    "text": "Step 1: tools/farms.py, manual dates for Gemini and Lillgrund, workflow (no rain data)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/703dd010eff6fa30dffe23fc701c4f237ca053f4"
-  },
-  {
-   "t": "2026-10-03T04:27:57Z",
-   "node": "co2",
-   "kind": "seal",
-   "text": "Day 4 sealed: 82 CO₂ forecasts locked, chain intact",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/ecc68d1bc836816d8e9d7fc66465f33561282a31"
-  },
-  {
-   "t": "2026-10-03T04:20:19Z",
-   "node": "weather",
-   "kind": "seal",
-   "text": "Day 6 sealed: 394 forecast downloads locked, chain intact",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/2bfc6965c6a2b4e7de9c4374e6f755c125c03153"
   }
  ]
 }
