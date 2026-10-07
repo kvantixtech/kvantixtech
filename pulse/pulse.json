@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-07T20:32:29Z",
+ "built_utc": "2026-10-07T20:47:49Z",
  "nodes": [
   {
    "id": "weather",
@@ -113,8 +113,8 @@
     "at": "2026-10-07T14:27:12Z",
     "head": "1121ea7cf3f2"
    },
-   "beat": "2026-10-07T14:27:13Z",
-   "touched": "2026-10-07T14:27:13Z"
+   "beat": "2026-10-07T20:34:15Z",
+   "touched": "2026-10-07T20:34:15Z"
   },
   {
    "id": "windgrid",
@@ -359,6 +359,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-07T20:34:15Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/37682986143"
+  },
   {
    "t": "2026-10-07T20:22:50Z",
    "node": "windrain",
@@ -981,13 +988,6 @@
    "kind": "data",
    "text": "gauges: series and day counts (tools/gauges.py)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/4598d5277932ffc39f53c6e196024dda672f3acd"
-  },
-  {
-   "t": "2026-10-03T09:57:29Z",
-   "node": "windrain",
-   "kind": "commit",
-   "text": "Step 2: tools/gauges.py and workflow (counts only)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/6a4bc20cf8d87e32ee95f5397076a0283b82f841"
   }
  ]
 }
