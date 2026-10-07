@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-07T13:02:18Z",
+ "built_utc": "2026-10-07T14:27:32Z",
  "nodes": [
   {
    "id": "weather",
@@ -96,11 +96,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "14",
+     "16",
      "price-list checks locked"
     ],
     [
-     "7",
+     "8",
      "days running"
     ]
    ],
@@ -109,12 +109,12 @@
     "unit": "price-list checks a day"
    },
    "anchor": {
-    "date": "2026-10-06",
-    "at": "2026-10-06T14:27:37Z",
-    "head": "be54a8a923ca"
+    "date": "2026-10-07",
+    "at": "2026-10-07T14:27:12Z",
+    "head": "1121ea7cf3f2"
    },
-   "beat": "2026-10-06T20:11:54Z",
-   "touched": "2026-10-06T20:11:54Z"
+   "beat": "2026-10-07T14:27:13Z",
+   "touched": "2026-10-07T14:27:13Z"
   },
   {
    "id": "windgrid",
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-07T14:27:13Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 8 sealed: 16 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/f2d6e2287807bb2a8670f3f304a0cb54bc536ae1"
+  },
   {
    "t": "2026-10-07T11:58:48Z",
    "node": "tools",
@@ -986,13 +993,6 @@
    "kind": "commit",
    "text": "Workflow for step 1 (farms)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/7a2fe138c047dbe9741b5c0f85e5ef008240e1a2"
-  },
-  {
-   "t": "2026-10-03T09:35:22Z",
-   "node": "windrain",
-   "kind": "commit",
-   "text": "Step 1: tools/farms.py, manual dates for Gemini and Lillgrund, workflow (no rain data)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/703dd010eff6fa30dffe23fc701c4f237ca053f4"
   }
  ]
 }
