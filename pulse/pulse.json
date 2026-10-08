@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-08T03:47:24Z",
+ "built_utc": "2026-10-08T04:17:23Z",
  "nodes": [
   {
    "id": "weather",
@@ -22,25 +22,25 @@
    "chain_ok": true,
    "counters": [
     [
-     "719",
+     "804",
      "forecast downloads locked"
     ],
     [
-     "10",
+     "11",
      "days running"
     ]
    ],
    "rate": {
-    "per_day": 83,
+    "per_day": 85,
     "unit": "forecast downloads a day"
    },
    "anchor": {
-    "date": "2026-10-07",
-    "at": "2026-10-07T04:18:56Z",
-    "head": "fb63f149f022"
+    "date": "2026-10-08",
+    "at": "2026-10-08T04:17:25Z",
+    "head": "0ec44376a443"
    },
-   "beat": "2026-10-07T14:42:53Z",
-   "touched": "2026-10-07T14:42:53Z"
+   "beat": "2026-10-08T04:17:26Z",
+   "touched": "2026-10-08T04:17:26Z"
   },
   {
    "id": "co2",
@@ -177,7 +177,7 @@
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
    "rate": {
-    "per_day": 1.6,
+    "per_day": 1.5,
     "unit": "ERA5 years a day"
    },
    "beat": "2026-10-08T03:44:21Z",
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-08T04:17:26Z",
+   "node": "weather",
+   "kind": "seal",
+   "text": "Day 11 sealed: 804 forecast downloads locked, chain intact",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/06eaa81c323be5f21f9a79cd41d089daded16e38"
+  },
   {
    "t": "2026-10-08T03:44:21Z",
    "node": "windrain",
@@ -986,13 +993,6 @@
    "kind": "commit",
    "text": "CHANGELOG: day windows per network fixed before any value is read (check 2)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/eda5c576b46fc70c41457694ea163bf6e3c84c61"
-  },
-  {
-   "t": "2026-10-03T10:10:38Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "gauges: series and day counts (tools/gauges.py)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/3797cb7e785d77da802b7985382b019dbce21482"
   }
  ]
 }

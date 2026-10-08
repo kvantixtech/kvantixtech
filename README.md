@@ -17,7 +17,7 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 | Investigation | State | Last heartbeat | Where it stands | Next |
 |---|---|---|---|---|
-| [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 7 Oct 14:42 UTC | 719 forecast downloads locked · 10 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
+| [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 8 Oct 04:17 UTC | 804 forecast downloads locked · 11 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
 | [Energinet's CO₂ forecast](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 7 Oct 14:43 UTC | 190 CO₂ forecasts locked · 8 days running | First green-hour tally, marked preliminary, ≈ 30 Oct |
 | [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 7 Oct 20:34 UTC | 16 price-list checks locked · 8 days running | – |
 | [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/) | 🔒 Waiting | 5 Oct 16:25 UTC | 2019–2026 scored · shown from 14 October at the earliest | Results may be published (right of reply ends), 14 Oct |
@@ -29,12 +29,12 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 **Latest traces**
 
+- 8 Oct 04:17 UTC · Weather · [Day 11 sealed: 804 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/06eaa81c323be5f21f9a79cd41d089daded16e38)
 - 8 Oct 03:44 UTC · Wind & rain · [Weather-model run finished after 5 h 42 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37693514833)
 - 8 Oct 03:44 UTC · Wind & rain · [Weather model: 3 downloads for 1998 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/f57bd5be13795b399986f2da413197af3a0aa7b6)
 - 7 Oct 20:34 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/37682986143)
 - 7 Oct 20:22 UTC · Wind & rain · [Weather-model run finished after 3 h 48 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37653180963)
 - 7 Oct 20:22 UTC · Wind & rain · [Weather model: 1996 reduced to the gauges' days (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/a0761923a58eba7641810ae758ed2fa05af17349)
-- 7 Oct 15:19 UTC · Wind & rain · [Weather-model run finished after 5 h 41 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37595929518)
 <!-- pulse:end -->
 
 ## Repositories
