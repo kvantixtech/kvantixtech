@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-08T00:32:20Z",
+ "built_utc": "2026-10-08T03:47:24Z",
  "nodes": [
   {
    "id": "weather",
@@ -180,12 +180,12 @@
     "per_day": 1.6,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-07T20:22:50Z",
-   "touched": "2026-10-07T20:22:50Z",
+   "beat": "2026-10-08T03:44:21Z",
+   "touched": "2026-10-08T03:44:21Z",
    "active": {
-    "since": "2026-10-07T22:02:15Z",
+    "since": "2026-10-08T03:44:23Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37693514833"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37715689759"
    }
   },
   {
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-08T03:44:21Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 42 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37693514833"
+  },
+  {
+   "t": "2026-10-08T03:44:17Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 3 downloads for 1998 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/f57bd5be13795b399986f2da413197af3a0aa7b6"
+  },
   {
    "t": "2026-10-07T20:34:15Z",
    "node": "prices",
@@ -979,20 +993,6 @@
    "kind": "data",
    "text": "gauges: series and day counts (tools/gauges.py)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/3797cb7e785d77da802b7985382b019dbce21482"
-  },
-  {
-   "t": "2026-10-03T10:04:44Z",
-   "node": "windrain",
-   "kind": "commit",
-   "text": "Step 2: keep the DWD RS window per station period and DMI's window offset",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/a29acfc29994d29572f1d7d29f8dc3c6a9134444"
-  },
-  {
-   "t": "2026-10-03T10:03:21Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "gauges: series and day counts (tools/gauges.py)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/4598d5277932ffc39f53c6e196024dda672f3acd"
   }
  ]
 }
