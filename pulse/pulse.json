@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-08T20:17:39Z",
+ "built_utc": "2026-10-08T20:47:48Z",
  "nodes": [
   {
    "id": "weather",
@@ -113,8 +113,8 @@
     "at": "2026-10-08T14:30:49Z",
     "head": "6353da1b7f5d"
    },
-   "beat": "2026-10-08T14:30:50Z",
-   "touched": "2026-10-08T14:30:50Z"
+   "beat": "2026-10-08T20:40:06Z",
+   "touched": "2026-10-08T20:40:06Z"
   },
   {
    "id": "windgrid",
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-08T20:40:06Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/37841131520"
+  },
   {
    "t": "2026-10-08T15:06:12Z",
    "node": "windrain",
@@ -986,13 +993,6 @@
    "kind": "commit",
    "text": "Step 3: split ERA5 requests by months when CDS refuses the size",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/06d8f0a4dfe32cb68b3233b03f5d3640f4e4342e"
-  },
-  {
-   "t": "2026-10-04T07:06:30Z",
-   "node": "windrain",
-   "kind": "commit",
-   "text": "Step 3: fetch ERA5 one year at a time within CDS queue limits; resumable via cache and hourly schedule",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/74ce2d887c0b3913937e7a923aec09ab4c33540f"
   }
  ]
 }
