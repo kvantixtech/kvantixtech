@@ -25,16 +25,16 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 5 Oct 12:42 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
 | [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 6 Oct 13:36 UTC | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Nov |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
-| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 7 Oct 11:58 UTC | 3 tools · nothing you type is stored | – |
+| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 8 Oct 12:12 UTC | 3 tools · nothing you type is stored | – |
 
 **Latest traces**
 
+- 8 Oct 12:12 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/37775280458)
+- 8 Oct 12:05 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/37774432739)
 - 8 Oct 09:24 UTC · Wind & rain · [Weather-model run finished after 5 h 40 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37715689759)
 - 8 Oct 09:24 UTC · Wind & rain · [Weather model: 2 downloads for 1998 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/cee6b6f9c4340374300d9bcfb7794ff9baec514d)
 - 8 Oct 04:30 UTC · CO₂ forecast · [Day 9 sealed: 217 CO₂ forecasts locked, chain intact](https://github.com/kvantixtech/energinet-forecasts/commit/902844e9aa293aee03fdbc8d387d6cd4d0afe129)
 - 8 Oct 04:17 UTC · Weather · [Day 11 sealed: 804 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/06eaa81c323be5f21f9a79cd41d089daded16e38)
-- 8 Oct 03:44 UTC · Wind & rain · [Weather-model run finished after 5 h 42 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37693514833)
-- 8 Oct 03:44 UTC · Wind & rain · [Weather model: 3 downloads for 1998 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/f57bd5be13795b399986f2da413197af3a0aa7b6)
 <!-- pulse:end -->
 
 ## Repositories
