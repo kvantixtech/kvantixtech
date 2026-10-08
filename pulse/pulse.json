@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-08T15:02:35Z",
+ "built_utc": "2026-10-08T15:17:35Z",
  "nodes": [
   {
    "id": "weather",
@@ -158,12 +158,12 @@
    "line": "35 years of rain gauges against every offshore turbine, method locked before the data",
    "next": {
     "what": "ERA5 weather model complete (estimate at the pace so far)",
-    "date": "2026-10-29",
+    "date": "2026-10-25",
     "approx": true
    },
    "counters": [
     [
-     "6 of 35",
+     "7 of 35",
      "ERA5 years in"
     ],
     [
@@ -177,16 +177,11 @@
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
    "rate": {
-    "per_day": 1.4,
+    "per_day": 1.6,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-08T09:24:52Z",
-   "touched": "2026-10-08T09:24:52Z",
-   "active": {
-    "since": "2026-10-08T09:24:54Z",
-    "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37754072259"
-   }
+   "beat": "2026-10-08T15:06:12Z",
+   "touched": "2026-10-08T15:06:12Z"
   },
   {
    "id": "experts",
@@ -333,15 +328,15 @@
    "approx": false
   },
   {
-   "node": "weather",
-   "what": "First scoreboard, marked preliminary",
-   "date": "2026-10-28",
+   "node": "windrain",
+   "what": "ERA5 weather model complete (estimate at the pace so far)",
+   "date": "2026-10-25",
    "approx": true
   },
   {
-   "node": "windrain",
-   "what": "ERA5 weather model complete (estimate at the pace so far)",
-   "date": "2026-10-29",
+   "node": "weather",
+   "what": "First scoreboard, marked preliminary",
+   "date": "2026-10-28",
    "approx": true
   },
   {
@@ -364,6 +359,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-08T15:06:12Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 41 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37754072259"
+  },
+  {
+   "t": "2026-10-08T15:06:08Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 1997 reduced to the gauges' days (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/0b151dbe5a605358c5e46f7ce75be1edc80122e3"
+  },
   {
    "t": "2026-10-08T14:53:29Z",
    "node": "co2",
@@ -979,20 +988,6 @@
    "kind": "commit",
    "text": "Step 3: fetch ERA5 one year at a time within CDS queue limits; resumable via cache and hourly schedule",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/74ce2d887c0b3913937e7a923aec09ab4c33540f"
-  },
-  {
-   "t": "2026-10-04T06:04:07Z",
-   "node": "windrain",
-   "kind": "commit",
-   "text": "Step 3: tools/era5.py and workflow (ERA5 to day windows; no gauge values)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/27b85af075e4f4b3dd9502f674c2afa7a9aba178"
-  },
-  {
-   "t": "2026-10-04T04:27:19Z",
-   "node": "co2",
-   "kind": "seal",
-   "text": "Day 5 sealed: 109 CO₂ forecasts locked, chain intact",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/4a525f08aaad6b7effc21804d24679d3e52f2ef0"
   }
  ]
 }
