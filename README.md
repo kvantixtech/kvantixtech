@@ -25,16 +25,16 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 5 Oct 12:42 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
 | [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 6 Oct 13:36 UTC | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Nov |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
-| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 9 Oct 11:57 UTC | 3 tools · nothing you type is stored | – |
+| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 9 Oct 12:04 UTC | 3 tools · nothing you type is stored | – |
 
 **Latest traces**
 
+- 9 Oct 12:04 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/37927667211)
 - 9 Oct 11:57 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/37926910411)
 - 9 Oct 09:19 UTC · Wind & rain · [Weather-model run finished after 5 h 42 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37873583096)
 - 9 Oct 09:19 UTC · Wind & rain · [Weather model: 2 downloads for 2000 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/72ba2f7fda4aa0c195165e575b8840cb06520d18)
 - 9 Oct 06:53 UTC · Nitrogen · [Rerun with DCE's station catchments: catchments, land use and results (dce.yml)](https://github.com/kvantixtech/nitrogen-sources-denmark/commit/2cb3d7b5171ac8937ff8e7689d027f6593aedba6)
 - 9 Oct 05:06 UTC · Nitrogen · [Rerun with DCE's station catchments: source files, polygon choice, land use and build switch, workflow](https://github.com/kvantixtech/nitrogen-sources-denmark/commit/e71d142e92cee0d0ec228b0b0e6bbe7df7c754f2)
-- 9 Oct 05:04 UTC · Nitrogen · [CHANGELOG: DCE's catchments published; runoff area and nesting for the rerun (fixed before the rerun)](https://github.com/kvantixtech/nitrogen-sources-denmark/commit/488e578e7031b46d93c342fced543d2f347a9abb)
 <!-- pulse:end -->
 
 ## Repositories
