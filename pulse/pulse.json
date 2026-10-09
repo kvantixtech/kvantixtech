@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-09T04:17:51Z",
+ "built_utc": "2026-10-09T04:32:30Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-10-09T04:18:12Z",
     "head": "b3bfd07dd77b"
    },
-   "beat": "2026-10-08T14:52:11Z",
-   "touched": "2026-10-08T14:52:11Z"
+   "beat": "2026-10-09T04:18:14Z",
+   "touched": "2026-10-09T04:18:14Z"
   },
   {
    "id": "co2",
@@ -61,11 +61,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "217",
+     "244",
      "CO₂ forecasts locked"
     ],
     [
-     "9",
+     "10",
      "days running"
     ]
    ],
@@ -74,12 +74,12 @@
     "unit": "CO₂ forecasts a day"
    },
    "anchor": {
-    "date": "2026-10-08",
-    "at": "2026-10-08T04:30:15Z",
-    "head": "f90ade182bf0"
+    "date": "2026-10-09",
+    "at": "2026-10-09T04:28:14Z",
+    "head": "cda473e8b073"
    },
-   "beat": "2026-10-08T14:53:29Z",
-   "touched": "2026-10-08T14:53:29Z"
+   "beat": "2026-10-09T04:28:15Z",
+   "touched": "2026-10-09T04:28:15Z"
   },
   {
    "id": "prices",
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-09T04:28:15Z",
+   "node": "co2",
+   "kind": "seal",
+   "text": "Day 10 sealed: 244 CO₂ forecasts locked, chain intact",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/07429774f0c4896ab78b74d07dc822258270b618"
+  },
+  {
+   "t": "2026-10-09T04:18:14Z",
+   "node": "weather",
+   "kind": "seal",
+   "text": "Day 12 sealed: 883 forecast downloads locked, chain intact",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/2759b7ba0b8a5b07b549344dce8c689f02de8211"
+  },
   {
    "t": "2026-10-09T03:37:12Z",
    "node": "windrain",
@@ -979,20 +993,6 @@
    "kind": "data",
    "text": "Weather model: 6 downloads for 1991 fetched (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/54808cbf44605dfb0c2d994a0e680ca8e6946ce6"
-  },
-  {
-   "t": "2026-10-04T12:32:15Z",
-   "node": "experts",
-   "kind": "check",
-   "text": "Outcomes compared again with Statistics Denmark (monthly drift check)",
-   "url": "https://github.com/kvantixtech/expert-forecasts/commit/599bf08936db89a3a9b1cf9d5ccab1150be6de81"
-  },
-  {
-   "t": "2026-10-04T11:15:43Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Published reports compared byte for byte with the live files",
-   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/37198119951"
   }
  ]
 }
