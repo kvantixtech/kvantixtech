@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-09T06:18:06Z",
+ "built_utc": "2026-10-09T07:02:51Z",
  "nodes": [
   {
    "id": "weather",
@@ -269,8 +269,8 @@
      "stations"
     ]
    ],
-   "touched": "2026-10-09T05:06:25Z",
-   "beat": "2026-10-01T20:19:39Z"
+   "beat": "2026-10-09T06:53:12Z",
+   "touched": "2026-10-09T06:53:12Z"
   },
   {
    "id": "tools",
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-09T06:53:12Z",
+   "node": "nitrogen",
+   "kind": "data",
+   "text": "Rerun with DCE's station catchments: catchments, land use and results (dce.yml)",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/2cb3d7b5171ac8937ff8e7689d027f6593aedba6"
+  },
   {
    "t": "2026-10-09T05:06:25Z",
    "node": "nitrogen",
@@ -986,13 +993,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/37205633724"
-  },
-  {
-   "t": "2026-10-04T13:24:49Z",
-   "node": "weather",
-   "kind": "check",
-   "text": "Watchdog: anchor, chain and code version checked",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/37205518359"
   }
  ]
 }
