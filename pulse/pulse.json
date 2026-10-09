@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-09T19:47:46Z",
+ "built_utc": "2026-10-09T20:17:28Z",
  "nodes": [
   {
    "id": "weather",
@@ -113,8 +113,8 @@
     "at": "2026-10-09T14:27:58Z",
     "head": "266a0c9ce528"
    },
-   "beat": "2026-10-09T14:27:59Z",
-   "touched": "2026-10-09T14:27:59Z"
+   "beat": "2026-10-09T20:04:37Z",
+   "touched": "2026-10-09T20:04:37Z"
   },
   {
    "id": "windgrid",
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-09T20:04:37Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/37984509072"
+  },
   {
    "t": "2026-10-09T14:40:09Z",
    "node": "windrain",
@@ -986,13 +993,6 @@
    "kind": "data",
    "text": "Weather model: 3 downloads for 1992 fetched (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/2857eb1f549a6a649651b0df94e55c3b9db26ee4"
-  },
-  {
-   "t": "2026-10-04T18:49:45Z",
-   "node": "windrain",
-   "kind": "commit",
-   "text": "CHANGELOG: ERA5 fetching made resumable (evening of 4 Oct)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/00f24cce0cc760f39785cef50773672acfbbcfe7"
   }
  ]
 }
