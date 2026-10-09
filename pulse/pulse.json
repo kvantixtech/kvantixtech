@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-09T11:47:16Z",
+ "built_utc": "2026-10-09T12:02:33Z",
  "nodes": [
   {
    "id": "weather",
@@ -294,8 +294,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-10-08T12:12:58Z",
-   "touched": "2026-10-08T12:12:58Z"
+   "beat": "2026-10-09T11:57:20Z",
+   "touched": "2026-10-09T11:57:20Z"
   }
  ],
  "edges": [
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-09T11:57:20Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/37926910411"
+  },
   {
    "t": "2026-10-09T09:19:59Z",
    "node": "windrain",
@@ -986,13 +993,6 @@
    "kind": "commit",
    "text": "Updated data/manifest.json (uploaded on github.com)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/e68b2bebe642be3f4fe94333116d454eb43ede8d"
-  },
-  {
-   "t": "2026-10-04T17:59:32Z",
-   "node": "windrain",
-   "kind": "commit",
-   "text": "Updated data/era5/run.log (uploaded on github.com)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/f19bf1b9ee7bd0377762f711f5d41be5ddcc2661"
   }
  ]
 }
