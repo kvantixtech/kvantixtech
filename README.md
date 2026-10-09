@@ -29,12 +29,12 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 **Latest traces**
 
+- 9 Oct 05:06 UTC · Nitrogen · [Rerun with DCE's station catchments: source files, polygon choice, land use and build switch, workflow](https://github.com/kvantixtech/nitrogen-sources-denmark/commit/e71d142e92cee0d0ec228b0b0e6bbe7df7c754f2)
+- 9 Oct 05:04 UTC · Nitrogen · [CHANGELOG: DCE's catchments published; runoff area and nesting for the rerun (fixed before the rerun)](https://github.com/kvantixtech/nitrogen-sources-denmark/commit/488e578e7031b46d93c342fced543d2f347a9abb)
 - 9 Oct 04:28 UTC · CO₂ forecast · [Day 10 sealed: 244 CO₂ forecasts locked, chain intact](https://github.com/kvantixtech/energinet-forecasts/commit/07429774f0c4896ab78b74d07dc822258270b618)
 - 9 Oct 04:18 UTC · Weather · [Day 12 sealed: 883 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/2759b7ba0b8a5b07b549344dce8c689f02de8211)
 - 9 Oct 03:37 UTC · Wind & rain · [Weather-model run finished after 5 h 23 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37851531847)
 - 9 Oct 03:37 UTC · Wind & rain · [Weather model: 1998 reduced to the gauges' days (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/12b870721555941666d2a3312a3b48585f81ce98)
-- 8 Oct 22:14 UTC · Wind & rain · [Weather-model run finished after 5 h 41 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37809728516)
-- 8 Oct 22:14 UTC · Wind & rain · [Weather model: 3 downloads for 1999 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/777afaf3e523ebd1871a32e073bbda1a7dd4100a)
 <!-- pulse:end -->
 
 ## Repositories

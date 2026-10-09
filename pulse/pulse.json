@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-09T04:32:30Z",
+ "built_utc": "2026-10-09T05:17:33Z",
  "nodes": [
   {
    "id": "weather",
@@ -269,7 +269,7 @@
      "stations"
     ]
    ],
-   "touched": "2026-10-05T15:26:07Z",
+   "touched": "2026-10-09T05:06:25Z",
    "beat": "2026-10-01T20:19:39Z"
   },
   {
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-09T05:06:25Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "Rerun with DCE's station catchments: source files, polygon choice, land use and build switch, workflow",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/e71d142e92cee0d0ec228b0b0e6bbe7df7c754f2"
+  },
+  {
+   "t": "2026-10-09T05:04:02Z",
+   "node": "nitrogen",
+   "kind": "commit",
+   "text": "CHANGELOG: DCE's catchments published; runoff area and nesting for the rerun (fixed before the rerun)",
+   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/488e578e7031b46d93c342fced543d2f347a9abb"
+  },
   {
    "t": "2026-10-09T04:28:15Z",
    "node": "co2",
@@ -979,20 +993,6 @@
    "kind": "check",
    "text": "Watchdog: anchor, chain and code version checked",
    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/37205518359"
-  },
-  {
-   "t": "2026-10-04T12:55:33Z",
-   "node": "windrain",
-   "kind": "check",
-   "text": "Weather-model run finished after 5 h 43 min",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37185070726"
-  },
-  {
-   "t": "2026-10-04T12:55:30Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 6 downloads for 1991 fetched (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/54808cbf44605dfb0c2d994a0e680ca8e6946ce6"
   }
  ]
 }
