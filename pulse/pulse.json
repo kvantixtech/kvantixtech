@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-10T12:17:12Z",
+ "built_utc": "2026-10-10T14:02:18Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-10-10T04:21:54Z",
     "head": "33a26baafca8"
    },
-   "beat": "2026-10-10T04:21:55Z",
-   "touched": "2026-10-10T04:21:55Z"
+   "beat": "2026-10-10T13:57:09Z",
+   "touched": "2026-10-10T13:57:09Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-10-10T04:27:44Z",
     "head": "a2113655ac8b"
    },
-   "beat": "2026-10-10T04:27:45Z",
-   "touched": "2026-10-10T04:27:45Z"
+   "beat": "2026-10-10T13:57:20Z",
+   "touched": "2026-10-10T13:57:20Z"
   },
   {
    "id": "prices",
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-10T13:57:20Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/38057698698"
+  },
+  {
+   "t": "2026-10-10T13:57:09Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/38057689031"
+  },
   {
    "t": "2026-10-10T11:20:39Z",
    "node": "tools",
@@ -979,20 +993,6 @@
    "kind": "seal",
    "text": "Day 6 sealed: 12 price-list checks locked, chain intact",
    "url": "https://github.com/kvantixtech/energy-price-archive/commit/365ee7e39664ccc7194daedc14fed04d3edbc8c5"
-  },
-  {
-   "t": "2026-10-05T12:42:40Z",
-   "node": "experts",
-   "kind": "check",
-   "text": "Live page compared with the repository",
-   "url": "https://github.com/kvantixtech/expert-forecasts/actions/runs/37311403785"
-  },
-  {
-   "t": "2026-10-05T12:34:56Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Published reports compared byte for byte with the live files",
-   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/37310499947"
   }
  ]
 }
