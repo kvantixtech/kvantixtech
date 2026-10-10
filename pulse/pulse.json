@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-10T11:17:19Z",
+ "built_utc": "2026-10-10T11:32:19Z",
  "nodes": [
   {
    "id": "weather",
@@ -294,8 +294,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-10-10T11:13:41Z",
-   "touched": "2026-10-10T11:13:41Z"
+   "beat": "2026-10-10T11:20:39Z",
+   "touched": "2026-10-10T11:20:39Z"
   }
  ],
  "edges": [
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-10T11:20:39Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/38048060040"
+  },
   {
    "t": "2026-10-10T11:13:41Z",
    "node": "tools",
@@ -986,13 +993,6 @@
    "kind": "check",
    "text": "Published reports compared byte for byte with the live files",
    "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/37310499947"
-  },
-  {
-   "t": "2026-10-05T12:27:06Z",
-   "node": "windrain",
-   "kind": "check",
-   "text": "Weather-model run finished after 5 h 42 min",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37259568608"
   }
  ]
 }
