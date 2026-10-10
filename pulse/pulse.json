@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-10T19:02:29Z",
+ "built_utc": "2026-10-10T19:17:18Z",
  "nodes": [
   {
    "id": "weather",
@@ -113,8 +113,8 @@
     "at": "2026-10-10T14:32:00Z",
     "head": "87068945f134"
    },
-   "beat": "2026-10-10T14:32:02Z",
-   "touched": "2026-10-10T14:32:02Z"
+   "beat": "2026-10-10T19:14:48Z",
+   "touched": "2026-10-10T19:14:48Z"
   },
   {
    "id": "windgrid",
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-10T19:14:48Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/38079017896"
+  },
   {
    "t": "2026-10-10T15:04:35Z",
    "node": "windrain",
@@ -986,13 +993,6 @@
    "kind": "check",
    "text": "Watchdog: anchor, chain and code version checked",
    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/37340054632"
-  },
-  {
-   "t": "2026-10-05T15:40:26Z",
-   "node": "windgrid",
-   "kind": "commit",
-   "text": "Score offshore wind also against parks >=100 MW (CHANGELOG #7); first scores unchanged",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/d99a3a9ff154f025520a07db27a3f7a08061eb27"
   }
  ]
 }
