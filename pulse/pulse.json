@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-10T14:32:46Z",
+ "built_utc": "2026-10-10T15:17:16Z",
  "nodes": [
   {
    "id": "weather",
@@ -158,12 +158,12 @@
    "line": "35 years of rain gauges against every offshore turbine, method locked before the data",
    "next": {
     "what": "ERA5 weather model complete (estimate at the pace so far)",
-    "date": "2026-10-28",
+    "date": "2026-10-26",
     "approx": true
    },
    "counters": [
     [
-     "9 of 35",
+     "10 of 35",
      "ERA5 years in"
     ],
     [
@@ -177,15 +177,15 @@
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
    "rate": {
-    "per_day": 1.4,
+    "per_day": 1.6,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-10T09:22:54Z",
-   "touched": "2026-10-10T09:22:54Z",
+   "beat": "2026-10-10T15:04:35Z",
+   "touched": "2026-10-10T15:04:35Z",
    "active": {
-    "since": "2026-10-10T09:22:56Z",
+    "since": "2026-10-10T15:04:37Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38033656404"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38057074879"
    }
   },
   {
@@ -333,14 +333,14 @@
    "approx": false
   },
   {
-   "node": "weather",
-   "what": "First scoreboard, marked preliminary",
-   "date": "2026-10-28",
+   "node": "windrain",
+   "what": "ERA5 weather model complete (estimate at the pace so far)",
+   "date": "2026-10-26",
    "approx": true
   },
   {
-   "node": "windrain",
-   "what": "ERA5 weather model complete (estimate at the pace so far)",
+   "node": "weather",
+   "what": "First scoreboard, marked preliminary",
    "date": "2026-10-28",
    "approx": true
   },
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-10T15:04:35Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 42 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38033656404"
+  },
+  {
+   "t": "2026-10-10T15:04:31Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 2000 reduced to the gauges' days (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/b286b19ee0408c86f6c55dec0f520f5458e8c632"
+  },
   {
    "t": "2026-10-10T14:32:02Z",
    "node": "prices",
@@ -979,20 +993,6 @@
    "kind": "commit",
    "text": "Score offshore wind also against parks >=100 MW (CHANGELOG #7); first scores unchanged",
    "url": "https://github.com/kvantixtech/energinet-forecasts/commit/d99a3a9ff154f025520a07db27a3f7a08061eb27"
-  },
-  {
-   "t": "2026-10-05T15:31:49Z",
-   "node": "co2",
-   "kind": "commit",
-   "text": "CHANGELOG #7-10: Energinet's reply; offshore also scored against parks >=100 MW (before that scoring is run)",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/bd2c0f8b2fae38c002e59a4e936804dd2c046ee6"
-  },
-  {
-   "t": "2026-10-05T15:26:07Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "CHANGELOG: rule for the rerun with DCE's station catchments (fixed before the rerun)",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/69048e77a41a95f49fa61a39212bc9c583fa0ad1"
   }
  ]
 }
