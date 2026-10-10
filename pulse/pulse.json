@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-10T14:02:18Z",
+ "built_utc": "2026-10-10T14:32:46Z",
  "nodes": [
   {
    "id": "weather",
@@ -96,11 +96,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "20",
+     "22",
      "price-list checks locked"
     ],
     [
-     "10",
+     "11",
      "days running"
     ]
    ],
@@ -109,12 +109,12 @@
     "unit": "price-list checks a day"
    },
    "anchor": {
-    "date": "2026-10-09",
-    "at": "2026-10-09T14:27:58Z",
-    "head": "266a0c9ce528"
+    "date": "2026-10-10",
+    "at": "2026-10-10T14:32:00Z",
+    "head": "87068945f134"
    },
-   "beat": "2026-10-09T20:04:37Z",
-   "touched": "2026-10-09T20:04:37Z"
+   "beat": "2026-10-10T14:32:02Z",
+   "touched": "2026-10-10T14:32:02Z"
   },
   {
    "id": "windgrid",
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-10T14:32:02Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 11 sealed: 22 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/73576a2f5b4d3d5da052d67cbfd29db93b163852"
+  },
   {
    "t": "2026-10-10T13:57:20Z",
    "node": "co2",
@@ -986,13 +993,6 @@
    "kind": "commit",
    "text": "CHANGELOG: rule for the rerun with DCE's station catchments (fixed before the rerun)",
    "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/69048e77a41a95f49fa61a39212bc9c583fa0ad1"
-  },
-  {
-   "t": "2026-10-05T14:28:31Z",
-   "node": "prices",
-   "kind": "seal",
-   "text": "Day 6 sealed: 12 price-list checks locked, chain intact",
-   "url": "https://github.com/kvantixtech/energy-price-archive/commit/365ee7e39664ccc7194daedc14fed04d3edbc8c5"
   }
  ]
 }
