@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-11T14:32:16Z",
+ "built_utc": "2026-10-11T17:47:17Z",
  "nodes": [
   {
    "id": "weather",
@@ -180,12 +180,12 @@
     "per_day": 1.5,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-11T12:36:01Z",
-   "touched": "2026-10-11T12:36:01Z",
+   "beat": "2026-10-11T17:37:33Z",
+   "touched": "2026-10-11T17:37:33Z",
    "active": {
-    "since": "2026-10-11T12:36:03Z",
+    "since": "2026-10-11T17:37:35Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38126726660"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38152641855"
    }
   },
   {
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-11T17:37:33Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 02 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38126726660"
+  },
+  {
+   "t": "2026-10-11T17:37:30Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 2 downloads for 2003 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/d21001465764b636b02a6efa1b9380820367c692"
+  },
   {
    "t": "2026-10-11T14:31:48Z",
    "node": "prices",
@@ -979,20 +993,6 @@
    "kind": "check",
    "text": "Watchdog: anchor, chain and code version checked",
    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/37478865195"
-  },
-  {
-   "t": "2026-10-06T13:36:28Z",
-   "node": "wastewater",
-   "kind": "check",
-   "text": "Monthly check: sources downloaded again and compared",
-   "url": "https://github.com/kvantixtech/wastewater-denmark/actions/runs/37471935343"
-  },
-  {
-   "t": "2026-10-06T12:12:05Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Published reports compared byte for byte with the live files",
-   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/37461552175"
   }
  ]
 }
