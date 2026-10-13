@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-13T14:32:31Z",
+ "built_utc": "2026-10-13T15:17:22Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-10-13T04:18:44Z",
     "head": "1890a6f7e454"
    },
-   "beat": "2026-10-13T04:18:46Z",
-   "touched": "2026-10-13T04:18:46Z"
+   "beat": "2026-10-13T15:14:22Z",
+   "touched": "2026-10-13T15:14:22Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-10-13T04:30:14Z",
     "head": "fa4e50cadc49"
    },
-   "beat": "2026-10-13T04:30:16Z",
-   "touched": "2026-10-13T04:30:16Z"
+   "beat": "2026-10-13T15:15:04Z",
+   "touched": "2026-10-13T15:15:04Z"
   },
   {
    "id": "prices",
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-13T15:15:04Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/38420400827"
+  },
+  {
+   "t": "2026-10-13T15:14:22Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/38420293581"
+  },
   {
    "t": "2026-10-13T14:27:10Z",
    "node": "prices",
@@ -979,20 +993,6 @@
    "kind": "check",
    "text": "Published reports compared byte for byte with the live files",
    "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/37775280458"
-  },
-  {
-   "t": "2026-10-08T12:05:37Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Served sealing script compared byte for byte with the code",
-   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/37774432739"
-  },
-  {
-   "t": "2026-10-08T09:24:52Z",
-   "node": "windrain",
-   "kind": "check",
-   "text": "Weather-model run finished after 5 h 40 min",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37715689759"
   }
  ]
 }
