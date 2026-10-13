@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-13T04:32:51Z",
+ "built_utc": "2026-10-13T04:47:41Z",
  "nodes": [
   {
    "id": "weather",
@@ -180,12 +180,12 @@
     "per_day": 1.5,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-12T21:17:15Z",
-   "touched": "2026-10-12T21:17:15Z",
+   "beat": "2026-10-13T04:43:43Z",
+   "touched": "2026-10-13T04:43:43Z",
    "active": {
-    "since": "2026-10-12T23:02:01Z",
+    "since": "2026-10-13T04:43:44Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38319972478"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38342470152"
    }
   },
   {
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-13T04:43:43Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 42 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38319972478"
+  },
+  {
+   "t": "2026-10-13T04:43:39Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 3 downloads for 2005 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/cb71cee6f03cd356d06aad5308c45254e14036f1"
+  },
   {
    "t": "2026-10-13T04:30:16Z",
    "node": "co2",
@@ -979,20 +993,6 @@
    "kind": "data",
    "text": "Weather model: 3 downloads for 1998 fetched (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/f57bd5be13795b399986f2da413197af3a0aa7b6"
-  },
-  {
-   "t": "2026-10-07T20:34:15Z",
-   "node": "prices",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/37682986143"
-  },
-  {
-   "t": "2026-10-07T20:22:50Z",
-   "node": "windrain",
-   "kind": "check",
-   "text": "Weather-model run finished after 3 h 48 min",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/37653180963"
   }
  ]
 }
