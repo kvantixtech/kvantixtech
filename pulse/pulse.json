@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-14T15:32:21Z",
+ "built_utc": "2026-10-14T19:32:14Z",
  "nodes": [
   {
    "id": "weather",
@@ -113,8 +113,8 @@
     "at": "2026-10-14T14:29:48Z",
     "head": "759fe138e599"
    },
-   "beat": "2026-10-14T14:29:49Z",
-   "touched": "2026-10-14T14:29:49Z"
+   "beat": "2026-10-14T19:18:35Z",
+   "touched": "2026-10-14T19:18:35Z"
   },
   {
    "id": "windgrid",
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-14T19:18:35Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/38622543367"
+  },
   {
    "t": "2026-10-14T15:29:50Z",
    "node": "windrain",
@@ -986,13 +993,6 @@
    "kind": "check",
    "text": "Published reports compared byte for byte with the live files",
    "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/37927667211"
-  },
-  {
-   "t": "2026-10-09T11:57:20Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Served sealing script compared byte for byte with the code",
-   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/37926910411"
   }
  ]
 }
