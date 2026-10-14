@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-14T13:02:55Z",
+ "built_utc": "2026-10-14T13:17:35Z",
  "nodes": [
   {
    "id": "weather",
@@ -78,8 +78,8 @@
     "at": "2026-10-14T04:29:44Z",
     "head": "34bd3c8ec50c"
    },
-   "beat": "2026-10-14T04:29:45Z",
-   "touched": "2026-10-14T04:29:45Z"
+   "beat": "2026-10-14T13:04:01Z",
+   "touched": "2026-10-14T13:04:01Z"
   },
   {
    "id": "prices",
@@ -364,6 +364,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-14T13:04:01Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/38568670891"
+  },
   {
    "t": "2026-10-14T13:02:23Z",
    "node": "weather",
@@ -986,13 +993,6 @@
    "kind": "data",
    "text": "Rerun with DCE's station catchments: catchments, land use and results (dce.yml)",
    "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/2cb3d7b5171ac8937ff8e7689d027f6593aedba6"
-  },
-  {
-   "t": "2026-10-09T05:06:25Z",
-   "node": "nitrogen",
-   "kind": "commit",
-   "text": "Rerun with DCE's station catchments: source files, polygon choice, land use and build switch, workflow",
-   "url": "https://github.com/kvantixtech/nitrogen-sources-denmark/commit/e71d142e92cee0d0ec228b0b0e6bbe7df7c754f2"
   }
  ]
 }
