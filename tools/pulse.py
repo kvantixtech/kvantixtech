@@ -48,10 +48,11 @@ NODES = [
      "repo": "energy-price-archive", "state": "collecting", "since": "2026-09-30", "beat_h": 24,
      "line": "Every grid tariff and the electricity tax, checked daily and logged when they change", "next": None},
     {"id": "windgrid", "name": "Energinet's wind and solar forecasts", "short": "Wind & solar",
-     "question": "How good are the wind and solar forecasts?", "url": SITE + "energy/",
-     "repo": "energinet-forecasts", "state": "waiting", "since": "2026-09-29", "beat_h": None,
-     "line": "Scored for 2019–2026. Energinet has until 14 October to reply before anything is shown",
-     "next": {"what": "Results may be published (right of reply ends)", "date": "2026-10-14", "approx": False}},
+     "question": "How good are the wind and solar forecasts?", "url": SITE + "energy/#kvx-en-wind",
+     "repo": "energinet-forecasts", "state": "watching", "since": "2026-09-29", "beat_h": None,
+     "line": "Scored for 2019–2026 and published on 15 October, with Energinet's reply. Onshore wind and solar beat both "
+             "lazy guesses; the hour-ahead offshore forecast loses to \"like right now\" in the years plants were missing",
+     "next": None},
     {"id": "windrain", "name": "Offshore wind and coastal rain", "short": "Wind & rain",
      "question": "Do offshore wind farms take the rain from the coast?", "url": SITE + "wind-rain/",
      "repo": "offshore-wind-rain", "state": "working", "since": "2026-10-02", "beat_h": 6,
@@ -353,7 +354,7 @@ def build(now=None):
     except ValueError:
         pass
     nodes["tools"]["counters"] = [["3", "tools"], ["", "nothing you type is stored"]]
-    nodes["windgrid"]["counters"] = [["2019–2026", "scored"], ["", "shown from 14 October at the earliest"]]
+    nodes["windgrid"]["counters"] = [["2019–2026", "scored"], ["", "results published 15 October"]]
 
     # heartbeat = latest automatic event (seal, data, check, log, alarm) per cell; active runs
     for e in feed:
