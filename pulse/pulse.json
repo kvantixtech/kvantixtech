@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-15T14:32:24Z",
+ "built_utc": "2026-10-15T15:32:46Z",
  "nodes": [
   {
    "id": "weather",
@@ -176,13 +176,8 @@
     "per_day": 1.5,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-15T13:02:45Z",
-   "touched": "2026-10-15T13:02:45Z",
-   "active": {
-    "since": "2026-10-15T13:02:47Z",
-    "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38728598047"
-   }
+   "beat": "2026-10-15T15:33:14Z",
+   "touched": "2026-10-15T15:33:14Z"
   },
   {
    "id": "experts",
@@ -354,6 +349,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-15T15:33:14Z",
+   "node": "windrain",
+   "kind": "alarm",
+   "text": "Weather-model run stopped with an error after 2 h 30 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38728598047"
+  },
   {
    "t": "2026-10-15T14:28:28Z",
    "node": "prices",
@@ -976,13 +978,6 @@
    "kind": "check",
    "text": "Published reports compared byte for byte with the live files",
    "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/38048060040"
-  },
-  {
-   "t": "2026-10-10T11:13:41Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Served sealing script compared byte for byte with the code",
-   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/38047652496"
   }
  ]
 }
