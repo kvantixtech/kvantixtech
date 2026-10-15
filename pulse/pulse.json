@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-14T21:17:12Z",
+ "built_utc": "2026-10-15T03:02:49Z",
  "nodes": [
   {
    "id": "weather",
@@ -180,12 +180,12 @@
     "per_day": 1.5,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-14T21:12:21Z",
-   "touched": "2026-10-14T21:12:21Z",
+   "beat": "2026-10-15T02:54:21Z",
+   "touched": "2026-10-15T02:54:21Z",
    "active": {
-    "since": "2026-10-14T21:12:24Z",
+    "since": "2026-10-15T02:54:23Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38617143930"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38660855882"
    }
   },
   {
@@ -364,6 +364,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-15T02:54:21Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 42 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38617143930"
+  },
+  {
+   "t": "2026-10-15T02:54:16Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 3 downloads for 2008 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/a10469474c713e285e2bbaa23252a80c81c16d2a"
+  },
   {
    "t": "2026-10-14T21:12:21Z",
    "node": "windrain",
@@ -979,20 +993,6 @@
    "kind": "data",
    "text": "Weather model: 2 downloads for 2000 fetched (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/ac51fd9c94baf22d212cde33f65e89c7dd7e7eeb"
-  },
-  {
-   "t": "2026-10-09T14:37:48Z",
-   "node": "co2",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/37945576380"
-  },
-  {
-   "t": "2026-10-09T14:36:18Z",
-   "node": "weather",
-   "kind": "check",
-   "text": "Watchdog: anchor, chain and code version checked",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/37945390264"
   }
  ]
 }
