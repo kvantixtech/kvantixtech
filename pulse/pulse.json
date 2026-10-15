@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-15T04:32:20Z",
+ "built_utc": "2026-10-15T05:46:01Z",
  "nodes": [
   {
    "id": "weather",
@@ -121,17 +121,13 @@
    "name": "Energinet's wind and solar forecasts",
    "short": "Wind & solar",
    "question": "How good are the wind and solar forecasts?",
-   "url": "https://kvantix.tech/playground/energy/",
+   "url": "https://kvantix.tech/playground/energy/#kvx-en-wind",
    "repo": "energinet-forecasts",
-   "state": "waiting",
+   "state": "watching",
    "since": "2026-09-29",
    "beat_h": null,
-   "line": "Scored for 2019–2026. Energinet has until 14 October to reply before anything is shown",
-   "next": {
-    "what": "Results may be published (right of reply ends)",
-    "date": "2026-10-14",
-    "approx": false
-   },
+   "line": "Scored for 2019–2026 and published on 15 October, with Energinet's reply. Onshore wind and solar beat both lazy guesses; the hour-ahead offshore forecast loses to \"like right now\" in the years plants were missing",
+   "next": null,
    "counters": [
     [
      "2019–2026",
@@ -139,7 +135,7 @@
     ],
     [
      "",
-     "shown from 14 October at the earliest"
+     "results published 15 October"
     ]
    ],
    "touched": "2026-10-05T16:25:18Z",
@@ -326,12 +322,6 @@
   ]
  ],
  "milestones": [
-  {
-   "node": "windgrid",
-   "what": "Results may be published (right of reply ends)",
-   "date": "2026-10-14",
-   "approx": false
-  },
   {
    "node": "weather",
    "what": "First scoreboard, marked preliminary",
