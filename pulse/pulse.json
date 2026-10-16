@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-15T22:47:47Z",
+ "built_utc": "2026-10-16T00:47:17Z",
  "nodes": [
   {
    "id": "weather",
@@ -173,7 +173,7 @@
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
    "rate": {
-    "per_day": 1.5,
+    "per_day": 1.4,
     "unit": "ERA5 years a day"
    },
    "beat": "2026-10-15T22:41:07Z",
