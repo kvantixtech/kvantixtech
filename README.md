@@ -17,7 +17,7 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 | Investigation | State | Last heartbeat | Where it stands | Next |
 |---|---|---|---|---|
-| [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 15 Oct 12:49 UTC | 1,374 forecast downloads locked · 18 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
+| [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 16 Oct 04:17 UTC | 1,454 forecast downloads locked · 19 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
 | [Energinet's CO₂ forecast](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 15 Oct 12:50 UTC | 406 CO₂ forecasts locked · 16 days running | First green-hour tally, marked preliminary, ≈ 30 Oct |
 | [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 15 Oct 19:04 UTC | 32 price-list checks locked · 16 days running | – |
 | [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/#kvx-en-wind) | ⚪ Watching | 5 Oct 16:25 UTC | 2019–2026 scored · results published 15 October | – |
@@ -29,12 +29,12 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 **Latest traces**
 
+- 16 Oct 04:17 UTC · Weather · [Day 19 sealed: 1,454 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/70cf0d7762f55ccabc7fb26712d8e4b4eb1e1dfc)
 - 16 Oct 03:33 UTC · Wind & rain · [Weather-model run finished after 4 h 53 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38801360425)
 - 16 Oct 03:33 UTC · Wind & rain · [Weather model: 2008 reduced to the gauges' days (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/a1f89642b627dccb7b736196aa2f4f1fbbdc8d44)
 - 15 Oct 22:41 UTC · Wind & rain · [Weather-model run finished after 5 h 35 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38774526973)
 - 15 Oct 22:41 UTC · Wind & rain · [Weather model: 3 downloads for 2009 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/a299d3efbdab1ebe090e99d9addfa2015fd8f9df)
 - 15 Oct 19:04 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/38790844166)
-- 15 Oct 15:33 UTC · Wind & rain · [Weather-model run stopped with an error after 2 h 30 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38728598047)
 <!-- pulse:end -->
 
 ## Repositories
