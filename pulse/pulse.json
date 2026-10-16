@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-16T11:47:47Z",
+ "built_utc": "2026-10-16T12:47:37Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-10-16T04:17:05Z",
     "head": "51c22bdb9b14"
    },
-   "beat": "2026-10-16T04:17:06Z",
-   "touched": "2026-10-16T04:17:06Z"
+   "beat": "2026-10-16T12:41:17Z",
+   "touched": "2026-10-16T12:41:17Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-10-16T04:29:58Z",
     "head": "5152c0ee2cd9"
    },
-   "beat": "2026-10-16T04:29:59Z",
-   "touched": "2026-10-16T04:29:59Z"
+   "beat": "2026-10-16T12:42:29Z",
+   "touched": "2026-10-16T12:42:29Z"
   },
   {
    "id": "prices",
@@ -354,6 +354,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-16T12:42:29Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/38902403619"
+  },
+  {
+   "t": "2026-10-16T12:41:17Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/38902254874"
+  },
   {
    "t": "2026-10-16T10:04:43Z",
    "node": "tools",
@@ -969,20 +983,6 @@
    "kind": "check",
    "text": "Weather-model run finished after 5 h 41 min",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38092107718"
-  },
-  {
-   "t": "2026-10-11T06:54:37Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 2001 reduced to the gauges' days (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/37d17818cd5026489dd95aeb70f7585e12f386e2"
-  },
-  {
-   "t": "2026-10-11T04:27:27Z",
-   "node": "co2",
-   "kind": "seal",
-   "text": "Day 12 sealed: 298 CO₂ forecasts locked, chain intact",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/40ca08ccbeebeb09aa9ac035c3b76d66291e0dea"
   }
  ]
 }
