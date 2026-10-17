@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-17T09:32:45Z",
+ "built_utc": "2026-10-17T09:47:11Z",
  "nodes": [
   {
    "id": "weather",
@@ -173,7 +173,7 @@
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
    "rate": {
-    "per_day": 1.5,
+    "per_day": 1.4,
     "unit": "ERA5 years a day"
    },
    "beat": "2026-10-17T06:34:09Z",
@@ -290,8 +290,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-10-17T09:28:04Z",
-   "touched": "2026-10-17T09:28:04Z"
+   "beat": "2026-10-17T09:38:37Z",
+   "touched": "2026-10-17T09:38:37Z"
   }
  ],
  "edges": [
@@ -354,6 +354,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-17T09:38:37Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/39021896693"
+  },
   {
    "t": "2026-10-17T09:28:04Z",
    "node": "tools",
@@ -976,13 +983,6 @@
    "kind": "seal",
    "text": "Day 13 sealed: 325 CO₂ forecasts locked, chain intact",
    "url": "https://github.com/kvantixtech/energinet-forecasts/commit/db2a9186e019f02d1bb5d0ddc45c3b50435fc39f"
-  },
-  {
-   "t": "2026-10-12T04:17:53Z",
-   "node": "weather",
-   "kind": "seal",
-   "text": "Day 15 sealed: 1,130 forecast downloads locked, chain intact",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/d2940e9e4023391e6126139089b30caa6c1ec788"
   }
  ]
 }
