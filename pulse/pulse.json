@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-17T04:32:33Z",
+ "built_utc": "2026-10-17T06:47:24Z",
  "nodes": [
   {
    "id": "weather",
@@ -176,12 +176,12 @@
     "per_day": 1.5,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-17T01:42:00Z",
-   "touched": "2026-10-17T01:42:00Z",
+   "beat": "2026-10-17T06:34:09Z",
+   "touched": "2026-10-17T06:34:09Z",
    "active": {
-    "since": "2026-10-17T01:42:02Z",
+    "since": "2026-10-17T06:34:11Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38982524417"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/39003116731"
    }
   },
   {
@@ -354,6 +354,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-17T06:34:09Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 4 h 52 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38982524417"
+  },
+  {
+   "t": "2026-10-17T06:34:04Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 2 downloads for 2011 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/00ccfe1e68d1e79f0075d080da590d7e316851f7"
+  },
   {
    "t": "2026-10-17T04:27:09Z",
    "node": "co2",
@@ -969,20 +983,6 @@
    "kind": "check",
    "text": "Weather-model run finished after 5 h 42 min",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38152641855"
-  },
-  {
-   "t": "2026-10-11T23:19:35Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 2002 reduced to the gauges' days (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/0ac8725786224170fdcdb5349334b15e4933eeb0"
-  },
-  {
-   "t": "2026-10-11T19:29:29Z",
-   "node": "prices",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/38168227031"
   }
  ]
 }
