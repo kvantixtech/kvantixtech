@@ -21,7 +21,7 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Energinet's CO₂ forecast](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 18 Oct 12:10 UTC | 487 CO₂ forecasts locked · 19 days running | First green-hour tally, marked preliminary, ≈ 30 Oct |
 | [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 18 Oct 18:02 UTC | 38 price-list checks locked · 19 days running | – |
 | [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/#kvx-en-wind) | ⚪ Watching | 5 Oct 16:25 UTC | 2019–2026 scored · results published 15 October | – |
-| [Offshore wind and coastal rain](https://kvantix.tech/playground/wind-rain/) | 🟡 Working | 18 Oct 15:23 UTC | 21 of 35 ERA5 years in · 4 of 8 steps done · now: fetching the weather model (ERA5) | ERA5 weather model complete (estimate at the pace so far), ≈ 28 Oct |
+| [Offshore wind and coastal rain](https://kvantix.tech/playground/wind-rain/) | 🟡 Working | 18 Oct 20:16 UTC | 21 of 35 ERA5 years in · 4 of 8 steps done · now: fetching the weather model (ERA5) | ERA5 weather model complete (estimate at the pace so far), ≈ 28 Oct |
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 12 Oct 13:34 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
 | [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 6 Oct 13:36 UTC | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Nov |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
@@ -29,12 +29,12 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 **Latest traces**
 
+- 18 Oct 20:16 UTC · Wind & rain · [Weather-model run finished after 4 h 53 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/39136868130)
+- 18 Oct 20:16 UTC · Wind & rain · [Weather model: 2 downloads for 2013 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/77ea2319e3c6132307e40b5345245560e40194ef)
 - 18 Oct 18:02 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/39152305868)
 - 18 Oct 15:23 UTC · Wind & rain · [Weather-model run finished after 5 h 42 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/39102403308)
 - 18 Oct 15:23 UTC · Wind & rain · [Weather model: 2 downloads for 2013 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/b71746de5b0832a4865b289ecb5a9898337abb5e)
 - 18 Oct 14:31 UTC · Price list · [Day 19 sealed: 38 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/fe9e5fc8f6097c9b9ea46ef80fc6413f3b83c474)
-- 18 Oct 12:10 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/39126182198)
-- 18 Oct 12:10 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/39126149241)
 <!-- pulse:end -->
 
 ## Repositories
