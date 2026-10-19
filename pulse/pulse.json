@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-19T15:02:27Z",
+ "built_utc": "2026-10-19T16:32:18Z",
  "nodes": [
   {
    "id": "weather",
@@ -138,8 +138,7 @@
      "results published 15 October"
     ]
    ],
-   "touched": "2026-10-05T16:25:18Z",
-   "beat": "2026-10-05T16:25:18Z"
+   "beat": null
   },
   {
    "id": "windrain",
