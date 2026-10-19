@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-19T11:02:45Z",
+ "built_utc": "2026-10-19T11:17:36Z",
  "nodes": [
   {
    "id": "weather",
@@ -211,7 +211,12 @@
     ]
    ],
    "beat": "2026-10-12T13:34:08Z",
-   "touched": "2026-10-12T13:34:08Z"
+   "touched": "2026-10-12T13:34:08Z",
+   "active": {
+    "since": "2026-10-19T11:18:07Z",
+    "what": "Running a check",
+    "url": "https://github.com/kvantixtech/expert-forecasts/actions/runs/39243649380"
+   }
   },
   {
    "id": "wastewater",
@@ -290,8 +295,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-10-19T10:53:00Z",
-   "touched": "2026-10-19T10:53:00Z"
+   "beat": "2026-10-19T11:12:08Z",
+   "touched": "2026-10-19T11:12:08Z"
   }
  ],
  "edges": [
@@ -354,6 +359,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-19T11:12:08Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/39242897288"
+  },
   {
    "t": "2026-10-19T10:53:00Z",
    "node": "tools",
@@ -976,13 +988,6 @@
    "kind": "data",
    "text": "Weather model: 2005 reduced to the gauges' days (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/2efe17e884e10e972682eebc8ea5de4cb29157b1"
-  },
-  {
-   "t": "2026-10-13T20:37:25Z",
-   "node": "prices",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/38464268287"
   }
  ]
 }
