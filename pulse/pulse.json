@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-18T23:32:20Z",
+ "built_utc": "2026-10-19T01:32:37Z",
  "nodes": [
   {
    "id": "weather",
@@ -887,13 +887,6 @@
    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/38568484294"
   },
   {
-   "t": "2026-10-14T11:21:49Z",
-   "node": "windrain",
-   "kind": "check",
-   "text": "Weather-model run finished after 5 h 41 min",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38498475012"
-  },
-  {
    "t": "2026-10-14T11:21:45Z",
    "node": "windrain",
    "kind": "data",
@@ -983,6 +976,13 @@
    "kind": "check",
    "text": "Published reports compared byte for byte with the live files",
    "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/38400865954"
+  },
+  {
+   "t": "2026-10-13T12:46:23Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/38399757191"
   }
  ]
 }
