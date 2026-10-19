@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-19T11:17:36Z",
+ "built_utc": "2026-10-19T11:32:20Z",
  "nodes": [
   {
    "id": "weather",
@@ -173,7 +173,7 @@
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
    "rate": {
-    "per_day": 1.5,
+    "per_day": 1.4,
     "unit": "ERA5 years a day"
    },
    "beat": "2026-10-19T07:39:12Z",
@@ -210,13 +210,8 @@
      "outcomes from Statistics Denmark"
     ]
    ],
-   "beat": "2026-10-12T13:34:08Z",
-   "touched": "2026-10-12T13:34:08Z",
-   "active": {
-    "since": "2026-10-19T11:18:07Z",
-    "what": "Running a check",
-    "url": "https://github.com/kvantixtech/expert-forecasts/actions/runs/39243649380"
-   }
+   "beat": "2026-10-19T11:18:17Z",
+   "touched": "2026-10-19T11:18:17Z"
   },
   {
    "id": "wastewater",
@@ -359,6 +354,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-19T11:18:17Z",
+   "node": "experts",
+   "kind": "check",
+   "text": "Live page compared with the repository",
+   "url": "https://github.com/kvantixtech/expert-forecasts/actions/runs/39243649380"
+  },
   {
    "t": "2026-10-19T11:12:08Z",
    "node": "tools",
@@ -981,13 +983,6 @@
    "kind": "seal",
    "text": "Day 17 sealed: 1,294 forecast downloads locked, chain intact",
    "url": "https://github.com/kvantixtech/weather-forecast-test/commit/cb681eaa5448ff793d77b05513b495ee8b9baffd"
-  },
-  {
-   "t": "2026-10-13T23:59:29Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 2005 reduced to the gauges' days (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/2efe17e884e10e972682eebc8ea5de4cb29157b1"
   }
  ]
 }
