@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-20T04:02:21Z",
+ "built_utc": "2026-10-20T04:17:41Z",
  "nodes": [
   {
    "id": "weather",
@@ -22,22 +22,22 @@
    "chain_ok": true,
    "counters": [
     [
-     "1,695",
+     "1,778",
      "forecast downloads locked"
     ],
     [
-     "22",
+     "23",
      "days running"
     ]
    ],
    "rate": {
-    "per_day": 80,
+    "per_day": 83,
     "unit": "forecast downloads a day"
    },
    "anchor": {
-    "date": "2026-10-19",
-    "at": "2026-10-19T04:18:36Z",
-    "head": "736819f16520"
+    "date": "2026-10-20",
+    "at": "2026-10-20T04:18:14Z",
+    "head": "8115904a161b"
    },
    "beat": "2026-10-19T14:56:10Z",
    "touched": "2026-10-19T14:56:10Z"
