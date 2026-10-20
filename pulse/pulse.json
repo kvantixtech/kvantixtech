@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-20T13:02:16Z",
+ "built_utc": "2026-10-20T13:47:26Z",
  "nodes": [
   {
    "id": "weather",
@@ -239,8 +239,7 @@
      "sources checked again every month"
     ]
    ],
-   "beat": "2026-10-06T13:36:28Z",
-   "touched": "2026-10-06T13:36:28Z"
+   "beat": null
   },
   {
    "id": "nitrogen",
