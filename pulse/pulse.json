@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-21T04:32:11Z",
+ "built_utc": "2026-10-21T06:17:30Z",
  "nodes": [
   {
    "id": "weather",
@@ -927,13 +927,6 @@
    "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/38883678391"
   },
   {
-   "t": "2026-10-16T09:14:53Z",
-   "node": "windrain",
-   "kind": "check",
-   "text": "Weather-model run finished after 5 h 41 min",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/38835052841"
-  },
-  {
    "t": "2026-10-16T09:14:49Z",
    "node": "windrain",
    "kind": "data",
@@ -981,6 +974,13 @@
    "kind": "data",
    "text": "Weather model: 1 download for 2009 fetched (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/4551e22f2e317caf64451dab484ab06ee5ef0e43"
+  },
+  {
+   "t": "2026-10-15T14:28:28Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 16 sealed: 32 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/4f1fab7b338a2383c71e4c1ff418dbf22928a385"
   }
  ]
 }
