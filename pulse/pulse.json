@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-22T10:47:27Z",
+ "built_utc": "2026-10-22T13:17:21Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-10-22T04:17:20Z",
     "head": "e66f95d08142"
    },
-   "beat": "2026-10-22T04:17:22Z",
-   "touched": "2026-10-22T04:17:22Z"
+   "beat": "2026-10-22T13:09:37Z",
+   "touched": "2026-10-22T13:09:37Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-10-22T04:28:00Z",
     "head": "101ee8980ab3"
    },
-   "beat": "2026-10-22T04:28:02Z",
-   "touched": "2026-10-22T04:28:02Z"
+   "beat": "2026-10-22T13:10:31Z",
+   "touched": "2026-10-22T13:10:31Z"
   },
   {
    "id": "prices",
@@ -352,6 +352,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-22T13:10:31Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/39784518020"
+  },
+  {
+   "t": "2026-10-22T13:09:37Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/39784385732"
+  },
   {
    "t": "2026-10-22T10:35:47Z",
    "node": "tools",
@@ -967,20 +981,6 @@
    "kind": "data",
    "text": "Weather model: 2 downloads for 2011 fetched (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/00ccfe1e68d1e79f0075d080da590d7e316851f7"
-  },
-  {
-   "t": "2026-10-17T04:27:09Z",
-   "node": "co2",
-   "kind": "seal",
-   "text": "Day 18 sealed: 460 CO₂ forecasts locked, chain intact",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/a5ce87283466c286d6d95e0c6a267977952916a8"
-  },
-  {
-   "t": "2026-10-17T04:17:59Z",
-   "node": "weather",
-   "kind": "seal",
-   "text": "Day 20 sealed: 1,532 forecast downloads locked, chain intact",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/86ff915b7d421bda11d8a6ad2dc66a140097034e"
   }
  ]
 }
