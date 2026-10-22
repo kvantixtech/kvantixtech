@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-22T15:47:48Z",
+ "built_utc": "2026-10-22T19:17:13Z",
  "nodes": [
   {
    "id": "weather",
@@ -113,8 +113,8 @@
     "at": "2026-10-22T14:31:44Z",
     "head": "33343ba0b3da"
    },
-   "beat": "2026-10-22T14:31:46Z",
-   "touched": "2026-10-22T14:31:46Z"
+   "beat": "2026-10-22T19:10:52Z",
+   "touched": "2026-10-22T19:10:52Z"
   },
   {
    "id": "windgrid",
@@ -352,6 +352,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-22T19:10:52Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/39837807655"
+  },
   {
    "t": "2026-10-22T15:17:45Z",
    "node": "windrain",
@@ -974,13 +981,6 @@
    "kind": "check",
    "text": "Watchdog: anchor, chain and code version checked",
    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/39029802962"
-  },
-  {
-   "t": "2026-10-17T09:38:37Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Published reports compared byte for byte with the live files",
-   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/39021896693"
   }
  ]
 }
