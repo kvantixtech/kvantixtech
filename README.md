@@ -30,11 +30,11 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 **Latest traces**
 
 - 22 Oct 15:17 UTC · Wind & rain · [Weather-model run finished after 5 h 41 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/39725173293)
+- 22 Oct 15:17 UTC · Wind & rain · [Weather model: 1 download for 2017 fetched (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/330b8f958b48d62314eaceecd5e35a1c00937fd5)
 - 22 Oct 14:31 UTC · Price list · [Day 23 sealed: 46 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/c213763715543927e4e72467416c5804fec9ad58)
 - 22 Oct 13:10 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/39784518020)
 - 22 Oct 13:09 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/39784385732)
 - 22 Oct 10:35 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/39764254014)
-- 22 Oct 10:17 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/39761947872)
 <!-- pulse:end -->
 
 ## Repositories
