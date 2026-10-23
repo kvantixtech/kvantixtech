@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-23T07:02:36Z",
+ "built_utc": "2026-10-23T07:47:27Z",
  "nodes": [
   {
    "id": "weather",
@@ -968,18 +968,18 @@
    "url": "https://github.com/kvantixtech/weather-forecast-test/commit/00e35e0cda5bf13331524486a64a5c56fe01cf6a"
   },
   {
-   "t": "2026-10-18T03:59:48Z",
-   "node": "windrain",
-   "kind": "check",
-   "text": "Weather-model run finished after 4 h 46 min",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/39074912462"
-  },
-  {
    "t": "2026-10-18T03:59:43Z",
    "node": "windrain",
    "kind": "data",
    "text": "Weather model: 2 downloads for 2012 fetched (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/a255c9f65fac0b26ae58c5225c9018c12d0db2c9"
+  },
+  {
+   "t": "2026-10-17T23:13:36Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 2 downloads for 2012 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/6c764e69eb593a6d598d2731bdf965eea1e0551c"
   }
  ]
 }
