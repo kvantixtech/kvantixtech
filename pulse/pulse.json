@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-23T13:02:31Z",
+ "built_utc": "2026-10-23T13:32:42Z",
  "nodes": [
   {
    "id": "weather",
@@ -172,7 +172,7 @@
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
    "rate": {
-    "per_day": 1.4,
+    "per_day": 1.3,
     "unit": "ERA5 years a day"
    },
    "beat": "2026-10-23T12:37:02Z",
@@ -975,11 +975,11 @@
    "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/39116962039"
   },
   {
-   "t": "2026-10-18T09:41:38Z",
-   "node": "windrain",
+   "t": "2026-10-18T09:41:36Z",
+   "node": "tools",
    "kind": "check",
-   "text": "Weather-model run finished after 5 h 42 min",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/39085336749"
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/39116330017"
   }
  ]
 }
