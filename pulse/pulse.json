@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-24T04:02:47Z",
+ "built_utc": "2026-10-24T04:32:47Z",
  "nodes": [
   {
    "id": "weather",
@@ -22,25 +22,25 @@
    "chain_ok": true,
    "counters": [
     [
-     "2,032",
+     "2,119",
      "forecast downloads locked"
     ],
     [
-     "26",
+     "27",
      "days running"
     ]
    ],
    "rate": {
-    "per_day": 82,
+    "per_day": 87,
     "unit": "forecast downloads a day"
    },
    "anchor": {
-    "date": "2026-10-23",
-    "at": "2026-10-23T04:19:10Z",
-    "head": "2e752c07ed5a"
+    "date": "2026-10-24",
+    "at": "2026-10-24T04:19:00Z",
+    "head": "359078ed8f62"
    },
-   "beat": "2026-10-23T12:49:45Z",
-   "touched": "2026-10-23T12:49:45Z"
+   "beat": "2026-10-24T04:19:01Z",
+   "touched": "2026-10-24T04:19:01Z"
   },
   {
    "id": "co2",
@@ -61,11 +61,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "622",
+     "649",
      "CO₂ forecasts locked"
     ],
     [
-     "24",
+     "25",
      "days running"
     ]
    ],
@@ -74,12 +74,12 @@
     "unit": "CO₂ forecasts a day"
    },
    "anchor": {
-    "date": "2026-10-23",
-    "at": "2026-10-23T04:31:00Z",
-    "head": "3342d50b40b1"
+    "date": "2026-10-24",
+    "at": "2026-10-24T04:30:30Z",
+    "head": "0fc96c93c31a"
    },
-   "beat": "2026-10-23T12:50:47Z",
-   "touched": "2026-10-23T12:50:47Z"
+   "beat": "2026-10-24T04:30:32Z",
+   "touched": "2026-10-24T04:30:32Z"
   },
   {
    "id": "prices",
@@ -351,6 +351,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-24T04:30:32Z",
+   "node": "co2",
+   "kind": "seal",
+   "text": "Day 25 sealed: 649 CO₂ forecasts locked, chain intact",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/596b70406a2c1c78ee991aab7acb35ad9d28f5cd"
+  },
+  {
+   "t": "2026-10-24T04:19:01Z",
+   "node": "weather",
+   "kind": "seal",
+   "text": "Day 27 sealed: 2,119 forecast downloads locked, chain intact",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/b2ddc915f88b4bcab294f03ea8d0c51ec1b91355"
+  },
   {
    "t": "2026-10-24T03:50:36Z",
    "node": "windrain",
@@ -966,20 +980,6 @@
    "kind": "data",
    "text": "Weather model: 1 download for 2013 fetched (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/182a9ce7b97e91e8ac8fbe1ae7f4a0afae7bd2b8"
-  },
-  {
-   "t": "2026-10-18T20:16:44Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 2 downloads for 2013 fetched (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/77ea2319e3c6132307e40b5345245560e40194ef"
-  },
-  {
-   "t": "2026-10-18T18:02:23Z",
-   "node": "prices",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/39152305868"
   }
  ]
 }
