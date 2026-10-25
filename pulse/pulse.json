@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-25T16:32:38Z",
+ "built_utc": "2026-10-25T17:47:27Z",
  "nodes": [
   {
    "id": "weather",
@@ -175,12 +175,12 @@
     "per_day": 1.4,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-25T11:59:55Z",
-   "touched": "2026-10-25T11:59:55Z",
+   "beat": "2026-10-25T17:42:14Z",
+   "touched": "2026-10-25T17:42:14Z",
    "active": {
-    "since": "2026-10-25T11:59:57Z",
+    "since": "2026-10-25T17:42:16Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40189766662"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40211886342"
    }
   },
   {
@@ -351,6 +351,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-25T17:42:14Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 42 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40189766662"
+  },
+  {
+   "t": "2026-10-25T17:42:10Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 1 download for 2021 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/028a6aa11924af8dd0a3966ce8a3614c854c82cb"
+  },
   {
    "t": "2026-10-25T14:30:31Z",
    "node": "prices",
@@ -966,20 +980,6 @@
    "kind": "check",
    "text": "Watchdog: anchor, chain and code version checked",
    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/39426117304"
-  },
-  {
-   "t": "2026-10-20T10:23:13Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Published reports compared byte for byte with the live files",
-   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/39407544540"
-  },
-  {
-   "t": "2026-10-20T10:08:43Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Served sealing script compared byte for byte with the code",
-   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/39405808636"
   }
  ]
 }
