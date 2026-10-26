@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-26T19:17:48Z",
+ "built_utc": "2026-10-26T19:32:39Z",
  "nodes": [
   {
    "id": "weather",
@@ -176,7 +176,12 @@
     "unit": "ERA5 years a day"
    },
    "beat": "2026-10-26T19:05:00Z",
-   "touched": "2026-10-26T19:05:00Z"
+   "touched": "2026-10-26T19:05:00Z",
+   "active": {
+    "since": "2026-10-26T19:22:10Z",
+    "what": "Fetching the weather model (ERA5)",
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40386107089"
+   }
   },
   {
    "id": "experts",
@@ -956,13 +961,6 @@
    "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/39660097339"
   },
   {
-   "t": "2026-10-21T18:58:07Z",
-   "node": "windrain",
-   "kind": "check",
-   "text": "Weather-model run finished after 5 h 42 min",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/39595850807"
-  },
-  {
    "t": "2026-10-21T18:58:00Z",
    "node": "windrain",
    "kind": "data",
@@ -975,6 +973,13 @@
    "kind": "seal",
    "text": "Day 22 sealed: 44 price-list checks locked, chain intact",
    "url": "https://github.com/kvantixtech/energy-price-archive/commit/9c3eb25bd4c507e932504668088fe6b7ce7809e2"
+  },
+  {
+   "t": "2026-10-21T13:15:52Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 1 download for 2016 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/e9718e49a251111d4e209fb762edf5f4ae648ea3"
   }
  ]
 }
