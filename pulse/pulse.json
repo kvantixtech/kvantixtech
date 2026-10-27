@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-26T23:17:10Z",
+ "built_utc": "2026-10-27T01:17:10Z",
  "nodes": [
   {
    "id": "weather",
@@ -153,12 +153,12 @@
    "line": "35 years of rain gauges against every offshore turbine, method locked before the data",
    "next": {
     "what": "ERA5 weather model complete (estimate at the pace so far)",
-    "date": "2026-10-30",
+    "date": "2026-10-29",
     "approx": true
    },
    "counters": [
     [
-     "30 of 35",
+     "31 of 35",
      "ERA5 years in"
     ],
     [
@@ -172,15 +172,15 @@
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
    "rate": {
-    "per_day": 1.3,
+    "per_day": 1.4,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-26T19:05:00Z",
-   "touched": "2026-10-26T19:05:00Z",
+   "beat": "2026-10-27T01:03:29Z",
+   "touched": "2026-10-27T01:03:29Z",
    "active": {
-    "since": "2026-10-26T19:22:10Z",
+    "since": "2026-10-27T01:03:31Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40386107089"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40417925504"
    }
   },
   {
@@ -326,14 +326,14 @@
    "approx": true
   },
   {
-   "node": "co2",
-   "what": "First green-hour tally, marked preliminary",
-   "date": "2026-10-30",
+   "node": "windrain",
+   "what": "ERA5 weather model complete (estimate at the pace so far)",
+   "date": "2026-10-29",
    "approx": true
   },
   {
-   "node": "windrain",
-   "what": "ERA5 weather model complete (estimate at the pace so far)",
+   "node": "co2",
+   "what": "First green-hour tally, marked preliminary",
    "date": "2026-10-30",
    "approx": true
   },
@@ -351,6 +351,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-27T01:03:29Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 41 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40386107089"
+  },
+  {
+   "t": "2026-10-27T01:03:25Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 2021 reduced to the gauges' days (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/27787f9f6a181249667ad091928d03b52cdb5ea8"
+  },
   {
    "t": "2026-10-26T20:26:12Z",
    "node": "prices",
@@ -966,20 +980,6 @@
    "kind": "data",
    "text": "Weather model: 2 downloads for 2016 fetched (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/a80335308165ff00ad45218039ad8d3342d23982"
-  },
-  {
-   "t": "2026-10-21T14:29:23Z",
-   "node": "prices",
-   "kind": "seal",
-   "text": "Day 22 sealed: 44 price-list checks locked, chain intact",
-   "url": "https://github.com/kvantixtech/energy-price-archive/commit/9c3eb25bd4c507e932504668088fe6b7ce7809e2"
-  },
-  {
-   "t": "2026-10-21T13:15:52Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 1 download for 2016 fetched (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/e9718e49a251111d4e209fb762edf5f4ae648ea3"
   }
  ]
 }
