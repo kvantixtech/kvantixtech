@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-27T10:47:33Z",
+ "built_utc": "2026-10-27T11:02:24Z",
  "nodes": [
   {
    "id": "weather",
@@ -287,8 +287,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-10-27T10:40:17Z",
-   "touched": "2026-10-27T10:40:17Z"
+   "beat": "2026-10-27T10:54:46Z",
+   "touched": "2026-10-27T10:54:46Z"
   }
  ],
  "edges": [
@@ -351,6 +351,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-27T10:54:46Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/40492106973"
+  },
   {
    "t": "2026-10-27T10:40:17Z",
    "node": "tools",
@@ -973,13 +980,6 @@
    "kind": "seal",
    "text": "Day 25 sealed: 1,950 forecast downloads locked, chain intact",
    "url": "https://github.com/kvantixtech/weather-forecast-test/commit/d8d8dd527102a5ffd1a59e2828af3bf5a1251043"
-  },
-  {
-   "t": "2026-10-22T03:54:25Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 2015 reduced to the gauges' days (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/17fb77deabe7134718d44ea40d2b77899bd5906b"
   }
  ]
 }
