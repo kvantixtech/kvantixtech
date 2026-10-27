@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-27T13:32:16Z",
+ "built_utc": "2026-10-27T13:47:27Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,13 +39,8 @@
     "at": "2026-10-27T04:20:00Z",
     "head": "ede77575c682"
    },
-   "beat": "2026-10-27T04:20:02Z",
-   "touched": "2026-10-27T04:20:02Z",
-   "active": {
-    "since": "2026-10-27T13:30:59Z",
-    "what": "Running a check",
-    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/40512701629"
-   }
+   "beat": "2026-10-27T13:33:25Z",
+   "touched": "2026-10-27T13:33:25Z"
   },
   {
    "id": "co2",
@@ -83,8 +78,8 @@
     "at": "2026-10-27T04:31:20Z",
     "head": "24633f259ce8"
    },
-   "beat": "2026-10-27T04:31:22Z",
-   "touched": "2026-10-27T04:31:22Z"
+   "beat": "2026-10-27T13:34:14Z",
+   "touched": "2026-10-27T13:34:14Z"
   },
   {
    "id": "prices",
@@ -356,6 +351,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-27T13:34:14Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/40512842617"
+  },
+  {
+   "t": "2026-10-27T13:33:25Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/40512701629"
+  },
   {
    "t": "2026-10-27T12:26:50Z",
    "node": "windrain",
@@ -971,20 +980,6 @@
    "kind": "check",
    "text": "Published reports compared byte for byte with the live files",
    "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/39764254014"
-  },
-  {
-   "t": "2026-10-22T10:17:20Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Served sealing script compared byte for byte with the code",
-   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/39761947872"
-  },
-  {
-   "t": "2026-10-22T09:36:48Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 1 download for 2017 fetched (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/6bae1ad9899e8eaaac1cfdabe1ce86a4a5dfbc21"
   }
  ]
 }
