@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-28T20:17:38Z",
+ "built_utc": "2026-10-28T23:17:38Z",
  "nodes": [
   {
    "id": "weather",
@@ -175,12 +175,12 @@
     "per_day": 1.3,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-28T18:45:26Z",
-   "touched": "2026-10-28T18:45:26Z",
+   "beat": "2026-10-28T23:10:09Z",
+   "touched": "2026-10-28T23:10:09Z",
    "active": {
-    "since": "2026-10-28T18:53:23Z",
+    "since": "2026-10-28T23:15:37Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40749278117"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40786072756"
    }
   },
   {
@@ -351,6 +351,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-28T23:10:09Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 4 h 17 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40749278117"
+  },
+  {
+   "t": "2026-10-28T23:10:04Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 3 downloads for 2025 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/a81397747a1e3f367efe53f612f9047a713f1918"
+  },
   {
    "t": "2026-10-28T20:13:08Z",
    "node": "prices",
@@ -966,20 +980,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/40008825649"
-  },
-  {
-   "t": "2026-10-23T16:27:45Z",
-   "node": "windrain",
-   "kind": "check",
-   "text": "Weather-model run finished after 3 h 51 min",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/39918965281"
-  },
-  {
-   "t": "2026-10-23T16:27:40Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 2 downloads for 2018 fetched (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/fca0c618505ce8eeea1acc57c4f3697d0c469ab6"
   }
  ]
 }
