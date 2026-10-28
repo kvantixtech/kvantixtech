@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-28T06:02:51Z",
+ "built_utc": "2026-10-28T10:02:38Z",
  "nodes": [
   {
    "id": "weather",
@@ -175,12 +175,12 @@
     "per_day": 1.3,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-28T04:08:46Z",
-   "touched": "2026-10-28T04:08:46Z",
+   "beat": "2026-10-28T09:51:00Z",
+   "touched": "2026-10-28T09:51:00Z",
    "active": {
-    "since": "2026-10-28T04:08:48Z",
+    "since": "2026-10-28T09:51:03Z",
     "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40604621362"
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40640229293"
    }
   },
   {
@@ -351,6 +351,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-28T09:51:00Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 42 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40604621362"
+  },
+  {
+   "t": "2026-10-28T09:50:56Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 1 download for 2024 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/322f9c0aaf13a042e77a533d5f0caa1bec10e870"
+  },
   {
    "t": "2026-10-28T04:30:35Z",
    "node": "co2",
@@ -966,20 +980,6 @@
    "kind": "seal",
    "text": "Day 24 sealed: 622 CO₂ forecasts locked, chain intact",
    "url": "https://github.com/kvantixtech/energinet-forecasts/commit/afc06e5e155d0ae65b7454fe5a078ee6fa35e553"
-  },
-  {
-   "t": "2026-10-23T04:19:11Z",
-   "node": "weather",
-   "kind": "seal",
-   "text": "Day 26 sealed: 2,032 forecast downloads locked, chain intact",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/107a8c07b372cec513df63df3b02f2f6e113090a"
-  },
-  {
-   "t": "2026-10-23T01:13:18Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 2016 reduced to the gauges' days (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/ac3642ce8174969ac679a0e92c63842e267e3919"
   }
  ]
 }
