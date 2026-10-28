@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-28T11:32:46Z",
+ "built_utc": "2026-10-28T11:47:25Z",
  "nodes": [
   {
    "id": "weather",
@@ -282,8 +282,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-10-28T11:24:31Z",
-   "touched": "2026-10-28T11:24:31Z"
+   "beat": "2026-10-28T11:35:12Z",
+   "touched": "2026-10-28T11:35:12Z"
   }
  ],
  "edges": [
@@ -346,6 +346,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-28T11:35:12Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/40681083810"
+  },
   {
    "t": "2026-10-28T11:24:31Z",
    "node": "tools",
@@ -968,13 +975,6 @@
    "kind": "check",
    "text": "Published reports compared byte for byte with the live files",
    "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/39939314635"
-  },
-  {
-   "t": "2026-10-23T10:10:50Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Served sealing script compared byte for byte with the code",
-   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/39937230407"
   }
  ]
 }
