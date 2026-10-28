@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-28T13:17:27Z",
+ "built_utc": "2026-10-28T14:32:27Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-10-28T04:21:54Z",
     "head": "78a26531c7de"
    },
-   "beat": "2026-10-28T04:21:55Z",
-   "touched": "2026-10-28T04:21:55Z"
+   "beat": "2026-10-28T14:24:48Z",
+   "touched": "2026-10-28T14:24:48Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-10-28T04:30:34Z",
     "head": "d5df562c0ebd"
    },
-   "beat": "2026-10-28T04:30:35Z",
-   "touched": "2026-10-28T04:30:35Z"
+   "beat": "2026-10-28T14:27:23Z",
+   "touched": "2026-10-28T14:27:23Z"
   },
   {
    "id": "prices",
@@ -96,11 +96,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "56",
+     "58",
      "price-list checks locked"
     ],
     [
-     "28",
+     "29",
      "days running"
     ]
    ],
@@ -109,12 +109,12 @@
     "unit": "price-list checks a day"
    },
    "anchor": {
-    "date": "2026-10-27",
-    "at": "2026-10-27T14:27:47Z",
-    "head": "daea87bca973"
+    "date": "2026-10-28",
+    "at": "2026-10-28T14:30:39Z",
+    "head": "8db7de80697a"
    },
-   "beat": "2026-10-27T20:01:38Z",
-   "touched": "2026-10-27T20:01:38Z"
+   "beat": "2026-10-28T14:30:40Z",
+   "touched": "2026-10-28T14:30:40Z"
   },
   {
    "id": "windgrid",
@@ -351,6 +351,27 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-28T14:30:40Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 29 sealed: 58 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/a8169ae06f61eca74cad38975d27e2e3cc56952d"
+  },
+  {
+   "t": "2026-10-28T14:27:23Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/40706066442"
+  },
+  {
+   "t": "2026-10-28T14:24:48Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/40705639995"
+  },
   {
    "t": "2026-10-28T11:35:12Z",
    "node": "tools",
@@ -959,27 +980,6 @@
    "kind": "check",
    "text": "Watchdog: anchor, chain and code version checked",
    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/39956261816"
-  },
-  {
-   "t": "2026-10-23T12:37:02Z",
-   "node": "windrain",
-   "kind": "check",
-   "text": "Weather-model run finished after 5 h 41 min",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/39884744531"
-  },
-  {
-   "t": "2026-10-23T12:36:57Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 1 download for 2018 fetched (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/e311b4384b45205f67ee2b5806d9dca3763b3fa7"
-  },
-  {
-   "t": "2026-10-23T10:28:21Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Published reports compared byte for byte with the live files",
-   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/39939314635"
   }
  ]
 }
