@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-28T10:02:38Z",
+ "built_utc": "2026-10-28T11:17:24Z",
  "nodes": [
   {
    "id": "weather",
@@ -153,12 +153,12 @@
    "line": "35 years of rain gauges against every offshore turbine, method locked before the data",
    "next": {
     "what": "ERA5 weather model complete (estimate at the pace so far)",
-    "date": "2026-10-30",
+    "date": "2026-10-29",
     "approx": true
    },
    "counters": [
     [
-     "32 of 35",
+     "33 of 35",
      "ERA5 years in"
     ],
     [
@@ -172,7 +172,7 @@
    ],
    "step": "Weather model (ERA5), hour by hour, summed over each gauge network's day",
    "rate": {
-    "per_day": 1.3,
+    "per_day": 1.4,
     "unit": "ERA5 years a day"
    },
    "beat": "2026-10-28T09:51:00Z",
@@ -326,14 +326,14 @@
    "approx": true
   },
   {
-   "node": "co2",
-   "what": "First green-hour tally, marked preliminary",
-   "date": "2026-10-30",
+   "node": "windrain",
+   "what": "ERA5 weather model complete (estimate at the pace so far)",
+   "date": "2026-10-29",
    "approx": true
   },
   {
-   "node": "windrain",
-   "what": "ERA5 weather model complete (estimate at the pace so far)",
+   "node": "co2",
+   "what": "First green-hour tally, marked preliminary",
    "date": "2026-10-30",
    "approx": true
   },
