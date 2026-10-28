@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-28T18:02:19Z",
+ "built_utc": "2026-10-28T18:47:37Z",
  "nodes": [
   {
    "id": "weather",
@@ -175,13 +175,8 @@
     "per_day": 1.3,
     "unit": "ERA5 years a day"
    },
-   "beat": "2026-10-28T11:18:01Z",
-   "touched": "2026-10-28T11:18:01Z",
-   "active": {
-    "since": "2026-10-28T13:03:20Z",
-    "what": "Fetching the weather model (ERA5)",
-    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40692974533"
-   }
+   "beat": "2026-10-28T18:45:26Z",
+   "touched": "2026-10-28T18:45:26Z"
   },
   {
    "id": "experts",
@@ -351,6 +346,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-28T18:45:26Z",
+   "node": "windrain",
+   "kind": "check",
+   "text": "Weather-model run finished after 5 h 42 min",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40692974533"
+  },
+  {
+   "t": "2026-10-28T18:45:21Z",
+   "node": "windrain",
+   "kind": "data",
+   "text": "Weather model: 2 downloads for 2025 fetched (no rain-gauge value read)",
+   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/7e25d90e91e10814de0c3c61c50eb8a767e5a322"
+  },
   {
    "t": "2026-10-28T14:30:40Z",
    "node": "prices",
@@ -966,20 +975,6 @@
    "kind": "seal",
    "text": "Day 24 sealed: 48 price-list checks locked, chain intact",
    "url": "https://github.com/kvantixtech/energy-price-archive/commit/195486a27348bb83a3ddfe1a70047cdd5022c373"
-  },
-  {
-   "t": "2026-10-23T12:50:47Z",
-   "node": "co2",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/39956398204"
-  },
-  {
-   "t": "2026-10-23T12:49:45Z",
-   "node": "weather",
-   "kind": "check",
-   "text": "Watchdog: anchor, chain and code version checked",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/39956261816"
   }
  ]
 }
