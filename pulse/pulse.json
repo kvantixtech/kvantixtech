@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-28T18:47:37Z",
+ "built_utc": "2026-10-28T19:02:28Z",
  "nodes": [
   {
    "id": "weather",
@@ -176,7 +176,12 @@
     "unit": "ERA5 years a day"
    },
    "beat": "2026-10-28T18:45:26Z",
-   "touched": "2026-10-28T18:45:26Z"
+   "touched": "2026-10-28T18:45:26Z",
+   "active": {
+    "since": "2026-10-28T18:53:23Z",
+    "what": "Fetching the weather model (ERA5)",
+    "url": "https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40749278117"
+   }
   },
   {
    "id": "experts",
