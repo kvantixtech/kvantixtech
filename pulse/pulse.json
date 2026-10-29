@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-29T02:32:30Z",
+ "built_utc": "2026-10-29T04:17:42Z",
  "nodes": [
   {
    "id": "weather",
@@ -22,25 +22,25 @@
    "chain_ok": true,
    "counters": [
     [
-     "2,465",
+     "2,549",
      "forecast downloads locked"
     ],
     [
-     "31",
+     "32",
      "days running"
     ]
    ],
    "rate": {
-    "per_day": 89,
+    "per_day": 84,
     "unit": "forecast downloads a day"
    },
    "anchor": {
-    "date": "2026-10-28",
-    "at": "2026-10-28T04:21:54Z",
-    "head": "78a26531c7de"
+    "date": "2026-10-29",
+    "at": "2026-10-29T04:17:44Z",
+    "head": "0a2180db9f2f"
    },
-   "beat": "2026-10-28T14:24:48Z",
-   "touched": "2026-10-28T14:24:48Z"
+   "beat": "2026-10-29T04:17:46Z",
+   "touched": "2026-10-29T04:17:46Z"
   },
   {
    "id": "co2",
@@ -351,6 +351,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-29T04:17:46Z",
+   "node": "weather",
+   "kind": "seal",
+   "text": "Day 32 sealed: 2,549 forecast downloads locked, chain intact",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/29de979e8ab51c2ccf77107a84dacec8cf06dcd6"
+  },
   {
    "t": "2026-10-28T23:10:09Z",
    "node": "windrain",
@@ -973,13 +980,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/40008825649"
-  },
-  {
-   "t": "2026-10-23T16:27:40Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 2 downloads for 2018 fetched (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/fca0c618505ce8eeea1acc57c4f3697d0c469ab6"
   }
  ]
 }
