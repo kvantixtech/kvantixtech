@@ -25,16 +25,16 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 26 Oct 11:34 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
 | [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | – | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Nov |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
-| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 28 Oct 11:35 UTC | 3 tools · nothing you type is stored | – |
+| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 29 Oct 11:43 UTC | 3 tools · nothing you type is stored | – |
 
 **Latest traces**
 
+- 29 Oct 11:43 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/40867504750)
+- 29 Oct 11:34 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/40866461246)
 - 29 Oct 05:15 UTC · Wind & rain · [Weather-model run finished after 18 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40806570191)
 - 29 Oct 05:15 UTC · Wind & rain · [Weather model: 2025 reduced to the gauges' days (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/b3d1c4c20166443ab37c528c034711508b57fbbe)
 - 29 Oct 04:57 UTC · Wind & rain · [Weather-model run finished after 5 h 42 min](https://github.com/kvantixtech/offshore-wind-rain/actions/runs/40786072756)
 - 29 Oct 04:57 UTC · Wind & rain · [Weather model: 2024 reduced to the gauges' days (no rain-gauge value read)](https://github.com/kvantixtech/offshore-wind-rain/commit/036560100b459d180f200dc6ab087d818eb9d7dd)
-- 29 Oct 04:30 UTC · CO₂ forecast · [Day 30 sealed: 784 CO₂ forecasts locked, chain intact](https://github.com/kvantixtech/energinet-forecasts/commit/c0dd35bbbdb4899cb5452e000aa5d583f75d0d89)
-- 29 Oct 04:17 UTC · Weather · [Day 32 sealed: 2,549 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/29de979e8ab51c2ccf77107a84dacec8cf06dcd6)
 <!-- pulse:end -->
 
 ## Repositories
