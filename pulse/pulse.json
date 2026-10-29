@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-10-29T14:32:36Z",
+ "built_utc": "2026-10-29T14:47:28Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-10-29T04:17:44Z",
     "head": "0a2180db9f2f"
    },
-   "beat": "2026-10-29T04:17:46Z",
-   "touched": "2026-10-29T04:17:46Z"
+   "beat": "2026-10-29T14:37:19Z",
+   "touched": "2026-10-29T14:37:19Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-10-29T04:30:20Z",
     "head": "95e973de947e"
    },
-   "beat": "2026-10-29T04:30:21Z",
-   "touched": "2026-10-29T04:30:21Z"
+   "beat": "2026-10-29T14:37:53Z",
+   "touched": "2026-10-29T14:37:53Z"
   },
   {
    "id": "prices",
@@ -336,6 +336,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-10-29T14:37:53Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/40893384254"
+  },
+  {
+   "t": "2026-10-29T14:37:19Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/40893288181"
+  },
   {
    "t": "2026-10-29T14:30:02Z",
    "node": "prices",
@@ -951,20 +965,6 @@
    "kind": "check",
    "text": "Watchdog: anchor, chain and code version checked",
    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/40092885852"
-  },
-  {
-   "t": "2026-10-24T09:45:46Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Published reports compared byte for byte with the live files",
-   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/40083224214"
-  },
-  {
-   "t": "2026-10-24T09:36:39Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Served sealing script compared byte for byte with the code",
-   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/40082626232"
   }
  ]
 }
