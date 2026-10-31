@@ -25,16 +25,16 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 26 Oct 11:34 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
 | [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | – | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Nov |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
-| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 30 Oct 11:35 UTC | 3 tools · nothing you type is stored | – |
+| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 31 Oct 10:57 UTC | 3 tools · nothing you type is stored | – |
 
 **Latest traces**
 
+- 31 Oct 10:57 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/41194852369)
 - 31 Oct 04:27 UTC · CO₂ forecast · [Day 32 sealed: 838 CO₂ forecasts locked, chain intact](https://github.com/kvantixtech/energinet-forecasts/commit/dfb07c574d902dc2466340dd15d2092ad49b033c)
 - 31 Oct 04:18 UTC · Weather · [Day 34 sealed: 2,723 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/cfcb068a2fe784333053da15b30803ff80f0f178)
 - 30 Oct 19:54 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/41119042756)
 - 30 Oct 14:29 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/41071920310)
 - 30 Oct 14:28 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/41071819322)
-- 30 Oct 14:28 UTC · Price list · [Day 31 sealed: 62 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/a69b02be4c46f38ce340c06d7d08fc5710ef0abb)
 <!-- pulse:end -->
 
 ## Repositories
