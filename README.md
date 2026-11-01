@@ -25,16 +25,16 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 26 Oct 11:34 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
 | [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | – | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Nov |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
-| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 31 Oct 11:10 UTC | 3 tools · nothing you type is stored | – |
+| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 1 Nov 11:59 UTC | 3 tools · nothing you type is stored | – |
 
 **Latest traces**
 
+- 1 Nov 11:59 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/41304333599)
+- 1 Nov 11:53 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/41303866947)
 - 1 Nov 04:29 UTC · CO₂ forecast · [Day 33 sealed: 865 CO₂ forecasts locked, chain intact](https://github.com/kvantixtech/energinet-forecasts/commit/028e133b064cee87203352e45236144d376b7075)
 - 1 Nov 04:17 UTC · Weather · [Day 35 sealed: 2,805 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/2aa1bca366b3ebdc9f59c88cf91648aaf9e3ec38)
 - 31 Oct 19:14 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/41233251068)
 - 31 Oct 14:30 UTC · Price list · [Day 32 sealed: 64 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/e2f94aff2368e3b6819c407abe3404e1cbb32bf1)
-- 31 Oct 13:50 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/41207385822)
-- 31 Oct 13:49 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/41207275090)
 <!-- pulse:end -->
 
 ## Repositories

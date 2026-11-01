@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-01T04:32:08Z",
+ "built_utc": "2026-11-01T12:02:53Z",
  "nodes": [
   {
    "id": "weather",
@@ -278,8 +278,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-10-31T11:10:22Z",
-   "touched": "2026-10-31T11:10:22Z"
+   "beat": "2026-11-01T11:59:51Z",
+   "touched": "2026-11-01T11:59:51Z"
   }
  ],
  "edges": [
@@ -336,6 +336,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-01T11:59:51Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/41304333599"
+  },
+  {
+   "t": "2026-11-01T11:53:23Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/41303866947"
+  },
   {
    "t": "2026-11-01T04:29:38Z",
    "node": "co2",
@@ -951,20 +965,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/40194446717"
-  },
-  {
-   "t": "2026-10-25T12:43:38Z",
-   "node": "weather",
-   "kind": "check",
-   "text": "Watchdog: anchor, chain and code version checked",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/40194382355"
-  },
-  {
-   "t": "2026-10-25T11:59:50Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 2019 reduced to the gauges' days (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/4b7dbe08541e27a97ee53f8dad943ad429a6ada0"
   }
  ]
 }
