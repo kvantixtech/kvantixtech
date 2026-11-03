@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-03T14:32:24Z",
+ "built_utc": "2026-11-03T15:32:27Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-11-03T04:20:20Z",
     "head": "835251342f3a"
    },
-   "beat": "2026-11-03T04:20:22Z",
-   "touched": "2026-11-03T04:20:22Z"
+   "beat": "2026-11-03T15:26:55Z",
+   "touched": "2026-11-03T15:26:55Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-11-03T04:31:41Z",
     "head": "aa7693dc6565"
    },
-   "beat": "2026-11-03T04:31:42Z",
-   "touched": "2026-11-03T04:31:42Z"
+   "beat": "2026-11-03T15:28:06Z",
+   "touched": "2026-11-03T15:28:06Z"
   },
   {
    "id": "prices",
@@ -336,6 +336,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-03T15:28:06Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/41664051505"
+  },
+  {
+   "t": "2026-11-03T15:26:55Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/41663957371"
+  },
   {
    "t": "2026-11-03T14:30:26Z",
    "node": "prices",
@@ -951,20 +965,6 @@
    "kind": "check",
    "text": "Watchdog: anchor, chain and code version checked",
    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/40340300719"
-  },
-  {
-   "t": "2026-10-26T14:29:41Z",
-   "node": "prices",
-   "kind": "seal",
-   "text": "Day 27 sealed: 54 price-list checks locked, chain intact",
-   "url": "https://github.com/kvantixtech/energy-price-archive/commit/e06952f1425ae5aa8aa27b57a268f43b216280f4"
-  },
-  {
-   "t": "2026-10-26T11:34:17Z",
-   "node": "experts",
-   "kind": "check",
-   "text": "Live page compared with the repository",
-   "url": "https://github.com/kvantixtech/expert-forecasts/actions/runs/40316032707"
   }
  ]
 }
