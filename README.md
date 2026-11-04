@@ -17,7 +17,7 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 | Investigation | State | Last heartbeat | Where it stands | Next |
 |---|---|---|---|---|
-| [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 3 Nov 15:26 UTC | 2,982 forecast downloads locked · 37 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
+| [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 4 Nov 04:17 UTC | 3,063 forecast downloads locked · 38 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
 | [Energinet's CO₂ forecast](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 3 Nov 15:28 UTC | 919 CO₂ forecasts locked · 35 days running | First green-hour tally, marked preliminary, ≈ 30 Oct |
 | [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 3 Nov 20:56 UTC | 70 price-list checks locked · 35 days running | – |
 | [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/#kvx-en-wind) | ⚪ Watching | – | 2019–2026 scored · results published 15 October | – |
@@ -29,12 +29,12 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 **Latest traces**
 
+- 4 Nov 04:17 UTC · Weather · [Day 38 sealed: 3,063 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/7ba485e0b98d0d3326bec42c91b6bf8da84154c8)
 - 3 Nov 20:56 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/41717121162)
 - 3 Nov 15:28 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/41664051505)
 - 3 Nov 15:26 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/41663957371)
 - 3 Nov 14:30 UTC · Price list · [Day 35 sealed: 70 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/a1f39bd9af8f4a254d9a669b5c4e017d7ac2b398)
 - 3 Nov 12:58 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/41640204880)
-- 3 Nov 12:51 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/41639259052)
 <!-- pulse:end -->
 
 ## Repositories
