@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-04T15:32:12Z",
+ "built_utc": "2026-11-04T15:47:52Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-11-04T04:17:20Z",
     "head": "afb850200a5e"
    },
-   "beat": "2026-11-04T04:17:22Z",
-   "touched": "2026-11-04T04:17:22Z"
+   "beat": "2026-11-04T15:42:48Z",
+   "touched": "2026-11-04T15:42:48Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-11-04T04:30:40Z",
     "head": "718a9821a245"
    },
-   "beat": "2026-11-04T04:30:41Z",
-   "touched": "2026-11-04T04:30:41Z"
+   "beat": "2026-11-04T15:43:29Z",
+   "touched": "2026-11-04T15:43:29Z"
   },
   {
    "id": "prices",
@@ -336,6 +336,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-04T15:43:29Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/41860671447"
+  },
+  {
+   "t": "2026-11-04T15:42:48Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/41860557367"
+  },
   {
    "t": "2026-11-04T14:42:29Z",
    "node": "experts",
@@ -951,20 +965,6 @@
    "kind": "data",
    "text": "Weather model: 2021 reduced to the gauges' days (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/27787f9f6a181249667ad091928d03b52cdb5ea8"
-  },
-  {
-   "t": "2026-10-26T20:26:12Z",
-   "node": "prices",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/40395585371"
-  },
-  {
-   "t": "2026-10-26T19:04:45Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 3 downloads for 2022 fetched (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/06b11b54ae2a0c8c67ae0912fff5d5b19dc5259a"
   }
  ]
 }
