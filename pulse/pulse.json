@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-04T14:32:15Z",
+ "built_utc": "2026-11-04T14:47:48Z",
  "nodes": [
   {
    "id": "weather",
@@ -200,8 +200,8 @@
      "outcomes from Statistics Denmark"
     ]
    ],
-   "beat": "2026-11-02T13:52:27Z",
-   "touched": "2026-11-02T13:52:27Z"
+   "beat": "2026-11-04T14:42:29Z",
+   "touched": "2026-11-04T14:42:29Z"
   },
   {
    "id": "wastewater",
@@ -336,6 +336,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-04T14:42:29Z",
+   "node": "experts",
+   "kind": "check",
+   "text": "Outcomes compared again with Statistics Denmark (monthly drift check)",
+   "url": "https://github.com/kvantixtech/expert-forecasts/commit/edddb0148c6bb24bc548fb99c3d7ad35783fcdbc"
+  },
   {
    "t": "2026-11-04T14:30:36Z",
    "node": "prices",
@@ -958,13 +965,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/40395585371"
-  },
-  {
-   "t": "2026-10-26T19:04:45Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 3 downloads for 2022 fetched (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/06b11b54ae2a0c8c67ae0912fff5d5b19dc5259a"
   }
  ]
 }
