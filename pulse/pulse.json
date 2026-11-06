@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-06T14:32:51Z",
+ "built_utc": "2026-11-06T14:47:32Z",
  "nodes": [
   {
    "id": "weather",
@@ -230,7 +230,8 @@
      "sources checked again every month"
     ]
    ],
-   "beat": null
+   "beat": "2026-11-06T14:35:58Z",
+   "touched": "2026-11-06T14:35:58Z"
   },
   {
    "id": "nitrogen",
@@ -336,6 +337,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-06T14:35:58Z",
+   "node": "wastewater",
+   "kind": "check",
+   "text": "Monthly check: sources downloaded again and compared",
+   "url": "https://github.com/kvantixtech/wastewater-denmark/actions/runs/42235178030"
+  },
   {
    "t": "2026-11-06T14:30:05Z",
    "node": "prices",
@@ -958,13 +966,6 @@
    "kind": "data",
    "text": "Weather model: 2022 reduced to the gauges' days (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/6ee42bbef201d2ebaa8e40827cd6d9eb569c93af"
-  },
-  {
-   "t": "2026-10-27T14:27:48Z",
-   "node": "prices",
-   "kind": "seal",
-   "text": "Day 28 sealed: 56 price-list checks locked, chain intact",
-   "url": "https://github.com/kvantixtech/energy-price-archive/commit/8b98a2cdc5e2ab59d9b6e316fb1b7c153b115aee"
   }
  ]
 }
