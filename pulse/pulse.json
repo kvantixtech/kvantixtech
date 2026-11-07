@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-07T11:47:40Z",
+ "built_utc": "2026-11-07T12:02:27Z",
  "nodes": [
   {
    "id": "weather",
@@ -279,8 +279,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-11-07T11:46:58Z",
-   "touched": "2026-11-07T11:46:58Z"
+   "beat": "2026-11-07T11:54:02Z",
+   "touched": "2026-11-07T11:54:02Z"
   }
  ],
  "edges": [
@@ -337,6 +337,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-07T11:54:02Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/42370101652"
+  },
   {
    "t": "2026-11-07T11:46:58Z",
    "node": "tools",
@@ -959,13 +966,6 @@
    "kind": "data",
    "text": "Weather model: 2023 reduced to the gauges' days (no rain-gauge value read)",
    "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/2e3ef0828563fde2f9e0e31be27a1c3d31bda342"
-  },
-  {
-   "t": "2026-10-28T09:50:56Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 1 download for 2024 fetched (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/322f9c0aaf13a042e77a533d5f0caa1bec10e870"
   }
  ]
 }
