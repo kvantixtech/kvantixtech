@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-08T04:32:25Z",
+ "built_utc": "2026-11-08T12:02:18Z",
  "nodes": [
   {
    "id": "weather",
@@ -279,8 +279,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-11-07T11:54:02Z",
-   "touched": "2026-11-07T11:54:02Z"
+   "beat": "2026-11-08T11:58:47Z",
+   "touched": "2026-11-08T11:58:47Z"
   }
  ],
  "edges": [
@@ -337,6 +337,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-08T11:58:47Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/42478077776"
+  },
   {
    "t": "2026-11-08T04:30:49Z",
    "node": "co2",
@@ -959,13 +966,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/40761254107"
-  },
-  {
-   "t": "2026-10-28T18:45:21Z",
-   "node": "windrain",
-   "kind": "data",
-   "text": "Weather model: 2 downloads for 2025 fetched (no rain-gauge value read)",
-   "url": "https://github.com/kvantixtech/offshore-wind-rain/commit/7e25d90e91e10814de0c3c61c50eb8a767e5a322"
   }
  ]
 }
