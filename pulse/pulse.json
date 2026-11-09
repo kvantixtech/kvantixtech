@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-09T14:17:24Z",
+ "built_utc": "2026-11-09T14:32:31Z",
  "nodes": [
   {
    "id": "weather",
@@ -96,11 +96,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "80",
+     "82",
      "price-list checks locked"
     ],
     [
-     "40",
+     "41",
      "days running"
     ]
    ],
@@ -109,12 +109,12 @@
     "unit": "price-list checks a day"
    },
    "anchor": {
-    "date": "2026-11-08",
-    "at": "2026-11-08T14:27:42Z",
-    "head": "b91d8961a70b"
+    "date": "2026-11-09",
+    "at": "2026-11-09T14:30:57Z",
+    "head": "f3ab5e2bd1af"
    },
-   "beat": "2026-11-08T19:35:22Z",
-   "touched": "2026-11-08T19:35:22Z"
+   "beat": "2026-11-09T14:30:58Z",
+   "touched": "2026-11-09T14:30:58Z"
   },
   {
    "id": "windgrid",
@@ -200,8 +200,8 @@
      "outcomes from Statistics Denmark"
     ]
    ],
-   "beat": "2026-11-04T14:42:29Z",
-   "touched": "2026-11-04T14:42:29Z"
+   "beat": "2026-11-09T14:24:09Z",
+   "touched": "2026-11-09T14:24:09Z"
   },
   {
    "id": "wastewater",
@@ -337,6 +337,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-09T14:30:58Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 41 sealed: 82 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/211b4598fa635d3babb86b8221fb29ad32b1e3ed"
+  },
+  {
+   "t": "2026-11-09T14:24:09Z",
+   "node": "experts",
+   "kind": "check",
+   "text": "Live page compared with the repository",
+   "url": "https://github.com/kvantixtech/expert-forecasts/actions/runs/42634283223"
+  },
   {
    "t": "2026-11-09T14:16:54Z",
    "node": "tools",
@@ -952,20 +966,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/40947187159"
-  },
-  {
-   "t": "2026-10-29T14:37:53Z",
-   "node": "co2",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/40893384254"
-  },
-  {
-   "t": "2026-10-29T14:37:19Z",
-   "node": "weather",
-   "kind": "check",
-   "text": "Watchdog: anchor, chain and code version checked",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/40893288181"
   }
  ]
 }
