@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-09T17:47:34Z",
+ "built_utc": "2026-11-09T23:47:14Z",
  "nodes": [
   {
    "id": "weather",
@@ -113,8 +113,8 @@
     "at": "2026-11-09T14:30:57Z",
     "head": "f3ab5e2bd1af"
    },
-   "beat": "2026-11-09T14:30:58Z",
-   "touched": "2026-11-09T14:30:58Z"
+   "beat": "2026-11-09T23:45:46Z",
+   "touched": "2026-11-09T23:45:46Z"
   },
   {
    "id": "windgrid",
@@ -337,6 +337,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-09T23:45:46Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/42723025148"
+  },
   {
    "t": "2026-11-09T17:47:07Z",
    "node": "co2",
@@ -959,13 +966,6 @@
    "kind": "check",
    "text": "Served sealing script compared byte for byte with the code",
    "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/41048163522"
-  },
-  {
-   "t": "2026-10-30T04:27:25Z",
-   "node": "co2",
-   "kind": "seal",
-   "text": "Day 31 sealed: 811 CO₂ forecasts locked, chain intact",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/bebcf1dde19ff7af1196a8ace96419db350c7da1"
   }
  ]
 }
