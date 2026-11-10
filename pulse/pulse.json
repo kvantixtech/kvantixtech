@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-10T14:32:27Z",
+ "built_utc": "2026-11-10T15:47:22Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-11-10T04:17:47Z",
     "head": "3e8ce7a28238"
    },
-   "beat": "2026-11-10T04:17:48Z",
-   "touched": "2026-11-10T04:17:48Z"
+   "beat": "2026-11-10T15:45:02Z",
+   "touched": "2026-11-10T15:45:02Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-11-10T04:28:59Z",
     "head": "78d5aec0112a"
    },
-   "beat": "2026-11-10T04:29:00Z",
-   "touched": "2026-11-10T04:29:00Z"
+   "beat": "2026-11-10T15:45:21Z",
+   "touched": "2026-11-10T15:45:21Z"
   },
   {
    "id": "prices",
@@ -337,6 +337,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-10T15:45:21Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/42847628847"
+  },
+  {
+   "t": "2026-11-10T15:45:02Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/42847568117"
+  },
   {
    "t": "2026-11-10T14:31:20Z",
    "node": "prices",
@@ -952,20 +966,6 @@
    "kind": "seal",
    "text": "Day 32 sealed: 838 CO₂ forecasts locked, chain intact",
    "url": "https://github.com/kvantixtech/energinet-forecasts/commit/dfb07c574d902dc2466340dd15d2092ad49b033c"
-  },
-  {
-   "t": "2026-10-31T04:18:48Z",
-   "node": "weather",
-   "kind": "seal",
-   "text": "Day 34 sealed: 2,723 forecast downloads locked, chain intact",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/cfcb068a2fe784333053da15b30803ff80f0f178"
-  },
-  {
-   "t": "2026-10-30T19:54:39Z",
-   "node": "prices",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/41119042756"
   }
  ]
 }
