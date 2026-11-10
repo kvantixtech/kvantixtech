@@ -25,16 +25,16 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 9 Nov 14:24 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
 | [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 6 Nov 14:35 UTC | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Dec |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
-| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 9 Nov 14:16 UTC | 3 tools · nothing you type is stored | – |
+| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 10 Nov 13:43 UTC | 3 tools · nothing you type is stored | – |
 
 **Latest traces**
 
+- 10 Nov 13:43 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/42827179550)
+- 10 Nov 13:33 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/42825644114)
 - 10 Nov 04:29 UTC · CO₂ forecast · [Day 42 sealed: 1,108 CO₂ forecasts locked, chain intact](https://github.com/kvantixtech/energinet-forecasts/commit/c103ba32c6ed64aec262d3a430e96414a677b9b3)
 - 10 Nov 04:17 UTC · Weather · [Day 44 sealed: 3,535 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/230553c59197ec5daa2705d44eec924287b6bf59)
 - 9 Nov 23:45 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/42723025148)
 - 9 Nov 17:47 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/42667958210)
-- 9 Nov 17:45 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/42667764172)
-- 9 Nov 14:30 UTC · Price list · [Day 41 sealed: 82 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/211b4598fa635d3babb86b8221fb29ad32b1e3ed)
 <!-- pulse:end -->
 
 ## Repositories
