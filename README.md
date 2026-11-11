@@ -25,16 +25,16 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 9 Nov 14:24 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
 | [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 6 Nov 14:35 UTC | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Dec |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
-| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 11 Nov 12:47 UTC | 3 tools · nothing you type is stored | – |
+| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 11 Nov 12:55 UTC | 3 tools · nothing you type is stored | – |
 
 **Latest traces**
 
+- 11 Nov 12:55 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/43024508969)
 - 11 Nov 12:47 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/43023336272)
 - 11 Nov 04:27 UTC · CO₂ forecast · [Day 43 sealed: 1,135 CO₂ forecasts locked, chain intact](https://github.com/kvantixtech/energinet-forecasts/commit/c7efd4f8859fc6a18cf77c78a3b2cb3180e412c6)
 - 11 Nov 04:19 UTC · Weather · [Day 45 sealed: 3,613 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/53d9d33c5bab0ceb3d5930ef3d57e7065ba5b552)
 - 10 Nov 21:16 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/42903366688)
 - 10 Nov 15:45 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/42847628847)
-- 10 Nov 15:45 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/42847568117)
 <!-- pulse:end -->
 
 ## Repositories
