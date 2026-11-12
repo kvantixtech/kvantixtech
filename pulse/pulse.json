@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-12T04:32:24Z",
+ "built_utc": "2026-11-12T05:17:44Z",
  "nodes": [
   {
    "id": "weather",
@@ -171,8 +171,7 @@
     ]
    ],
    "step": "Upwind capacity for every gauge and day, and the 10 % bound",
-   "beat": "2026-10-29T05:15:33Z",
-   "touched": "2026-10-29T05:15:33Z"
+   "beat": null
   },
   {
    "id": "experts",
