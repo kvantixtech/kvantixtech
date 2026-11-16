@@ -25,16 +25,16 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 9 Nov 14:24 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
 | [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 6 Nov 14:35 UTC | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Dec |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
-| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 15 Nov 12:55 UTC | 3 tools · nothing you type is stored | – |
+| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 16 Nov 13:45 UTC | 3 tools · nothing you type is stored | – |
 
 **Latest traces**
 
+- 16 Nov 13:45 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/43878779987)
 - 16 Nov 04:28 UTC · CO₂ forecast · [Day 48 sealed: 1,270 CO₂ forecasts locked, chain intact](https://github.com/kvantixtech/energinet-forecasts/commit/08f9846ff7f87ccf6b1e172537251c88a901c1fb)
 - 16 Nov 04:19 UTC · Weather · [Day 50 sealed: 4,003 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/944029d8948c2305cd94da757418ccc92fe1a635)
 - 15 Nov 20:20 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/43757534379)
 - 15 Nov 14:56 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/43727068622)
 - 15 Nov 14:56 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/43727063971)
-- 15 Nov 14:30 UTC · Price list · [Day 47 sealed: 94 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/aa6864a4e13814a44fa016af63bf1d8ccad8a7a9)
 <!-- pulse:end -->
 
 ## Repositories
