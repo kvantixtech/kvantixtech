@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-17T14:32:26Z",
+ "built_utc": "2026-11-17T14:47:21Z",
  "nodes": [
   {
    "id": "weather",
@@ -278,8 +278,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-11-16T13:57:21Z",
-   "touched": "2026-11-16T13:57:21Z"
+   "beat": "2026-11-17T14:36:01Z",
+   "touched": "2026-11-17T14:36:01Z"
   }
  ],
  "edges": [
@@ -336,6 +336,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-17T14:36:01Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/44104845254"
+  },
   {
    "t": "2026-11-17T14:30:20Z",
    "node": "prices",
@@ -958,13 +965,6 @@
    "kind": "check",
    "text": "Monthly check: sources downloaded again and compared",
    "url": "https://github.com/kvantixtech/wastewater-denmark/actions/runs/42235178030"
-  },
-  {
-   "t": "2026-11-06T14:30:05Z",
-   "node": "prices",
-   "kind": "seal",
-   "text": "Day 38 sealed: 76 price-list checks locked, chain intact",
-   "url": "https://github.com/kvantixtech/energy-price-archive/commit/16250b304f6aba00abc20a9fe3b88c7c8af62b6c"
   }
  ]
 }
