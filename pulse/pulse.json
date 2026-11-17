@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-17T14:47:21Z",
+ "built_utc": "2026-11-17T15:02:19Z",
  "nodes": [
   {
    "id": "weather",
@@ -278,8 +278,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-11-17T14:36:01Z",
-   "touched": "2026-11-17T14:36:01Z"
+   "beat": "2026-11-17T14:50:45Z",
+   "touched": "2026-11-17T14:50:45Z"
   }
  ],
  "edges": [
@@ -336,6 +336,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-17T14:50:45Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/44107550263"
+  },
   {
    "t": "2026-11-17T14:36:01Z",
    "node": "tools",
@@ -958,13 +965,6 @@
    "kind": "check",
    "text": "Watchdog: anchor, chain and code version checked",
    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/42241969448"
-  },
-  {
-   "t": "2026-11-06T14:35:58Z",
-   "node": "wastewater",
-   "kind": "check",
-   "text": "Monthly check: sources downloaded again and compared",
-   "url": "https://github.com/kvantixtech/wastewater-denmark/actions/runs/42235178030"
   }
  ]
 }
