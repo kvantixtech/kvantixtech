@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-17T15:02:19Z",
+ "built_utc": "2026-11-17T17:02:39Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-11-17T04:20:49Z",
     "head": "974183f94e97"
    },
-   "beat": "2026-11-17T04:20:50Z",
-   "touched": "2026-11-17T04:20:50Z"
+   "beat": "2026-11-17T17:01:39Z",
+   "touched": "2026-11-17T17:01:39Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-11-17T04:27:59Z",
     "head": "f09586f0a37c"
    },
-   "beat": "2026-11-17T04:28:00Z",
-   "touched": "2026-11-17T04:28:00Z"
+   "beat": "2026-11-17T17:02:14Z",
+   "touched": "2026-11-17T17:02:14Z"
   },
   {
    "id": "prices",
@@ -336,6 +336,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-17T17:02:14Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/44132450561"
+  },
+  {
+   "t": "2026-11-17T17:01:39Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/44132359830"
+  },
   {
    "t": "2026-11-17T14:50:45Z",
    "node": "tools",
@@ -951,20 +965,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/42291673216"
-  },
-  {
-   "t": "2026-11-06T15:21:08Z",
-   "node": "co2",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/42242202203"
-  },
-  {
-   "t": "2026-11-06T15:19:38Z",
-   "node": "weather",
-   "kind": "check",
-   "text": "Watchdog: anchor, chain and code version checked",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/42241969448"
   }
  ]
 }
