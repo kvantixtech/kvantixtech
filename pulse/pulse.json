@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-17T23:02:33Z",
+ "built_utc": "2026-11-18T04:32:22Z",
  "nodes": [
   {
    "id": "weather",
@@ -22,11 +22,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "4,081",
+     "4,159",
      "forecast downloads locked"
     ],
     [
-     "51",
+     "52",
      "days running"
     ]
    ],
@@ -35,12 +35,12 @@
     "unit": "forecast downloads a day"
    },
    "anchor": {
-    "date": "2026-11-17",
-    "at": "2026-11-17T04:20:49Z",
-    "head": "974183f94e97"
+    "date": "2026-11-18",
+    "at": "2026-11-18T04:19:38Z",
+    "head": "62e80b8c7c68"
    },
-   "beat": "2026-11-17T17:01:39Z",
-   "touched": "2026-11-17T17:01:39Z"
+   "beat": "2026-11-18T04:19:39Z",
+   "touched": "2026-11-18T04:19:39Z"
   },
   {
    "id": "co2",
@@ -61,11 +61,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "1,297",
+     "1,324",
      "CO₂ forecasts locked"
     ],
     [
-     "49",
+     "50",
      "days running"
     ]
    ],
@@ -74,12 +74,12 @@
     "unit": "CO₂ forecasts a day"
    },
    "anchor": {
-    "date": "2026-11-17",
-    "at": "2026-11-17T04:27:59Z",
-    "head": "f09586f0a37c"
+    "date": "2026-11-18",
+    "at": "2026-11-18T04:28:58Z",
+    "head": "b1c37a339906"
    },
-   "beat": "2026-11-17T17:02:14Z",
-   "touched": "2026-11-17T17:02:14Z"
+   "beat": "2026-11-18T04:29:00Z",
+   "touched": "2026-11-18T04:29:00Z"
   },
   {
    "id": "prices",
@@ -336,6 +336,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-18T04:29:00Z",
+   "node": "co2",
+   "kind": "seal",
+   "text": "Day 50 sealed: 1,324 CO₂ forecasts locked, chain intact",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/3e906d1a0299706607eb319adcf62cd8ce14451b"
+  },
+  {
+   "t": "2026-11-18T04:19:39Z",
+   "node": "weather",
+   "kind": "seal",
+   "text": "Day 52 sealed: 4,159 forecast downloads locked, chain intact",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/05a6a615045524bd395f1b8e2fbab664e2f2fe4f"
+  },
   {
    "t": "2026-11-17T22:51:21Z",
    "node": "prices",
@@ -951,20 +965,6 @@
    "kind": "check",
    "text": "Served sealing script compared byte for byte with the code",
    "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/42369607496"
-  },
-  {
-   "t": "2026-11-07T04:32:00Z",
-   "node": "co2",
-   "kind": "seal",
-   "text": "Day 39 sealed: 1,027 CO₂ forecasts locked, chain intact",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/commit/82e5e82737465a729cbd1b0b1b51410c96a231be"
-  },
-  {
-   "t": "2026-11-07T04:20:10Z",
-   "node": "weather",
-   "kind": "seal",
-   "text": "Day 41 sealed: 3,301 forecast downloads locked, chain intact",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/commit/c157b4d70f99a0e21cb0b83d0c9f63e4c80da7f8"
   }
  ]
 }
