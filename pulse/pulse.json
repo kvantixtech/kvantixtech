@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-19T04:32:46Z",
+ "built_utc": "2026-11-19T14:32:18Z",
  "nodes": [
   {
    "id": "weather",
@@ -96,11 +96,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "100",
+     "102",
      "price-list checks locked"
     ],
     [
-     "50",
+     "51",
      "days running"
     ]
    ],
@@ -109,12 +109,12 @@
     "unit": "price-list checks a day"
    },
    "anchor": {
-    "date": "2026-11-18",
-    "at": "2026-11-18T14:31:19Z",
-    "head": "8ac630b5162b"
+    "date": "2026-11-19",
+    "at": "2026-11-19T14:28:19Z",
+    "head": "fea5761fdb61"
    },
-   "beat": "2026-11-18T22:33:43Z",
-   "touched": "2026-11-18T22:33:43Z"
+   "beat": "2026-11-19T14:28:20Z",
+   "touched": "2026-11-19T14:28:20Z"
   },
   {
    "id": "windgrid",
@@ -278,8 +278,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-11-18T14:30:30Z",
-   "touched": "2026-11-18T14:30:30Z"
+   "beat": "2026-11-19T14:29:36Z",
+   "touched": "2026-11-19T14:29:36Z"
   }
  ],
  "edges": [
@@ -336,6 +336,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-19T14:29:36Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Served sealing script compared byte for byte with the code",
+   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/44544288413"
+  },
+  {
+   "t": "2026-11-19T14:28:20Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 51 sealed: 102 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/f759652911947c307b62f8ef17b4e03a0d8a7e4e"
+  },
   {
    "t": "2026-11-19T04:28:19Z",
    "node": "co2",
@@ -951,20 +965,6 @@
    "kind": "seal",
    "text": "Day 40 sealed: 80 price-list checks locked, chain intact",
    "url": "https://github.com/kvantixtech/energy-price-archive/commit/d24ab02f83c17b0be328e311cefce5fd824bcecc"
-  },
-  {
-   "t": "2026-11-08T12:09:42Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Published reports compared byte for byte with the live files",
-   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/42478917245"
-  },
-  {
-   "t": "2026-11-08T11:58:47Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Served sealing script compared byte for byte with the code",
-   "url": "https://github.com/kvantixtech/lock-your-prediction/actions/runs/42478077776"
   }
  ]
 }
