@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-20T14:17:48Z",
+ "built_utc": "2026-11-20T14:32:16Z",
  "nodes": [
   {
    "id": "weather",
@@ -96,11 +96,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "102",
+     "104",
      "price-list checks locked"
     ],
     [
-     "51",
+     "52",
      "days running"
     ]
    ],
@@ -109,12 +109,12 @@
     "unit": "price-list checks a day"
    },
    "anchor": {
-    "date": "2026-11-19",
-    "at": "2026-11-19T14:28:19Z",
-    "head": "fea5761fdb61"
+    "date": "2026-11-20",
+    "at": "2026-11-20T14:27:41Z",
+    "head": "13ef93ea8810"
    },
-   "beat": "2026-11-19T22:38:48Z",
-   "touched": "2026-11-19T22:38:48Z"
+   "beat": "2026-11-20T14:27:42Z",
+   "touched": "2026-11-20T14:27:42Z"
   },
   {
    "id": "windgrid",
@@ -278,8 +278,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-11-20T14:07:16Z",
-   "touched": "2026-11-20T14:07:16Z"
+   "beat": "2026-11-20T14:19:09Z",
+   "touched": "2026-11-20T14:19:09Z"
   }
  ],
  "edges": [
@@ -336,6 +336,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-20T14:27:42Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 52 sealed: 104 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/6cbc4511b6da9d07fc552c99ea0fd17a9f01d548"
+  },
+  {
+   "t": "2026-11-20T14:19:09Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/44752259055"
+  },
   {
    "t": "2026-11-20T14:07:16Z",
    "node": "tools",
@@ -951,20 +965,6 @@
    "kind": "seal",
    "text": "Day 41 sealed: 82 price-list checks locked, chain intact",
    "url": "https://github.com/kvantixtech/energy-price-archive/commit/211b4598fa635d3babb86b8221fb29ad32b1e3ed"
-  },
-  {
-   "t": "2026-11-09T14:24:09Z",
-   "node": "experts",
-   "kind": "check",
-   "text": "Live page compared with the repository",
-   "url": "https://github.com/kvantixtech/expert-forecasts/actions/runs/42634283223"
-  },
-  {
-   "t": "2026-11-09T14:16:54Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Published reports compared byte for byte with the live files",
-   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/42633110491"
   }
  ]
 }
