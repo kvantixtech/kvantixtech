@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-20T14:47:37Z",
+ "built_utc": "2026-11-20T16:32:37Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-11-20T04:21:47Z",
     "head": "9e12e139bda7"
    },
-   "beat": "2026-11-20T04:21:49Z",
-   "touched": "2026-11-20T04:21:49Z"
+   "beat": "2026-11-20T16:19:35Z",
+   "touched": "2026-11-20T16:19:35Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-11-20T04:30:25Z",
     "head": "4ab2fbcdb80d"
    },
-   "beat": "2026-11-20T04:30:26Z",
-   "touched": "2026-11-20T04:30:26Z"
+   "beat": "2026-11-20T16:20:31Z",
+   "touched": "2026-11-20T16:20:31Z"
   },
   {
    "id": "prices",
@@ -335,6 +335,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-20T16:20:31Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/44772368822"
+  },
+  {
+   "t": "2026-11-20T16:19:35Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/44772216386"
+  },
   {
    "t": "2026-11-20T14:27:42Z",
    "node": "prices",
@@ -950,20 +964,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/42667958210"
-  },
-  {
-   "t": "2026-11-09T17:45:56Z",
-   "node": "weather",
-   "kind": "check",
-   "text": "Watchdog: anchor, chain and code version checked",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/42667764172"
-  },
-  {
-   "t": "2026-11-09T14:30:58Z",
-   "node": "prices",
-   "kind": "seal",
-   "text": "Day 41 sealed: 82 price-list checks locked, chain intact",
-   "url": "https://github.com/kvantixtech/energy-price-archive/commit/211b4598fa635d3babb86b8221fb29ad32b1e3ed"
   }
  ]
 }
