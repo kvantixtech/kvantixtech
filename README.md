@@ -25,16 +25,16 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 16 Nov 14:01 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
 | [Denmark's wastewater](https://kvantix.tech/playground/wastewater/) | ⚪ Watching | 6 Nov 14:35 UTC | 98 municipalities and Christiansø · sources checked again every month | Next monthly check against the sources, 6 Dec |
 | [Nitrogen sources](https://kvantix.tech/playground/nitrogen/) | 💤 Resting | – | Inconclusive reading · 46 stations | – |
-| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 19 Nov 14:39 UTC | 3 tools · nothing you type is stored | – |
+| [Tools in your browser](https://kvantix.tech/playground/#kvx-pg-tools) | ⚪ Watching | 20 Nov 14:07 UTC | 3 tools · nothing you type is stored | – |
 
 **Latest traces**
 
+- 20 Nov 14:07 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/44750397255)
 - 20 Nov 04:30 UTC · CO₂ forecast · [Day 52 sealed: 1,378 CO₂ forecasts locked, chain intact](https://github.com/kvantixtech/energinet-forecasts/commit/5ba2072b070a911153a28683f52ac655cd646f0b)
 - 20 Nov 04:21 UTC · Weather · [Day 54 sealed: 4,319 forecast downloads locked, chain intact](https://github.com/kvantixtech/weather-forecast-test/commit/ded563ad20d594b464dec5ddd4736eae0a5d00d6)
 - 19 Nov 22:38 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/44630539582)
 - 19 Nov 16:45 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/44569574269)
 - 19 Nov 16:45 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/44569595508)
-- 19 Nov 14:39 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/44546098088)
 <!-- pulse:end -->
 
 ## Repositories
