@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-22T15:47:24Z",
+ "built_utc": "2026-11-22T21:02:50Z",
  "nodes": [
   {
    "id": "weather",
@@ -113,8 +113,8 @@
     "at": "2026-11-22T14:29:24Z",
     "head": "7c18b7d59e34"
    },
-   "beat": "2026-11-22T14:29:25Z",
-   "touched": "2026-11-22T14:29:25Z"
+   "beat": "2026-11-22T21:00:19Z",
+   "touched": "2026-11-22T21:00:19Z"
   },
   {
    "id": "windgrid",
@@ -335,6 +335,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-22T21:00:19Z",
+   "node": "prices",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/45069572576"
+  },
   {
    "t": "2026-11-22T15:38:19Z",
    "node": "co2",
@@ -957,13 +964,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/43106881429"
-  },
-  {
-   "t": "2026-11-11T15:35:06Z",
-   "node": "co2",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/43049783955"
   }
  ]
 }
