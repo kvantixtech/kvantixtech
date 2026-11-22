@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-22T13:47:26Z",
+ "built_utc": "2026-11-22T14:32:16Z",
  "nodes": [
   {
    "id": "weather",
@@ -96,11 +96,11 @@
    "chain_ok": true,
    "counters": [
     [
-     "106",
+     "108",
      "price-list checks locked"
     ],
     [
-     "53",
+     "54",
      "days running"
     ]
    ],
@@ -109,12 +109,12 @@
     "unit": "price-list checks a day"
    },
    "anchor": {
-    "date": "2026-11-21",
-    "at": "2026-11-21T14:27:11Z",
-    "head": "3aac86de227f"
+    "date": "2026-11-22",
+    "at": "2026-11-22T14:29:24Z",
+    "head": "7c18b7d59e34"
    },
-   "beat": "2026-11-21T20:52:34Z",
-   "touched": "2026-11-21T20:52:34Z"
+   "beat": "2026-11-22T14:29:25Z",
+   "touched": "2026-11-22T14:29:25Z"
   },
   {
    "id": "windgrid",
@@ -335,6 +335,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-22T14:29:25Z",
+   "node": "prices",
+   "kind": "seal",
+   "text": "Day 54 sealed: 108 price-list checks locked, chain intact",
+   "url": "https://github.com/kvantixtech/energy-price-archive/commit/b149e925a42e007e1e540e1ff84c2e7dcb0e169f"
+  },
   {
    "t": "2026-11-22T13:34:14Z",
    "node": "tools",
@@ -957,13 +964,6 @@
    "kind": "seal",
    "text": "Day 43 sealed: 86 price-list checks locked, chain intact",
    "url": "https://github.com/kvantixtech/energy-price-archive/commit/70a99d0bfc484ca7f6ba39ea0ad5477d01a66f79"
-  },
-  {
-   "t": "2026-11-11T12:55:27Z",
-   "node": "tools",
-   "kind": "check",
-   "text": "Published reports compared byte for byte with the live files",
-   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/43024508969"
   }
  ]
 }
