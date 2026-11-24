@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-24T16:02:49Z",
+ "built_utc": "2026-11-24T16:32:27Z",
  "nodes": [
   {
    "id": "weather",
@@ -277,8 +277,8 @@
      "nothing you type is stored"
     ]
    ],
-   "beat": "2026-11-24T15:57:39Z",
-   "touched": "2026-11-24T15:57:39Z"
+   "beat": "2026-11-24T16:19:14Z",
+   "touched": "2026-11-24T16:19:14Z"
   }
  ],
  "edges": [
@@ -335,6 +335,13 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-24T16:19:14Z",
+   "node": "tools",
+   "kind": "check",
+   "text": "Published reports compared byte for byte with the live files",
+   "url": "https://github.com/kvantixtech/kvantix-reports/actions/runs/45435698039"
+  },
   {
    "t": "2026-11-24T15:57:39Z",
    "node": "tools",
@@ -957,13 +964,6 @@
    "kind": "check",
    "text": "Watchdog: anchor, chain and code version checked",
    "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/43454686648"
-  },
-  {
-   "t": "2026-11-13T14:30:49Z",
-   "node": "prices",
-   "kind": "seal",
-   "text": "Day 45 sealed: 90 price-list checks locked, chain intact",
-   "url": "https://github.com/kvantixtech/energy-price-archive/commit/6c8a09e5e0a51e822c951a35219d70c2243aace2"
   }
  ]
 }
