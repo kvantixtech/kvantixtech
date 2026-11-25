@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-25T16:02:34Z",
+ "built_utc": "2026-11-25T18:17:47Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-11-25T04:19:26Z",
     "head": "fd667ab3031b"
    },
-   "beat": "2026-11-25T04:19:28Z",
-   "touched": "2026-11-25T04:19:28Z"
+   "beat": "2026-11-25T18:08:29Z",
+   "touched": "2026-11-25T18:08:29Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-11-25T04:31:19Z",
     "head": "71ff77dd329c"
    },
-   "beat": "2026-11-25T04:31:21Z",
-   "touched": "2026-11-25T04:31:21Z"
+   "beat": "2026-11-25T18:09:37Z",
+   "touched": "2026-11-25T18:09:37Z"
   },
   {
    "id": "prices",
@@ -335,6 +335,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-25T18:09:37Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/45672217865"
+  },
+  {
+   "t": "2026-11-25T18:08:29Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/45672027320"
+  },
   {
    "t": "2026-11-25T15:59:35Z",
    "node": "tools",
@@ -950,20 +964,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/43634487011"
-  },
-  {
-   "t": "2026-11-14T14:29:14Z",
-   "node": "prices",
-   "kind": "seal",
-   "text": "Day 46 sealed: 92 price-list checks locked, chain intact",
-   "url": "https://github.com/kvantixtech/energy-price-archive/commit/59851f4e25e11fd98c48e0f0ad7f9f16a3ec0e03"
-  },
-  {
-   "t": "2026-11-14T14:27:31Z",
-   "node": "co2",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/43604945199"
   }
  ]
 }
