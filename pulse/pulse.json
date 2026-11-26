@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "about": "Kvantix pulse: what each investigation is doing, from public commits, runs and status files. No results and no raw measurements. Built by tools/pulse.py in github.com/kvantixtech/kvantixtech.",
- "built_utc": "2026-11-26T15:47:37Z",
+ "built_utc": "2026-11-26T18:02:37Z",
  "nodes": [
   {
    "id": "weather",
@@ -39,8 +39,8 @@
     "at": "2026-11-26T04:20:14Z",
     "head": "f7e1393be506"
    },
-   "beat": "2026-11-26T04:20:15Z",
-   "touched": "2026-11-26T04:20:15Z"
+   "beat": "2026-11-26T17:51:56Z",
+   "touched": "2026-11-26T17:51:56Z"
   },
   {
    "id": "co2",
@@ -78,8 +78,8 @@
     "at": "2026-11-26T04:27:14Z",
     "head": "0487b9899de7"
    },
-   "beat": "2026-11-26T04:27:15Z",
-   "touched": "2026-11-26T04:27:15Z"
+   "beat": "2026-11-26T17:52:33Z",
+   "touched": "2026-11-26T17:52:33Z"
   },
   {
    "id": "prices",
@@ -335,6 +335,20 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-11-26T17:52:33Z",
+   "node": "co2",
+   "kind": "check",
+   "text": "Watchdog: anchor and chain checked",
+   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/45871345966"
+  },
+  {
+   "t": "2026-11-26T17:51:56Z",
+   "node": "weather",
+   "kind": "check",
+   "text": "Watchdog: anchor, chain and code version checked",
+   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/45871268293"
+  },
   {
    "t": "2026-11-26T15:42:56Z",
    "node": "tools",
@@ -950,20 +964,6 @@
    "kind": "check",
    "text": "Watchdog: anchor and chain checked",
    "url": "https://github.com/kvantixtech/energy-price-archive/actions/runs/43757534379"
-  },
-  {
-   "t": "2026-11-15T14:56:37Z",
-   "node": "weather",
-   "kind": "check",
-   "text": "Watchdog: anchor, chain and code version checked",
-   "url": "https://github.com/kvantixtech/weather-forecast-test/actions/runs/43727068622"
-  },
-  {
-   "t": "2026-11-15T14:56:30Z",
-   "node": "co2",
-   "kind": "check",
-   "text": "Watchdog: anchor and chain checked",
-   "url": "https://github.com/kvantixtech/energinet-forecasts/actions/runs/43727063971"
   }
  ]
 }
