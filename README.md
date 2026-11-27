@@ -19,7 +19,7 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 |---|---|---|---|---|
 | [Weather forecasts](https://kvantix.tech/playground/weather/) | 🟢 Collecting | 27 Nov 17:37 UTC | 4,866 forecast downloads locked · 61 days running | First scoreboard, marked preliminary, ≈ 28 Oct |
 | [Energinet's CO₂ forecast](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 27 Nov 17:38 UTC | 1,567 CO₂ forecasts locked · 59 days running | First green-hour tally, marked preliminary, ≈ 30 Oct |
-| [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 27 Nov 14:27 UTC | 118 price-list checks locked · 59 days running | – |
+| [Electricity price list](https://kvantix.tech/playground/energy/) | 🟢 Collecting | 27 Nov 23:23 UTC | 118 price-list checks locked · 59 days running | – |
 | [Energinet's wind and solar forecasts](https://kvantix.tech/playground/energy/#kvx-en-wind) | ⚪ Watching | – | 2019–2026 scored · results published 15 October | – |
 | [Offshore wind and coastal rain](https://kvantix.tech/playground/wind-rain/) | 🟡 Working | – | 35 of 35 ERA5 years in · 5 of 8 steps done | – |
 | [Economic forecasts](https://kvantix.tech/playground/experts/) | ⚪ Watching | 23 Nov 16:31 UTC | 60 forecasts scored · outcomes from Statistics Denmark | New edition with the 2026 outcomes, 2 Mar 2027 |
@@ -29,12 +29,12 @@ Every investigation, as of its latest public trace. This block is rewritten by [
 
 **Latest traces**
 
+- 27 Nov 23:23 UTC · Price list · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energy-price-archive/actions/runs/46082196755)
 - 27 Nov 17:38 UTC · CO₂ forecast · [Watchdog: anchor and chain checked](https://github.com/kvantixtech/energinet-forecasts/actions/runs/46043354550)
 - 27 Nov 17:37 UTC · Weather · [Watchdog: anchor, chain and code version checked](https://github.com/kvantixtech/weather-forecast-test/actions/runs/46043306927)
 - 27 Nov 15:31 UTC · Tools · [Published reports compared byte for byte with the live files](https://github.com/kvantixtech/kvantix-reports/actions/runs/46025668733)
 - 27 Nov 15:13 UTC · Tools · [Served sealing script compared byte for byte with the code](https://github.com/kvantixtech/lock-your-prediction/actions/runs/46022886149)
 - 27 Nov 14:27 UTC · Price list · [Day 59 sealed: 118 price-list checks locked, chain intact](https://github.com/kvantixtech/energy-price-archive/commit/27c0c1d0815dee8e73440a7be342a317ca22e12a)
-- 27 Nov 04:28 UTC · CO₂ forecast · [Day 59 sealed: 1,567 CO₂ forecasts locked, chain intact](https://github.com/kvantixtech/energinet-forecasts/commit/ae64cac35af285a970be52b7ffc09577c2ffcd96)
 <!-- pulse:end -->
 
 ## Repositories
